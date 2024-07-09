@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://btxamenaj7db6"
+path="res://.godot/imported/MUSICCR_17. Forest Chillin'.mp3-75e5e8adaf7598cc45e35739d62124ce.mp3str"
+
+[deps]
+
+source_file="res://assets/WORLD/MUSICCR_17. Forest Chillin'.mp3"
+dest_files=["res://.godot/imported/MUSICCR_17. Forest Chillin'.mp3-75e5e8adaf7598cc45e35739d62124ce.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

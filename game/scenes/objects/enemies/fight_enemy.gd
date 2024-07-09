@@ -10,7 +10,7 @@ var is_active: bool = false
 
 signal turn_finished
 
-const DAMAGE_SOUND = preload("res://prototype_things/audio/sfx/damage.mp3")
+const DAMAGE_SOUND = preload("res://assets/BATTLE/SFXCR_damage.mp3")
 
 func get_damage(value):
 	characteristics_res.health -= value

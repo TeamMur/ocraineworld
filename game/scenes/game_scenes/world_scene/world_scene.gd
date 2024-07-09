@@ -1,6 +1,6 @@
 extends Node
 
-var scene_music_file = load(MasterOfTheGame.global_music_package + "17. Forest Chillin'" + ".mp3")
+var scene_music_file = preload("res://assets/WORLD/MUSICCR_17. Forest Chillin'.mp3")
 
 func _ready():
 	#включение настроек мастера, ибо настроек в сцене нет

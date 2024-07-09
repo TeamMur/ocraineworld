@@ -1,7 +1,7 @@
 extends Node2D
 class_name FightPlayer
 
-const fire_sfx = preload("res://prototype_things/audio/sfx/Выстрел из револьера Никто.mp3")
+const fire_sfx = preload("res://assets/BATTLE/SFXCR_PLAYER_Выстрел из револьера Никто.mp3")
 
 @onready var sprite = $Sprite
 @onready var skills_animation = $SkillsAnimation
@@ -11,21 +11,21 @@ const fire_sfx = preload("res://prototype_things/audio/sfx/Выстрел из �
 var is_busy: bool = false
 var is_active: bool = true
 
-const DAMAGE_SOUND = preload("res://prototype_things/audio/sfx/damage.mp3")
+const DAMAGE_SOUND = preload("res://assets/BATTLE/SFXCR_damage.mp3")
 
 signal turn_finished
 
 var skills_dict = {
 	"shot_revolver": {
-		"texture": preload("res://sprites/BATTLE/SKILL_icon_pistol.png"),
+		"texture": preload("res://assets/BATTLE/SKILL_icon_pistol.png"),
 		"method": shot_revolver.bind(5)
 	},
 	"eyes": {
-		"texture": preload("res://sprites/BATTLE/SKILL_icon_eyes.png"),
+		"texture": preload("res://assets/BATTLE/SKILL_icon_eyes.png"),
 		"method": eyes.bind(3)
 	},
 	"shot_revolver_double": {
-		"texture": preload("res://sprites/BATTLE/SKILL_icon_pistol.png"),
+		"texture": preload("res://assets/BATTLE/SKILL_icon_pistol.png"),
 		"method": shot_revolver.bind(10)
 	}
 }

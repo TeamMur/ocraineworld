@@ -1,7 +1,7 @@
 [gd_scene load_steps=25 format=3 uid="uid://66cit0lcdd37"]
 
 [ext_resource type="Script" path="res://game/scenes/objects/enemies/cracker/fight_cracker.gd" id="1_dqx5m"]
-[ext_resource type="Texture2D" uid="uid://bo8urcfvp0jv" path="res://sprites/WORLD/ENEMY_cracker_spritesheet.png" id="2_33gd7"]
+[ext_resource type="Texture2D" uid="uid://bo8urcfvp0jv" path="res://assets/WORLD/ENEMY_cracker_spritesheet.png" id="2_33gd7"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6kp2o"]
 atlas = ExtResource("2_33gd7")

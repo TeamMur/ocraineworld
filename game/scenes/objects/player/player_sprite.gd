@@ -2,11 +2,11 @@ extends DashesSprite
 
 var textures = {
 	"idle": {
-		"texture": preload("res://sprites/WORLD/PLAYER_idle.png"),
+		"texture": preload("res://assets/WORLD/PLAYER_idle.png"),
 		"hframes": 4,
 	},
 	"walk": {
-		"texture": preload("res://sprites/WORLD/PLAYER_walk.png"),
+		"texture": preload("res://assets/WORLD/PLAYER_walk.png"),
 		"hframes": 9
 	}
 }

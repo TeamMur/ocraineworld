@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://djudysfc7sfp0"]
 
 [ext_resource type="Script" path="res://game/scenes/objects/enemies/enemy.gd" id="1_6gj87"]
-[ext_resource type="Texture2D" uid="uid://ukvyqp63b4" path="res://sprites/WORLD/ENEMY_dummy_idle.png" id="2_bygkv"]
+[ext_resource type="Texture2D" uid="uid://ukvyqp63b4" path="res://assets/WORLD/ENEMY_dummy_idle.png" id="2_bygkv"]
 [ext_resource type="Resource" uid="uid://c8tvfeodccxh0" path="res://game/scenes/objects/enemies/dummy/characteristics.tres" id="2_sl22q"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_b3c7v"]

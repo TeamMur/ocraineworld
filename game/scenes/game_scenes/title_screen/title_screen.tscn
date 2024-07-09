@@ -1,9 +1,9 @@
 [gd_scene load_steps=7 format=3 uid="uid://rbfhinkfolqo"]
 
 [ext_resource type="Script" path="res://game/scenes/game_scenes/title_screen/title_screen.gd" id="1_qylio"]
-[ext_resource type="Texture2D" uid="uid://byhjnt8sxglyf" path="res://sprites/BATTLE/BG_papers.png" id="2_goyem"]
+[ext_resource type="Texture2D" uid="uid://byhjnt8sxglyf" path="res://assets/BATTLE/BG_papers.png" id="2_goyem"]
 [ext_resource type="Script" path="res://samples/things/dashes_sprite/dashes_sprite.gd" id="3_rd0oe"]
-[ext_resource type="Texture2D" uid="uid://lhc00q24wu43" path="res://sprites/MENU/ICON_main_chracter.png" id="4_m7oek"]
+[ext_resource type="Texture2D" uid="uid://lhc00q24wu43" path="res://assets/MENU/ICON_main_chracter.png" id="4_m7oek"]
 [ext_resource type="PackedScene" uid="uid://bl228pekg5imo" path="res://game/scenes/game_scenes/title_screen/scenes/start_buttons.tscn" id="4_rp25m"]
 [ext_resource type="PackedScene" uid="uid://dvqjcfutanpdl" path="res://game/scenes/game_scenes/title_screen/scenes/settings_buttons.tscn" id="12_bm4t4"]
 

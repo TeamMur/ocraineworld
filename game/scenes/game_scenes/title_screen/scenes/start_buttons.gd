@@ -9,8 +9,8 @@ var new_game_scene_path: String = MasterOfTheGame.global_game_scenes_package + "
 var continue_game_scene_path: String
 var settings_scene: Object
 
-@onready var button_pressed_sfx = load(MasterOfTheGame.global_sfx_package + "button_up.mp3")
-@onready var button_mouse_entered_sfx = load(MasterOfTheGame.global_sfx_package + "mouse_entered.wav")
+@onready var button_pressed_sfx = preload("res://assets/MENU/SFXCR_button_up.mp3")
+@onready var button_mouse_entered_sfx = preload("res://assets/MENU/SFXCR_mouse_entered.wav")
 
 func _ready():
 	#действия кнопок
@@ -34,7 +34,7 @@ func _ready():
 		button.mouse_entered.connect(play_buttons_mouse_entered_effects)
 		if not button == new_game_button:
 			button.pressed.connect(play_buttons_pressed_effects)
-	new_game_button.pressed.connect(MasterOfTheSenses.play_sfx.bind(load("res://prototype_things/audio/sfx/start_game.mp3")))
+	new_game_button.pressed.connect(MasterOfTheSenses.play_sfx.bind(load("res://assets/MENU/SFXCR_start_game.mp3")))
 
 #эффекты кнопок (музыка и звуки)
 func play_buttons_mouse_entered_effects():

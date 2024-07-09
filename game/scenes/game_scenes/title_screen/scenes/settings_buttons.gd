@@ -22,8 +22,8 @@ extends Control
 var resolutions: Array = [Vector2i(1152, 648),Vector2i(1600, 900),Vector2i(1920, 1080)]
 var current_resolution_index: int = 0
 
-@onready var button_pressed_sfx = load(MasterOfTheGame.global_sfx_package + "button_up.mp3")
-@onready var button_mouse_entered_sfx = load(MasterOfTheGame.global_sfx_package + "mouse_entered.wav")
+@onready var button_pressed_sfx = preload("res://assets/MENU/SFXCR_button_up.mp3")
+@onready var button_mouse_entered_sfx = preload("res://assets/MENU/SFXCR_mouse_entered.wav")
 
 var previous_ui: Object
 

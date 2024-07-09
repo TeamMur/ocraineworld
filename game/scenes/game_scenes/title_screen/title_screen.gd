@@ -7,7 +7,7 @@ extends Node
 @onready var version_label = $Statics/VersionLabel
 @onready var copyright_label = $Statics/CopyrightLabel
 
-var scene_music_file = load(MasterOfTheGame.global_music_package + "Cocktails_and_Lobsters.mp3")
+var scene_music_file = null
 
 func _ready():
 	#отключение настроек мастера, ибо есть настройки в самой сцене

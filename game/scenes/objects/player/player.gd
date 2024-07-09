@@ -10,7 +10,7 @@ class_name Player
 @onready var hitbox = $Hitbox
 @onready var audio_player = $AudioPlayer
 
-const STEPS_SOUND = preload("res://prototype_things/audio/sfx/steps.mp3")
+const STEPS_SOUND = preload("res://assets/WORLD/SFXCR_PLAYER_steps.mp3")
 
 @export var speed: float = 1.25
 

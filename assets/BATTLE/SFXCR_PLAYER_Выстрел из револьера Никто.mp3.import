@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://4v56gpr3mnip"
+path="res://.godot/imported/SFXCR_PLAYER_Выстрел из револьера Никто.mp3-6a99e78274bda45c02438ed388ec8f55.mp3str"
+
+[deps]
+
+source_file="res://assets/BATTLE/SFXCR_PLAYER_Выстрел из револьера Никто.mp3"
+dest_files=["res://.godot/imported/SFXCR_PLAYER_Выстрел из револьера Никто.mp3-6a99e78274bda45c02438ed388ec8f55.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
