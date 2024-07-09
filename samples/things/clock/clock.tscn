@@ -1,8 +1,0 @@
-[gd_scene load_steps=2 format=3 uid="uid://bqecew0o7mxok"]
-
-[ext_resource type="Script" path="res://samples/things/clock/clock.gd" id="1_l6rxo"]
-
-[node name="Clock" type="Label"]
-offset_right = 40.0
-offset_bottom = 23.0
-script = ExtResource("1_l6rxo")

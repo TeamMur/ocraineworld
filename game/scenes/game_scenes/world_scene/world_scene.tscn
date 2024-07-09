@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=3 uid="uid://dapjv27oqreqe"]
+[gd_scene load_steps=44 format=3 uid="uid://dapjv27oqreqe"]
 
 [ext_resource type="Script" path="res://game/scenes/game_scenes/world_scene/world_scene.gd" id="1_bng1d"]
 [ext_resource type="Texture2D" uid="uid://byhjnt8sxglyf" path="res://game/global_sprites/backgrounds/papers.png" id="2_ilbis"]
@@ -19,7 +19,6 @@
 [ext_resource type="Texture2D" uid="uid://cjd1xr786l62r" path="res://game/global_sprites/dashes/травинка4.png" id="15_ydhu0"]
 [ext_resource type="Texture2D" uid="uid://b5h6plyu4kkmm" path="res://game/global_sprites/dashes/штрих1.png" id="17_lbgo4"]
 [ext_resource type="Texture2D" uid="uid://bl27gx75uosiy" path="res://game/global_sprites/dashes/штрих2.png" id="18_kgd5x"]
-[ext_resource type="PackedScene" uid="uid://bqecew0o7mxok" path="res://samples/things/clock/clock.tscn" id="19_0hrn7"]
 [ext_resource type="PackedScene" uid="uid://c1h7u2fexx28k" path="res://game/global_objects/enviroment/hay_z.tscn" id="22_8sm0g"]
 [ext_resource type="PackedScene" uid="uid://srmhoulhmnfe" path="res://game/global_objects/enviroment/hay_h_2.tscn" id="22_i57dw"]
 [ext_resource type="Texture2D" uid="uid://d4kgf18i271dm" path="res://game/global_sprites/enviroment/mushrooms/гриб2.png" id="23_bbqa1"]
@@ -104,16 +103,6 @@ script = ExtResource("1_bng1d")
 
 [node name="Background" type="CanvasLayer" parent="."]
 layer = -1
-
-[node name="Clock" parent="Background" instance=ExtResource("19_0hrn7")]
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -56.0
-offset_top = 16.0
-offset_right = -16.0
-offset_bottom = 39.0
-grow_horizontal = 0
 
 [node name="Papers" type="Sprite2D" parent="Background"]
 process_mode = 3
