@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://game/scenes/objects/player/player.gd" id="1_wo7r5"]
 [ext_resource type="Resource" uid="uid://l5g75wbc80ay" path="res://game/scenes/objects/player/characteristics.tres" id="2_jnoh3"]
-[ext_resource type="Script" path="res://game/scenes/objects/player/sprites/animations/player_sprite.gd" id="3_347b7"]
-[ext_resource type="Texture2D" uid="uid://dwcia7ikgqiku" path="res://game/scenes/objects/player/sprites/animations/idle.png" id="3_i8i1x"]
+[ext_resource type="Texture2D" uid="uid://dwcia7ikgqiku" path="res://sprites/WORLD/PLAYER_idle.png" id="3_pjdwg"]
+[ext_resource type="Script" path="res://game/scenes/objects/player/player_sprite.gd" id="4_u63jk"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_o2p0l"]
 radius = 41.0
@@ -21,11 +21,11 @@ characteristics_res = ExtResource("2_jnoh3")
 [node name="Sprite" type="Sprite2D" parent="."]
 process_mode = 3
 position = Vector2(0, -115)
-texture = ExtResource("3_i8i1x")
+texture = ExtResource("3_pjdwg")
 hframes = 4
 vframes = 8
 frame = 16
-script = ExtResource("3_347b7")
+script = ExtResource("4_u63jk")
 
 [node name="Collision" type="CollisionShape2D" parent="."]
 visibility_layer = 7

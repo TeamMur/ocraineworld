@@ -17,15 +17,15 @@ signal turn_finished
 
 var skills_dict = {
 	"shot_revolver": {
-		"texture": load("res://game/scenes/objects/player/sprites/skills/skill_icon_pistol.png"),
+		"texture": preload("res://sprites/BATTLE/SKILL_icon_pistol.png"),
 		"method": shot_revolver.bind(5)
 	},
 	"eyes": {
-		"texture": load("res://game/scenes/objects/player/sprites/skills/skill_icon_eyes.png"),
+		"texture": preload("res://sprites/BATTLE/SKILL_icon_eyes.png"),
 		"method": eyes.bind(3)
 	},
 	"shot_revolver_double": {
-		"texture": load("res://game/scenes/objects/player/sprites/skills/skill_icon_pistol.png"),
+		"texture": preload("res://sprites/BATTLE/SKILL_icon_pistol.png"),
 		"method": shot_revolver.bind(10)
 	}
 }

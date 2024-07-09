@@ -9,7 +9,6 @@ var is_active: bool = false
 @export var characteristics_res: Resource
 
 signal turn_finished
-signal successful_attack(damage)
 
 const DAMAGE_SOUND = preload("res://prototype_things/audio/sfx/damage.mp3")
 

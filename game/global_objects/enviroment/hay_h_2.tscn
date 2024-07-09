@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://srmhoulhmnfe"]
 
-[ext_resource type="Texture2D" uid="uid://du3q6pppvsmpl" path="res://game/global_sprites/enviroment/hay/сено9.png" id="1_h4pvm"]
+[ext_resource type="Texture2D" uid="uid://du3q6pppvsmpl" path="res://sprites/WORLD/ENV_сено9.png" id="1_h4pvm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v8x2r"]
 size = Vector2(207, 115)

@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://dvqjcfutanpdl"]
 
 [ext_resource type="Script" path="res://game/scenes/game_scenes/title_screen/scenes/settings_buttons.gd" id="1_qrd6l"]
-[ext_resource type="Texture2D" uid="uid://2sv5uu647sii" path="res://game/global_sprites/UI/normal/UI темный.png" id="2_vbymo"]
+[ext_resource type="Texture2D" uid="uid://2sv5uu647sii" path="res://sprites/BATTLE/UI_темный.png" id="2_vbymo"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_svgax"]
 texture = ExtResource("2_vbymo")
