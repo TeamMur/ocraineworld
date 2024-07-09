@@ -1,8 +1,8 @@
 [gd_scene load_steps=51 format=3 uid="uid://0w2kir3xkrn3"]
 
-[ext_resource type="Script" path="res://game/scenes/objects/player/fight_player.gd" id="1_yfxki"]
+[ext_resource type="Script" path="res://scenes/BATTLE/btlplayer.gd" id="1_yfxki"]
 [ext_resource type="Texture2D" uid="uid://ro4x5qdfnelb" path="res://assets/BATTLE/BTLPLAYER_damage.png" id="2_5r6pm"]
-[ext_resource type="Resource" uid="uid://l5g75wbc80ay" path="res://game/scenes/objects/player/characteristics.tres" id="2_wycw3"]
+[ext_resource type="Resource" uid="uid://l5g75wbc80ay" path="res://scenes/BATTLE/RES_player_characteristics.tres" id="2_wycw3"]
 [ext_resource type="Texture2D" uid="uid://dybxkdj5gud5k" path="res://assets/BATTLE/BTLPLAYER_death_1.png" id="3_asr2e"]
 [ext_resource type="Texture2D" uid="uid://5dye4n5uvpdl" path="res://assets/BATTLE/BTLPLAYER_idle.png" id="3_orp7v"]
 [ext_resource type="Texture2D" uid="uid://dynj71bk56fpy" path="res://assets/BATTLE/BTLPLAYER_idle_lowhp.png" id="4_mbo4w"]

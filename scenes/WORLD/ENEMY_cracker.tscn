@@ -1,7 +1,7 @@
 [gd_scene load_steps=28 format=3 uid="uid://b0o16mko3xb7g"]
 
-[ext_resource type="Script" path="res://game/scenes/objects/enemies/enemy.gd" id="1_l8jkk"]
-[ext_resource type="Resource" uid="uid://cd4oqhigh2thq" path="res://game/scenes/objects/enemies/cracker/characteristics.tres" id="2_khltx"]
+[ext_resource type="Script" path="res://scenes/WORLD/enemy.gd" id="1_l8jkk"]
+[ext_resource type="Resource" uid="uid://cd4oqhigh2thq" path="res://scenes/BATTLE/RES_cracker_characteristics.tres" id="2_khltx"]
 [ext_resource type="Texture2D" uid="uid://bo8urcfvp0jv" path="res://assets/WORLD/ENEMY_cracker_spritesheet.png" id="3_crrtb"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_b3c7v"]

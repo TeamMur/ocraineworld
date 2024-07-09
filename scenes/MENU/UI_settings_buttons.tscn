@@ -1,6 +1,6 @@
 [gd_scene load_steps=8 format=3 uid="uid://dvqjcfutanpdl"]
 
-[ext_resource type="Script" path="res://game/scenes/game_scenes/title_screen/scenes/settings_buttons.gd" id="1_qrd6l"]
+[ext_resource type="Script" path="res://scenes/MENU/ui_settings_buttons.gd" id="1_qrd6l"]
 [ext_resource type="Texture2D" uid="uid://2sv5uu647sii" path="res://assets/BATTLE/UI_темный.png" id="2_vbymo"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_svgax"]

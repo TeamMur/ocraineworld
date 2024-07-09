@@ -5,7 +5,7 @@ extends Control
 @onready var settings_button = $SettingsButton
 @onready var exit_button = $ExitButton
 
-var new_game_scene_path: String = MasterOfTheGame.global_game_scenes_package + "world_scene/world_scene.tscn"
+const new_game_scene_path: String = "res://scenes/WORLD/SCENE_world.tscn"
 var continue_game_scene_path: String
 var settings_scene: Object
 

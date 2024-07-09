@@ -1,7 +1,7 @@
 extends Node
 
 var scene_music_file = preload("res://assets/BATTLE/MUSICCR_75. Forest Frenzy.mp3")
-var main_scene_path: String = MasterOfTheGame.global_game_scenes_package + "world_scene/world_scene.tscn"
+var main_scene_path: String = "res://scenes/WORLD/SCENE_world.tscn"
 
 @onready var info = $GUI/Info
 

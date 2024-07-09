@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://6xpc0ge01y0e"]
 
 [ext_resource type="Script" path="res://common/masters/master_of_the_game/Master_of_the_game.gd" id="1_kpaey"]
-[ext_resource type="PackedScene" uid="uid://dvqjcfutanpdl" path="res://game/scenes/game_scenes/title_screen/scenes/settings_buttons.tscn" id="2_257bw"]
+[ext_resource type="PackedScene" uid="uid://dvqjcfutanpdl" path="res://scenes/MENU/UI_settings_buttons.tscn" id="2_257bw"]
 
 [node name="MasterOfTheGame" type="CanvasLayer"]
 process_mode = 3

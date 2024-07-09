@@ -11,7 +11,7 @@ var global_audio_package: String = "res://prototype_things/audio/"
 var global_sfx_package: String = "res://prototype_things/audio/sfx/"
 var global_music_package: String = "res://prototype_things/audio/music/"
 
-var title_screen_path: String = global_game_scenes_package + "title_screen/title_screen.tscn"
+const title_screen_path: String = "res://scenes/MENU/SCENE_menu.tscn"
 
 var scene_is_pausable: bool = false
 var scene_has_settings: bool = false
@@ -85,7 +85,7 @@ func _apply_global_settings():
 
 #боевая сцена
 ##Думаю стоит не переключать сцену а както поверх вызывать боевку
-var fight_scene_path: String = global_game_scenes_package + "fight_scene/fight_scene.tscn"
+const fight_scene_path: String = "res://scenes/BATTLE/SCENE_battle.tscn"
 
 func change_to_fight_scene(player, enemy):
 	MasterOfTheSenses.change_scene_with_transition(fight_scene_path, "dissolve_in", "dissolve_out")

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://cd4oqhigh2thq"]
+
+[ext_resource type="Script" path="res://scenes/BATTLE/res_characteristics.gd" id="1_36hhb"]
+
+[resource]
+script = ExtResource("1_36hhb")
+health = 20.0
+mana = 0.0
+damage = 10.0
+protection = 5.0
+speed = 0.0
+luck = 0.0
+world_version_path = "res://scenes/WORLD/ENEMY_cracker.tscn"
+fight_version_path = "res://scenes/BATTLE/BTLENEMY_cracker.tscn"

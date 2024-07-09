@@ -1,45 +1,45 @@
 [gd_scene load_steps=43 format=3 uid="uid://dapjv27oqreqe"]
 
-[ext_resource type="Script" path="res://game/scenes/game_scenes/world_scene/world_scene.gd" id="1_bng1d"]
-[ext_resource type="Texture2D" uid="uid://byhjnt8sxglyf" path="res://assets/BATTLE/BG_papers.png" id="2_ilbis"]
-[ext_resource type="Texture2D" uid="uid://ba6mlqgq7bpgk" path="res://assets/WORLD/DASH_заварулина.png" id="5_ftwlb"]
-[ext_resource type="Texture2D" uid="uid://gu0poywv5nr4" path="res://assets/WORLD/TILES_синеватый деревянный пол.png" id="5_uw1ie"]
-[ext_resource type="Texture2D" uid="uid://dka81se06qt1n" path="res://assets/WORLD/DASH_загагулина1.png" id="6_wewug"]
-[ext_resource type="Texture2D" uid="uid://67ugpchfe03k" path="res://assets/WORLD/TILES_тайл сет1.png" id="6_wibrg"]
-[ext_resource type="Texture2D" uid="uid://d4d6uc2a13ncg" path="res://assets/WORLD/TILES_тайл сет белой травы1.png" id="7_k5ehx"]
-[ext_resource type="Texture2D" uid="uid://d0i4modqtqimq" path="res://assets/WORLD/TILES_тайл сет белой травы.png" id="8_266aj"]
-[ext_resource type="Texture2D" uid="uid://dl56s3l7hf0xf" path="res://assets/WORLD/DASH_загагулина.png" id="8_muyvb"]
-[ext_resource type="Texture2D" uid="uid://befv50ndububy" path="res://assets/WORLD/DASH_камешки1.png" id="9_qghgy"]
-[ext_resource type="Texture2D" uid="uid://dev2d0egfq13a" path="res://assets/WORLD/DASH_камешки2.png" id="10_vsirt"]
-[ext_resource type="Texture2D" uid="uid://dhbpmm6y4gkwb" path="res://assets/WORLD/DASH_камешки.png" id="11_8c1o3"]
-[ext_resource type="Texture2D" uid="uid://y5646dirwpgp" path="res://assets/WORLD/DASH_травинка1.png" id="12_l7mur"]
-[ext_resource type="Texture2D" uid="uid://dt4cgf84ed244" path="res://assets/WORLD/DASH_травинка2.png" id="13_55unw"]
-[ext_resource type="Texture2D" uid="uid://blm3pthu4alwn" path="res://assets/WORLD/DASH_травинка3.png" id="14_t51w4"]
-[ext_resource type="Texture2D" uid="uid://cjd1xr786l62r" path="res://assets/WORLD/DASH_травинка4.png" id="15_ydhu0"]
-[ext_resource type="Texture2D" uid="uid://b5h6plyu4kkmm" path="res://assets/WORLD/DASH_штрих1.png" id="17_lbgo4"]
-[ext_resource type="Texture2D" uid="uid://bl27gx75uosiy" path="res://assets/WORLD/DASH_штрих2.png" id="18_kgd5x"]
-[ext_resource type="PackedScene" uid="uid://c1h7u2fexx28k" path="res://game/global_objects/enviroment/hay_z.tscn" id="22_8sm0g"]
-[ext_resource type="PackedScene" uid="uid://srmhoulhmnfe" path="res://game/global_objects/enviroment/hay_h_2.tscn" id="22_i57dw"]
-[ext_resource type="Texture2D" uid="uid://d4kgf18i271dm" path="res://assets/WORLD/ENV_гриб2.png" id="23_bbqa1"]
-[ext_resource type="PackedScene" uid="uid://8xoukc78wpds" path="res://game/global_objects/enviroment/bushes.tscn" id="23_cbvvn"]
-[ext_resource type="PackedScene" uid="uid://csa5luuveie3n" path="res://game/scenes/objects/player/player.tscn" id="23_eccl3"]
-[ext_resource type="PackedScene" uid="uid://djudysfc7sfp0" path="res://game/scenes/objects/enemies/dummy/dummy.tscn" id="24_32u13"]
-[ext_resource type="Texture2D" uid="uid://bwxar4xd5mdog" path="res://assets/WORLD/ENV_гриб1.png" id="24_kscyp"]
-[ext_resource type="PackedScene" uid="uid://ek1mwsgtdup0" path="res://game/global_objects/enviroment/hay_h.tscn" id="24_yxkab"]
-[ext_resource type="Texture2D" uid="uid://bxrw73dc1mee0" path="res://assets/WORLD/ENV_гриб3.png" id="25_i805h"]
-[ext_resource type="PackedScene" uid="uid://cg7clhm1fhxn1" path="res://game/global_objects/enviroment/hay_v.tscn" id="25_mvd3g"]
-[ext_resource type="PackedScene" uid="uid://b0o16mko3xb7g" path="res://game/scenes/objects/enemies/cracker/cracker.tscn" id="25_p7rm3"]
-[ext_resource type="PackedScene" uid="uid://57b7ykjxklno" path="res://game/global_objects/enviroment/hay_v_2.tscn" id="26_7jvsp"]
-[ext_resource type="Texture2D" uid="uid://b2j2ku86mp781" path="res://assets/WORLD/ENV_гриб.png" id="26_s26i8"]
-[ext_resource type="Texture2D" uid="uid://ujvonp52g6r6" path="res://assets/WORLD/ENV_камень1.png" id="27_1rj3d"]
-[ext_resource type="PackedScene" uid="uid://c2chs8n31adb2" path="res://game/global_objects/enviroment/hay_z_2.tscn" id="27_b3e0w"]
-[ext_resource type="Texture2D" uid="uid://deomtdg3peqn" path="res://assets/WORLD/ENV_камень2.png" id="28_mxv6l"]
-[ext_resource type="Texture2D" uid="uid://g0l7f1t3ertq" path="res://assets/WORLD/ENV_камень3.png" id="29_vo5tq"]
-[ext_resource type="Texture2D" uid="uid://s6k5ss81obp8" path="res://assets/WORLD/ENV_камень4.png" id="30_wlydn"]
-[ext_resource type="Texture2D" uid="uid://dw61sk6e5umnu" path="res://assets/WORLD/ENV_камень.png" id="31_3xbil"]
+[ext_resource type="Script" path="res://scenes/WORLD/scene_world.gd" id="1_i5c5t"]
+[ext_resource type="Texture2D" uid="uid://byhjnt8sxglyf" path="res://assets/BATTLE/BG_papers.png" id="2_mjdss"]
+[ext_resource type="Texture2D" uid="uid://gu0poywv5nr4" path="res://assets/WORLD/TILES_синеватый деревянный пол.png" id="3_xlh7p"]
+[ext_resource type="Texture2D" uid="uid://67ugpchfe03k" path="res://assets/WORLD/TILES_тайл сет1.png" id="4_xoudo"]
+[ext_resource type="Texture2D" uid="uid://d4d6uc2a13ncg" path="res://assets/WORLD/TILES_тайл сет белой травы1.png" id="5_txd2i"]
+[ext_resource type="Texture2D" uid="uid://d0i4modqtqimq" path="res://assets/WORLD/TILES_тайл сет белой травы.png" id="6_ftqbj"]
+[ext_resource type="Texture2D" uid="uid://ba6mlqgq7bpgk" path="res://assets/WORLD/DASH_заварулина.png" id="7_wm6jr"]
+[ext_resource type="Texture2D" uid="uid://dka81se06qt1n" path="res://assets/WORLD/DASH_загагулина1.png" id="8_8ayvg"]
+[ext_resource type="Texture2D" uid="uid://dl56s3l7hf0xf" path="res://assets/WORLD/DASH_загагулина.png" id="9_guv4d"]
+[ext_resource type="Texture2D" uid="uid://befv50ndububy" path="res://assets/WORLD/DASH_камешки1.png" id="10_uritc"]
+[ext_resource type="Texture2D" uid="uid://dev2d0egfq13a" path="res://assets/WORLD/DASH_камешки2.png" id="11_cb74l"]
+[ext_resource type="Texture2D" uid="uid://dhbpmm6y4gkwb" path="res://assets/WORLD/DASH_камешки.png" id="12_tfexb"]
+[ext_resource type="Texture2D" uid="uid://y5646dirwpgp" path="res://assets/WORLD/DASH_травинка1.png" id="13_msdlr"]
+[ext_resource type="Texture2D" uid="uid://dt4cgf84ed244" path="res://assets/WORLD/DASH_травинка2.png" id="14_4eyjl"]
+[ext_resource type="Texture2D" uid="uid://blm3pthu4alwn" path="res://assets/WORLD/DASH_травинка3.png" id="15_mten4"]
+[ext_resource type="Texture2D" uid="uid://cjd1xr786l62r" path="res://assets/WORLD/DASH_травинка4.png" id="16_c43t7"]
+[ext_resource type="Texture2D" uid="uid://b5h6plyu4kkmm" path="res://assets/WORLD/DASH_штрих1.png" id="17_utjvk"]
+[ext_resource type="Texture2D" uid="uid://bl27gx75uosiy" path="res://assets/WORLD/DASH_штрих2.png" id="18_1sqld"]
+[ext_resource type="PackedScene" uid="uid://8xoukc78wpds" path="res://scenes/WORLD/ENV_bushes.tscn" id="19_w14be"]
+[ext_resource type="PackedScene" uid="uid://srmhoulhmnfe" path="res://scenes/WORLD/ENV_hay_h_2.tscn" id="20_mmtrb"]
+[ext_resource type="PackedScene" uid="uid://57b7ykjxklno" path="res://scenes/WORLD/ENV_hay_v_2.tscn" id="21_8ctw7"]
+[ext_resource type="PackedScene" uid="uid://c2chs8n31adb2" path="res://scenes/WORLD/ENV_hay_z_2.tscn" id="22_watew"]
+[ext_resource type="PackedScene" uid="uid://ek1mwsgtdup0" path="res://scenes/WORLD/ENV_hay_h.tscn" id="23_vefj6"]
+[ext_resource type="PackedScene" uid="uid://c1h7u2fexx28k" path="res://scenes/WORLD/ENV_hay_z.tscn" id="24_85w0s"]
+[ext_resource type="PackedScene" uid="uid://cg7clhm1fhxn1" path="res://scenes/WORLD/ENV_hay_v.tscn" id="25_ylo1u"]
+[ext_resource type="Texture2D" uid="uid://d4kgf18i271dm" path="res://assets/WORLD/ENV_гриб2.png" id="26_dhout"]
+[ext_resource type="Texture2D" uid="uid://bwxar4xd5mdog" path="res://assets/WORLD/ENV_гриб1.png" id="27_e08oo"]
+[ext_resource type="Texture2D" uid="uid://bxrw73dc1mee0" path="res://assets/WORLD/ENV_гриб3.png" id="28_nqu3h"]
+[ext_resource type="Texture2D" uid="uid://b2j2ku86mp781" path="res://assets/WORLD/ENV_гриб.png" id="29_ii2qv"]
+[ext_resource type="Texture2D" uid="uid://ujvonp52g6r6" path="res://assets/WORLD/ENV_камень1.png" id="30_rh7l6"]
+[ext_resource type="Texture2D" uid="uid://deomtdg3peqn" path="res://assets/WORLD/ENV_камень2.png" id="31_7ioa1"]
+[ext_resource type="Texture2D" uid="uid://g0l7f1t3ertq" path="res://assets/WORLD/ENV_камень3.png" id="32_l1i4a"]
+[ext_resource type="Texture2D" uid="uid://s6k5ss81obp8" path="res://assets/WORLD/ENV_камень4.png" id="33_jpum6"]
+[ext_resource type="Texture2D" uid="uid://dw61sk6e5umnu" path="res://assets/WORLD/ENV_камень.png" id="34_qgw1c"]
+[ext_resource type="PackedScene" uid="uid://djudysfc7sfp0" path="res://scenes/WORLD/ENEMY_dummy.tscn" id="35_2tg8g"]
+[ext_resource type="PackedScene" uid="uid://b0o16mko3xb7g" path="res://scenes/WORLD/ENEMY_cracker.tscn" id="36_rkuae"]
+[ext_resource type="PackedScene" uid="uid://csa5luuveie3n" path="res://scenes/WORLD/PLAYER.tscn" id="37_s30ks"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dbpvp"]
-texture = ExtResource("5_uw1ie")
+texture = ExtResource("3_xlh7p")
 texture_region_size = Vector2i(170, 170)
 0:0/0 = 0
 1:0/0 = 0
@@ -52,7 +52,7 @@ texture_region_size = Vector2i(170, 170)
 2:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2fi2y"]
-texture = ExtResource("6_wibrg")
+texture = ExtResource("4_xoudo")
 texture_region_size = Vector2i(170, 170)
 0:0/0 = 0
 1:0/0 = 0
@@ -65,7 +65,7 @@ texture_region_size = Vector2i(170, 170)
 2:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c23op"]
-texture = ExtResource("7_k5ehx")
+texture = ExtResource("5_txd2i")
 texture_region_size = Vector2i(170, 170)
 0:0/0 = 0
 1:0/0 = 0
@@ -78,7 +78,7 @@ texture_region_size = Vector2i(170, 170)
 2:2/0 = 0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w6o4g"]
-texture = ExtResource("8_266aj")
+texture = ExtResource("6_ftqbj")
 texture_region_size = Vector2i(170, 170)
 0:0/0 = 0
 1:0/0 = 0
@@ -98,7 +98,7 @@ sources/3 = SubResource("TileSetAtlasSource_c23op")
 sources/4 = SubResource("TileSetAtlasSource_w6o4g")
 
 [node name="TestingScene" type="Node"]
-script = ExtResource("1_bng1d")
+script = ExtResource("1_i5c5t")
 
 [node name="Background" type="CanvasLayer" parent="."]
 layer = -1
@@ -107,7 +107,7 @@ layer = -1
 process_mode = 3
 visible = false
 scale = Vector2(4.18909, 3.54098)
-texture = ExtResource("2_ilbis")
+texture = ExtResource("2_mjdss")
 centered = false
 hframes = 3
 
@@ -126,355 +126,355 @@ layer_2/tile_data = PackedInt32Array(-65531, 65536, 1, -65530, 65536, 1, -65529,
 [node name="Заварулина" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(1366, 463)
 scale = Vector2(0.7, 0.7)
-texture = ExtResource("5_ftwlb")
+texture = ExtResource("7_wm6jr")
 
 [node name="Заварулина2" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(1456, 447)
 rotation = 3.59189
 scale = Vector2(0.7, 0.7)
-texture = ExtResource("5_ftwlb")
+texture = ExtResource("7_wm6jr")
 
 [node name="Загагулина1" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(-568, 295)
-texture = ExtResource("6_wewug")
+texture = ExtResource("8_8ayvg")
 
 [node name="Загагулина" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(-338, 629)
-texture = ExtResource("8_muyvb")
+texture = ExtResource("9_guv4d")
 
 [node name="Камешки1" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(1041, 398)
 scale = Vector2(0.6, 0.6)
-texture = ExtResource("9_qghgy")
+texture = ExtResource("10_uritc")
 
 [node name="Камешки2" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(482, 359)
 scale = Vector2(0.6, 0.6)
-texture = ExtResource("10_vsirt")
+texture = ExtResource("11_cb74l")
 
 [node name="Камешки3" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(932, 426)
 scale = Vector2(0.6, 0.6)
-texture = ExtResource("10_vsirt")
+texture = ExtResource("11_cb74l")
 
 [node name="Камешки4" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(881.15, 340.2)
 scale = Vector2(0.774049, 0.765278)
-texture = ExtResource("10_vsirt")
+texture = ExtResource("11_cb74l")
 
 [node name="Камешки10" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(-608, -81)
 scale = Vector2(1.02024, 0.997222)
-texture = ExtResource("10_vsirt")
+texture = ExtResource("11_cb74l")
 
 [node name="Камешки5" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(430, -40)
 scale = Vector2(0.6, 0.6)
-texture = ExtResource("10_vsirt")
+texture = ExtResource("11_cb74l")
 
 [node name="Камешки6" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(1105, 402)
 scale = Vector2(0.6, 0.6)
-texture = ExtResource("10_vsirt")
+texture = ExtResource("11_cb74l")
 
 [node name="Камешки7" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(223, 530)
 scale = Vector2(0.6, 0.6)
-texture = ExtResource("10_vsirt")
+texture = ExtResource("11_cb74l")
 
 [node name="Камешки8" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(207, 191)
 scale = Vector2(0.6, 0.6)
-texture = ExtResource("10_vsirt")
+texture = ExtResource("11_cb74l")
 
 [node name="Камешки" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(643, 269)
 scale = Vector2(0.7, 0.7)
-texture = ExtResource("11_8c1o3")
+texture = ExtResource("12_tfexb")
 
 [node name="Камешки9" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(1100, 540)
 scale = Vector2(0.7, 0.7)
-texture = ExtResource("11_8c1o3")
+texture = ExtResource("12_tfexb")
 
 [node name="Камешки11" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(1223, 972)
 scale = Vector2(0.7, 0.7)
-texture = ExtResource("11_8c1o3")
+texture = ExtResource("12_tfexb")
 
 [node name="Камешки12" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(-512, 376)
 scale = Vector2(0.7, 0.7)
-texture = ExtResource("11_8c1o3")
+texture = ExtResource("12_tfexb")
 
 [node name="Камешки13" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(-518, 151)
 scale = Vector2(0.7, 0.7)
-texture = ExtResource("11_8c1o3")
+texture = ExtResource("12_tfexb")
 
 [node name="Травинка1" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(1414, 480)
 scale = Vector2(0.7, 0.7)
-texture = ExtResource("12_l7mur")
+texture = ExtResource("13_msdlr")
 
 [node name="Травинка2" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(947, 292)
 scale = Vector2(0.556186, 0.542308)
-texture = ExtResource("12_l7mur")
+texture = ExtResource("13_msdlr")
 
 [node name="Травинка3" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(422, 116)
 scale = Vector2(0.556186, 0.542308)
-texture = ExtResource("12_l7mur")
+texture = ExtResource("13_msdlr")
 
 [node name="Травинка4" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(476, 141)
 scale = Vector2(0.422423, 0.386539)
-texture = ExtResource("12_l7mur")
+texture = ExtResource("13_msdlr")
 
 [node name="Травинка8" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(959, 322)
 scale = Vector2(0.757603, 0.680449)
-texture = ExtResource("12_l7mur")
+texture = ExtResource("13_msdlr")
 
 [node name="Травинка14" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(423, 274)
 scale = Vector2(0.757603, 0.680449)
-texture = ExtResource("12_l7mur")
+texture = ExtResource("13_msdlr")
 
 [node name="Травинка18" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(-755, 445)
 scale = Vector2(0.757603, 0.680449)
-texture = ExtResource("12_l7mur")
+texture = ExtResource("13_msdlr")
 
 [node name="Травинка19" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(-440, -10)
 scale = Vector2(0.757603, 0.680449)
-texture = ExtResource("12_l7mur")
+texture = ExtResource("13_msdlr")
 
 [node name="Травинка20" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(63, 595)
 scale = Vector2(0.757603, 0.680449)
-texture = ExtResource("12_l7mur")
+texture = ExtResource("13_msdlr")
 
 [node name="Травинка21" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(1759, 319)
 scale = Vector2(0.757603, 0.680449)
-texture = ExtResource("12_l7mur")
+texture = ExtResource("13_msdlr")
 
 [node name="Травинка22" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(647, -44)
 scale = Vector2(0.757603, 0.680449)
-texture = ExtResource("12_l7mur")
+texture = ExtResource("13_msdlr")
 
 [node name="Травинка5" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(641, 143)
 scale = Vector2(0.7, 0.7)
-texture = ExtResource("13_55unw")
+texture = ExtResource("14_4eyjl")
 
 [node name="Травинка9" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(1279, 691)
 scale = Vector2(0.7, 0.7)
-texture = ExtResource("13_55unw")
+texture = ExtResource("14_4eyjl")
 
 [node name="Травинка6" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(885, 450)
 scale = Vector2(0.7, 0.7)
-texture = ExtResource("13_55unw")
+texture = ExtResource("14_4eyjl")
 
 [node name="Травинка7" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(197, 490)
 scale = Vector2(0.7, 0.7)
-texture = ExtResource("13_55unw")
+texture = ExtResource("14_4eyjl")
 
 [node name="Травинка10" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(1197, 398)
 scale = Vector2(0.7, 0.7)
-texture = ExtResource("14_t51w4")
+texture = ExtResource("15_mten4")
 
 [node name="Травинка11" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(690, 491)
 scale = Vector2(0.7, 0.7)
-texture = ExtResource("14_t51w4")
+texture = ExtResource("15_mten4")
 
 [node name="Травинка12" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(315, 93)
 scale = Vector2(0.7, 0.7)
-texture = ExtResource("14_t51w4")
+texture = ExtResource("15_mten4")
 
 [node name="Травинка13" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(394, -60)
 scale = Vector2(0.7, 0.7)
-texture = ExtResource("14_t51w4")
+texture = ExtResource("15_mten4")
 
 [node name="Травинка15" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(603, -147)
 scale = Vector2(0.8, 0.8)
-texture = ExtResource("15_ydhu0")
+texture = ExtResource("16_c43t7")
 
 [node name="Травинка16" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(-331.9, 327.1)
 scale = Vector2(1.19381, 1.10513)
-texture = ExtResource("15_ydhu0")
+texture = ExtResource("16_c43t7")
 
 [node name="Травинка17" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(-717, 629)
 scale = Vector2(1.19381, 1.10513)
-texture = ExtResource("15_ydhu0")
+texture = ExtResource("16_c43t7")
 
 [node name="Штрих1" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(1436, 365)
 scale = Vector2(0.7, 0.7)
-texture = ExtResource("17_lbgo4")
+texture = ExtResource("17_utjvk")
 
 [node name="Штрих4" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(-717, 83.0001)
 scale = Vector2(0.7, 0.7)
-texture = ExtResource("17_lbgo4")
+texture = ExtResource("17_utjvk")
 
 [node name="Штрих5" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(198, 54)
-texture = ExtResource("18_kgd5x")
+texture = ExtResource("18_1sqld")
 
 [node name="Штрих6" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(1009, 740)
 rotation = 1.07687
-texture = ExtResource("18_kgd5x")
+texture = ExtResource("18_1sqld")
 
 [node name="Штрих10" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(-281, 57)
 rotation = 1.07687
-texture = ExtResource("18_kgd5x")
+texture = ExtResource("18_1sqld")
 
 [node name="Штрих2" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(425, -185)
 scale = Vector2(0.7, 0.7)
-texture = ExtResource("17_lbgo4")
+texture = ExtResource("17_utjvk")
 
 [node name="Штрих7" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(1022, 824)
-texture = ExtResource("18_kgd5x")
+texture = ExtResource("18_1sqld")
 
 [node name="Штрих8" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(608, 609)
-texture = ExtResource("18_kgd5x")
+texture = ExtResource("18_1sqld")
 
 [node name="Штрих9" type="Sprite2D" parent="Ground/Dashes"]
 position = Vector2(608, 609)
-texture = ExtResource("18_kgd5x")
+texture = ExtResource("18_1sqld")
 
 [node name="World" type="Node2D" parent="Ground"]
 y_sort_enabled = true
 scale = Vector2(0.5, 0.5)
 
-[node name="Bushes" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+[node name="Bushes" parent="Ground/World" instance=ExtResource("19_w14be")]
 position = Vector2(1210, -1214)
 
-[node name="Bushes2" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+[node name="Bushes2" parent="Ground/World" instance=ExtResource("19_w14be")]
 position = Vector2(3298, -1232)
 
-[node name="Bushes3" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+[node name="Bushes3" parent="Ground/World" instance=ExtResource("19_w14be")]
 position = Vector2(-2224, 1620)
 
-[node name="Bushes23" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+[node name="Bushes23" parent="Ground/World" instance=ExtResource("19_w14be")]
 position = Vector2(-1198, 1792)
 
-[node name="Bushes24" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+[node name="Bushes24" parent="Ground/World" instance=ExtResource("19_w14be")]
 position = Vector2(-422, 1878)
 
-[node name="Bushes4" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+[node name="Bushes4" parent="Ground/World" instance=ExtResource("19_w14be")]
 position = Vector2(5372, 1684)
 
-[node name="Bushes18" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+[node name="Bushes18" parent="Ground/World" instance=ExtResource("19_w14be")]
 position = Vector2(150, -1212)
 
-[node name="Bushes19" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+[node name="Bushes19" parent="Ground/World" instance=ExtResource("19_w14be")]
 position = Vector2(2228, -1218)
 
-[node name="Bushes20" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+[node name="Bushes20" parent="Ground/World" instance=ExtResource("19_w14be")]
 position = Vector2(-2220, 870)
 
-[node name="Bushes21" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+[node name="Bushes21" parent="Ground/World" instance=ExtResource("19_w14be")]
 position = Vector2(94, 468)
 
-[node name="Bushes5" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+[node name="Bushes5" parent="Ground/World" instance=ExtResource("19_w14be")]
 position = Vector2(4346, -1234)
 
-[node name="Bushes6" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+[node name="Bushes6" parent="Ground/World" instance=ExtResource("19_w14be")]
 position = Vector2(80, 110)
 
-[node name="Bushes7" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+[node name="Bushes7" parent="Ground/World" instance=ExtResource("19_w14be")]
 position = Vector2(3242, 1704)
 
-[node name="Bushes8" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+[node name="Bushes8" parent="Ground/World" instance=ExtResource("19_w14be")]
 position = Vector2(152, 1660)
 
-[node name="Bushes9" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+[node name="Bushes9" parent="Ground/World" instance=ExtResource("19_w14be")]
 position = Vector2(1222, 1648)
 
-[node name="Bushes10" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+[node name="Bushes10" parent="Ground/World" instance=ExtResource("19_w14be")]
 position = Vector2(4274, 1704)
 
-[node name="Bushes11" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+[node name="Bushes11" parent="Ground/World" instance=ExtResource("19_w14be")]
 position = Vector2(-2222, 158)
 
-[node name="Bushes22" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+[node name="Bushes22" parent="Ground/World" instance=ExtResource("19_w14be")]
 position = Vector2(-1840, -436)
 
-[node name="Bushes12" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+[node name="Bushes12" parent="Ground/World" instance=ExtResource("19_w14be")]
 position = Vector2(-848, -762)
 
-[node name="Bushes13" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+[node name="Bushes13" parent="Ground/World" instance=ExtResource("19_w14be")]
 position = Vector2(5378, 620)
 
-[node name="Bushes14" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+[node name="Bushes14" parent="Ground/World" instance=ExtResource("19_w14be")]
 position = Vector2(4278, 688)
 
-[node name="Bushes15" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+[node name="Bushes15" parent="Ground/World" instance=ExtResource("19_w14be")]
 position = Vector2(4252, 34.0001)
 
-[node name="Bushes16" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+[node name="Bushes16" parent="Ground/World" instance=ExtResource("19_w14be")]
 position = Vector2(4258, -564)
 
-[node name="Bushes17" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+[node name="Bushes17" parent="Ground/World" instance=ExtResource("19_w14be")]
 position = Vector2(64, -554)
 
 [node name="Hays1" type="Node2D" parent="Ground/World"]
 position = Vector2(762, -566)
 scale = Vector2(1.7, 1.7)
 
-[node name="Hay_H_2_1" parent="Ground/World/Hays1" instance=ExtResource("22_i57dw")]
+[node name="Hay_H_2_1" parent="Ground/World/Hays1" instance=ExtResource("20_mmtrb")]
 
-[node name="Hay_H_2_2" parent="Ground/World/Hays1" instance=ExtResource("22_i57dw")]
+[node name="Hay_H_2_2" parent="Ground/World/Hays1" instance=ExtResource("20_mmtrb")]
 position = Vector2(207.059, 14.1176)
 
-[node name="Hay_V_2_1" parent="Ground/World/Hays1" instance=ExtResource("26_7jvsp")]
+[node name="Hay_V_2_1" parent="Ground/World/Hays1" instance=ExtResource("21_8ctw7")]
 position = Vector2(354.118, 35.2941)
 
-[node name="Hay_Z_2_1" parent="Ground/World/Hays1" instance=ExtResource("27_b3e0w")]
+[node name="Hay_Z_2_1" parent="Ground/World/Hays1" instance=ExtResource("22_watew")]
 position = Vector2(307.059, -34.1176)
 
 [node name="Hays2" type="Node2D" parent="Ground/World"]
 position = Vector2(762, -566)
 scale = Vector2(1.7, 1.7)
 
-[node name="HayH9" parent="Ground/World/Hays2" instance=ExtResource("24_yxkab")]
+[node name="HayH9" parent="Ground/World/Hays2" instance=ExtResource("23_vefj6")]
 position = Vector2(847.059, 692.941)
 scale = Vector2(0.882353, 0.882353)
 
-[node name="HayH10" parent="Ground/World/Hays2" instance=ExtResource("24_yxkab")]
+[node name="HayH10" parent="Ground/World/Hays2" instance=ExtResource("23_vefj6")]
 position = Vector2(1017.65, 689.412)
 scale = Vector2(0.882353, 0.882353)
 
-[node name="HayH11" parent="Ground/World/Hays2" instance=ExtResource("24_yxkab")]
+[node name="HayH11" parent="Ground/World/Hays2" instance=ExtResource("23_vefj6")]
 position = Vector2(936.471, 758.824)
 scale = Vector2(0.882353, 0.882353)
 
-[node name="HayH12" parent="Ground/World/Hays2" instance=ExtResource("24_yxkab")]
+[node name="HayH12" parent="Ground/World/Hays2" instance=ExtResource("23_vefj6")]
 position = Vector2(1105.88, 745.882)
 scale = Vector2(0.882353, 0.882353)
 
-[node name="HayH13" parent="Ground/World/Hays2" instance=ExtResource("24_yxkab")]
+[node name="HayH13" parent="Ground/World/Hays2" instance=ExtResource("23_vefj6")]
 position = Vector2(945.882, 665.882)
 scale = Vector2(0.882353, 0.882353)
 
@@ -482,86 +482,86 @@ scale = Vector2(0.882353, 0.882353)
 position = Vector2(762, -566)
 scale = Vector2(1.7, 1.7)
 
-[node name="HayZ" parent="Ground/World/Hays3" instance=ExtResource("22_8sm0g")]
+[node name="HayZ" parent="Ground/World/Hays3" instance=ExtResource("24_85w0s")]
 position = Vector2(1627.06, -5.88235)
 scale = Vector2(1.17647, 1.17647)
 
-[node name="HayV29" parent="Ground/World/Hays3" instance=ExtResource("25_mvd3g")]
+[node name="HayV29" parent="Ground/World/Hays3" instance=ExtResource("25_ylo1u")]
 position = Vector2(1701.18, 143.529)
 scale = Vector2(1, 1)
 
-[node name="HayV30" parent="Ground/World/Hays3" instance=ExtResource("25_mvd3g")]
+[node name="HayV30" parent="Ground/World/Hays3" instance=ExtResource("25_ylo1u")]
 position = Vector2(1616.47, 204.706)
 scale = Vector2(1, 1)
 
-[node name="HayV31" parent="Ground/World/Hays3" instance=ExtResource("25_mvd3g")]
+[node name="HayV31" parent="Ground/World/Hays3" instance=ExtResource("25_ylo1u")]
 position = Vector2(1697.65, 322.353)
 scale = Vector2(1, 1)
 
 [node name="Гриб2" type="Sprite2D" parent="Ground/World"]
 position = Vector2(3516, 878)
 scale = Vector2(2, 2)
-texture = ExtResource("23_bbqa1")
+texture = ExtResource("26_dhout")
 
 [node name="Гриб1" type="Sprite2D" parent="Ground/World"]
 position = Vector2(3404, 820)
 scale = Vector2(2, 2)
-texture = ExtResource("24_kscyp")
+texture = ExtResource("27_e08oo")
 
 [node name="Гриб3" type="Sprite2D" parent="Ground/World"]
 position = Vector2(3614, 878)
 scale = Vector2(2, 2)
-texture = ExtResource("25_i805h")
+texture = ExtResource("28_nqu3h")
 
 [node name="Гриб" type="Sprite2D" parent="Ground/World"]
 position = Vector2(3604, 842)
 scale = Vector2(1.8, 1.8)
-texture = ExtResource("26_s26i8")
+texture = ExtResource("29_ii2qv")
 
 [node name="Камень1" type="Sprite2D" parent="Ground/World"]
 position = Vector2(-1332, 188)
 scale = Vector2(2, 2)
-texture = ExtResource("27_1rj3d")
+texture = ExtResource("30_rh7l6")
 
 [node name="Камень2" type="Sprite2D" parent="Ground/World"]
 position = Vector2(3650, 590)
 scale = Vector2(2, 2)
-texture = ExtResource("28_mxv6l")
+texture = ExtResource("31_7ioa1")
 
 [node name="Камень3" type="Sprite2D" parent="Ground/World"]
 position = Vector2(3698, 640)
 scale = Vector2(2, 2)
-texture = ExtResource("29_vo5tq")
+texture = ExtResource("32_l1i4a")
 
 [node name="Камень4" type="Sprite2D" parent="Ground/World"]
 position = Vector2(3598, 660)
 scale = Vector2(1.13322, 1.10417)
-texture = ExtResource("27_1rj3d")
+texture = ExtResource("30_rh7l6")
 
 [node name="Камень5" type="Sprite2D" parent="Ground/World"]
 position = Vector2(-1358, 90)
 scale = Vector2(2, 2)
-texture = ExtResource("30_wlydn")
+texture = ExtResource("33_jpum6")
 
 [node name="Камень" type="Sprite2D" parent="Ground/World"]
 position = Vector2(-1208, 200)
 scale = Vector2(2, 2)
-texture = ExtResource("31_3xbil")
+texture = ExtResource("34_qgw1c")
 
 [node name="Камень6" type="Sprite2D" parent="Ground/World"]
 position = Vector2(-854, -220)
 scale = Vector2(2, 2)
-texture = ExtResource("29_vo5tq")
+texture = ExtResource("32_l1i4a")
 
-[node name="Dummy" parent="Ground/World" instance=ExtResource("24_32u13")]
+[node name="Dummy" parent="Ground/World" instance=ExtResource("35_2tg8g")]
 position = Vector2(2750, -144)
 scale = Vector2(1.2, 1.2)
 speed = 0.0
 
-[node name="Cracker" parent="Ground/World" instance=ExtResource("25_p7rm3")]
+[node name="Cracker" parent="Ground/World" instance=ExtResource("36_rkuae")]
 position = Vector2(2144, 1548)
 
-[node name="Player" parent="Ground/World" instance=ExtResource("23_eccl3")]
+[node name="Player" parent="Ground/World" instance=ExtResource("37_s30ks")]
 texture_filter = 2
 position = Vector2(1872, 32)
 scale = Vector2(1.5, 1.5)

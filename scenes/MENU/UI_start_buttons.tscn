@@ -1,6 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://bl228pekg5imo"]
+[gd_scene load_steps=7 format=3 uid="uid://bnjqjrnyi5uyf"]
 
-[ext_resource type="Script" path="res://game/scenes/game_scenes/title_screen/scenes/start_buttons.gd" id="1_trd3x"]
+[ext_resource type="Script" path="res://scenes/MENU/ui_start_buttons.gd" id="1_trd3x"]
 [ext_resource type="Texture2D" uid="uid://mrsv1g7wu6ak" path="res://assets/BATTLE/UI_Никто.png" id="2_eaucw"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0q2sb"]

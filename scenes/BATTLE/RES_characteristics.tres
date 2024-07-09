@@ -1,6 +1,6 @@
 [gd_resource type="Resource" load_steps=2 format=3 uid="uid://ktj5jutmeuko"]
 
-[ext_resource type="Script" path="res://game/characteristics.gd" id="1_ppafk"]
+[ext_resource type="Script" path="res://scenes/BATTLE/res_characteristics.gd" id="1_ppafk"]
 
 [resource]
 script = ExtResource("1_ppafk")

@@ -1,0 +1,311 @@
+[gd_scene load_steps=13 format=3 uid="uid://rbfhinkfolqo"]
+
+[ext_resource type="Script" path="res://scenes/MENU/scene_menu.gd" id="1_qylio"]
+[ext_resource type="Texture2D" uid="uid://byhjnt8sxglyf" path="res://assets/BATTLE/BG_papers.png" id="2_goyem"]
+[ext_resource type="Script" path="res://scenes/GLOBAL/dashes_sprite.gd" id="3_rd0oe"]
+[ext_resource type="Texture2D" uid="uid://lhc00q24wu43" path="res://assets/MENU/ICON_main_chracter.png" id="4_m7oek"]
+[ext_resource type="PackedScene" uid="uid://bnjqjrnyi5uyf" path="res://scenes/MENU/UI_start_buttons.tscn" id="4_rp25m"]
+[ext_resource type="Script" path="res://scenes/MENU/ui_settings_buttons.gd" id="6_efldu"]
+[ext_resource type="Texture2D" uid="uid://2sv5uu647sii" path="res://assets/BATTLE/UI_темный.png" id="7_8huby"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_svgax"]
+texture = ExtResource("7_8huby")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2dc0b"]
+bg_color = Color(0.113725, 0.113725, 0.113725, 0.607843)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ed6pg"]
+texture = ExtResource("7_8huby")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uj1a4"]
+texture = ExtResource("7_8huby")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_882gr"]
+texture = ExtResource("7_8huby")
+
+[node name="TitleScreen" type="Node"]
+script = ExtResource("1_qylio")
+
+[node name="Background" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="Papers" type="Sprite2D" parent="Background"]
+process_mode = 3
+scale = Vector2(4.18909, 3.54098)
+texture = ExtResource("2_goyem")
+centered = false
+hframes = 3
+script = ExtResource("3_rd0oe")
+timer_wait_time = 0.25
+
+[node name="Statics" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="StartButtons" parent="Statics" instance=ExtResource("4_rp25m")]
+layout_mode = 1
+offset_top = -192.0
+offset_bottom = -56.0
+
+[node name="GameName" type="TextureRect" parent="Statics"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -331.5
+offset_top = -292.0
+offset_right = 331.5
+offset_bottom = 148.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("4_m7oek")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="SettingsButtons" type="VBoxContainer" parent="Statics"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -147.0
+offset_top = -139.0
+offset_right = 147.0
+offset_bottom = 139.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("6_efldu")
+
+[node name="SoundContainer" type="VBoxContainer" parent="Statics/SettingsButtons"]
+layout_mode = 2
+
+[node name="SoundLabel" type="Label" parent="Statics/SettingsButtons/SoundContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "SOUND"
+horizontal_alignment = 1
+
+[node name="SoundSeparator" type="HSeparator" parent="Statics/SettingsButtons/SoundContainer"]
+layout_mode = 2
+
+[node name="MusicContainer" type="HBoxContainer" parent="Statics/SettingsButtons/SoundContainer"]
+layout_mode = 2
+
+[node name="MusicLabel" type="Label" parent="Statics/SettingsButtons/SoundContainer/MusicContainer"]
+layout_mode = 2
+text = "MUSIC"
+vertical_alignment = 1
+
+[node name="MusicSlider" type="HSlider" parent="Statics/SettingsButtons/SoundContainer/MusicContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.05
+
+[node name="SFXContainer" type="HBoxContainer" parent="Statics/SettingsButtons/SoundContainer"]
+layout_mode = 2
+
+[node name="SFXLabel" type="Label" parent="Statics/SettingsButtons/SoundContainer/SFXContainer"]
+layout_mode = 2
+text = "SFX"
+vertical_alignment = 1
+
+[node name="SFXSlider" type="HSlider" parent="Statics/SettingsButtons/SoundContainer/SFXContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.05
+
+[node name="Space_1" type="HSeparator" parent="Statics/SettingsButtons"]
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 2
+
+[node name="GraphicsContainer" type="VBoxContainer" parent="Statics/SettingsButtons"]
+layout_mode = 2
+
+[node name="GraphicsLabel" type="Label" parent="Statics/SettingsButtons/GraphicsContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "GRAPHICS"
+horizontal_alignment = 1
+
+[node name="GraphicsSeparator" type="HSeparator" parent="Statics/SettingsButtons/GraphicsContainer"]
+layout_mode = 2
+
+[node name="ResolutionContainer" type="HBoxContainer" parent="Statics/SettingsButtons/GraphicsContainer"]
+layout_mode = 2
+
+[node name="ResolutionLabel" type="Label" parent="Statics/SettingsButtons/GraphicsContainer/ResolutionContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "RESOLUTION"
+
+[node name="ResButtonLeft" type="Button" parent="Statics/SettingsButtons/GraphicsContainer/ResolutionContainer"]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_svgax")
+text = "<"
+
+[node name="ResolutionValueLabel" type="Label" parent="Statics/SettingsButtons/GraphicsContainer/ResolutionContainer"]
+custom_minimum_size = Vector2(141, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_styles/normal = SubResource("StyleBoxFlat_2dc0b")
+text = " 1920x1080 (16x9) "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ResButtonRight" type="Button" parent="Statics/SettingsButtons/GraphicsContainer/ResolutionContainer"]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_ed6pg")
+text = ">"
+
+[node name="FullscreenContainer" type="HBoxContainer" parent="Statics/SettingsButtons/GraphicsContainer"]
+layout_mode = 2
+
+[node name="FullscreenLabel" type="Label" parent="Statics/SettingsButtons/GraphicsContainer/FullscreenContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "FULLSCREEN"
+
+[node name="FullscreenButton" type="CheckButton" parent="Statics/SettingsButtons/GraphicsContainer/FullscreenContainer"]
+modulate = Color(0.404511, 0.404511, 0.404511, 1)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="VSYNCContainer" type="HBoxContainer" parent="Statics/SettingsButtons/GraphicsContainer"]
+layout_mode = 2
+
+[node name="VSYNCLabel" type="Label" parent="Statics/SettingsButtons/GraphicsContainer/VSYNCContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "VSYNC"
+
+[node name="VSYNCButton" type="CheckButton" parent="Statics/SettingsButtons/GraphicsContainer/VSYNCContainer"]
+modulate = Color(0.404511, 0.404511, 0.404511, 1)
+layout_mode = 2
+size_flags_horizontal = 4
+button_pressed = true
+
+[node name="Space_2" type="HSeparator" parent="Statics/SettingsButtons"]
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 2
+
+[node name="GameSettingsContainer" type="VBoxContainer" parent="Statics/SettingsButtons"]
+visible = false
+layout_mode = 2
+
+[node name="GameSettingsLabel" type="Label" parent="Statics/SettingsButtons/GameSettingsContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "GAME SETTINGS"
+horizontal_alignment = 1
+
+[node name="GameSeparator" type="HSeparator" parent="Statics/SettingsButtons/GameSettingsContainer"]
+layout_mode = 2
+
+[node name="comment" type="Label" parent="Statics/SettingsButtons/GameSettingsContainer"]
+layout_mode = 2
+text = "добавить:
+- LANGUAGE
+"
+
+[node name="Space_3" type="HSeparator" parent="Statics/SettingsButtons"]
+visible = false
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 2
+
+[node name="ButtonsContainer" type="HBoxContainer" parent="Statics/SettingsButtons"]
+layout_mode = 2
+
+[node name="AcceptButton" type="Button" parent="Statics/SettingsButtons/ButtonsContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/normal = SubResource("StyleBoxTexture_uj1a4")
+disabled = true
+text = "accept"
+
+[node name="BackButton" type="Button" parent="Statics/SettingsButtons/ButtonsContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/normal = SubResource("StyleBoxTexture_882gr")
+text = "back"
+
+[node name="CloseButton" type="Button" parent="Statics/SettingsButtons"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+text = "close"
+
+[node name="VersionLabel" type="Label" parent="Statics"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -104.0
+offset_top = -32.0
+offset_right = -11.0
+offset_bottom = -9.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_font_sizes/font_size = 24
+text = "version alpha 0.01"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CopyrightLabel" type="Label" parent="Statics"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -101.0
+offset_top = -32.0
+offset_right = 101.0
+offset_bottom = -9.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 24
+text = "created by TeamMur & Davlenie"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GameTitle" type="Label" parent="Statics"]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -213.0
+offset_top = 124.0
+offset_right = 213.0
+offset_bottom = 181.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 76
+text = "DAZZLING ARMADILO"
+horizontal_alignment = 1
