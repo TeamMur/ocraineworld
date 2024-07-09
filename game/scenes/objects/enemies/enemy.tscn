@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://dur13tcvbv3k7"]
+
+[ext_resource type="Script" path="res://game/scenes/objects/enemies/enemy.gd" id="1_iij01"]
+[ext_resource type="Texture2D" uid="uid://ukvyqp63b4" path="res://game/scenes/objects/enemies/dummy/dummy_idle.png" id="2_pn5kc"]
+[ext_resource type="Script" path="res://samples/things/dashes_sprite/dashes_sprite.gd" id="3_nf77x"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_b3c7v"]
+radius = 112.161
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vq24y"]
+radius = 327.024
+
+[node name="Enemy" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 4
+script = ExtResource("1_iij01")
+
+[node name="Collision" type="CollisionShape2D" parent="."]
+position = Vector2(0, 64)
+shape = SubResource("CircleShape2D_b3c7v")
+debug_color = Color(1, 0, 0.0745098, 0.419608)
+
+[node name="VisibilityArea" type="Area2D" parent="."]
+
+[node name="Collision" type="CollisionShape2D" parent="VisibilityArea"]
+shape = SubResource("CircleShape2D_vq24y")
+debug_color = Color(0.981582, 0, 0.369798, 0.42)
+
+[node name="Sprite" type="Sprite2D" parent="."]
+position = Vector2(0, -9.33333)
+texture = ExtResource("2_pn5kc")
+hframes = 4
+script = ExtResource("3_nf77x")

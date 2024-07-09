@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://brxcmq4cjscc2"]
+
+[ext_resource type="Script" path="res://common/masters/master_of_the_logic/Master_of_the_logic.gd" id="1_wfk8n"]
+
+[node name="MasterOfTheLogic" type="Node"]
+process_mode = 3
+script = ExtResource("1_wfk8n")

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://cd4oqhigh2thq"]
+
+[ext_resource type="Script" path="res://game/characteristics.gd" id="1_7uyyy"]
+
+[resource]
+script = ExtResource("1_7uyyy")
+health = 20.0
+mana = 0.0
+damage = 10.0
+protection = 5.0
+speed = 0.0
+luck = 0.0
+world_version_path = "res://game/scenes/objects/enemies/cracker/cracker.tscn"
+fight_version_path = "res://game/scenes/objects/enemies/cracker/fight_cracker.tscn"

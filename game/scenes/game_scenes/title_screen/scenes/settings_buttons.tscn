@@ -1,0 +1,203 @@
+[gd_scene load_steps=8 format=3 uid="uid://dvqjcfutanpdl"]
+
+[ext_resource type="Script" path="res://game/scenes/game_scenes/title_screen/scenes/settings_buttons.gd" id="1_qrd6l"]
+[ext_resource type="Texture2D" uid="uid://2sv5uu647sii" path="res://game/global_sprites/UI/normal/UI темный.png" id="2_vbymo"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_svgax"]
+texture = ExtResource("2_vbymo")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2dc0b"]
+bg_color = Color(0.113725, 0.113725, 0.113725, 0.607843)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ed6pg"]
+texture = ExtResource("2_vbymo")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uj1a4"]
+texture = ExtResource("2_vbymo")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_882gr"]
+texture = ExtResource("2_vbymo")
+
+[node name="SettingsButtons" type="VBoxContainer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -147.0
+offset_top = -139.0
+offset_right = 147.0
+offset_bottom = 139.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qrd6l")
+
+[node name="SoundContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="SoundLabel" type="Label" parent="SoundContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "SOUND"
+horizontal_alignment = 1
+
+[node name="SoundSeparator" type="HSeparator" parent="SoundContainer"]
+layout_mode = 2
+
+[node name="MusicContainer" type="HBoxContainer" parent="SoundContainer"]
+layout_mode = 2
+
+[node name="MusicLabel" type="Label" parent="SoundContainer/MusicContainer"]
+layout_mode = 2
+text = "MUSIC"
+vertical_alignment = 1
+
+[node name="MusicSlider" type="HSlider" parent="SoundContainer/MusicContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.05
+
+[node name="SFXContainer" type="HBoxContainer" parent="SoundContainer"]
+layout_mode = 2
+
+[node name="SFXLabel" type="Label" parent="SoundContainer/SFXContainer"]
+layout_mode = 2
+text = "SFX"
+vertical_alignment = 1
+
+[node name="SFXSlider" type="HSlider" parent="SoundContainer/SFXContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.05
+
+[node name="Space_1" type="HSeparator" parent="."]
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 2
+
+[node name="GraphicsContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="GraphicsLabel" type="Label" parent="GraphicsContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "GRAPHICS"
+horizontal_alignment = 1
+
+[node name="GraphicsSeparator" type="HSeparator" parent="GraphicsContainer"]
+layout_mode = 2
+
+[node name="ResolutionContainer" type="HBoxContainer" parent="GraphicsContainer"]
+layout_mode = 2
+
+[node name="ResolutionLabel" type="Label" parent="GraphicsContainer/ResolutionContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "RESOLUTION"
+
+[node name="ResButtonLeft" type="Button" parent="GraphicsContainer/ResolutionContainer"]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_svgax")
+text = "<"
+
+[node name="ResolutionValueLabel" type="Label" parent="GraphicsContainer/ResolutionContainer"]
+custom_minimum_size = Vector2(141, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_styles/normal = SubResource("StyleBoxFlat_2dc0b")
+text = " 1920x1080 (16x9) "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ResButtonRight" type="Button" parent="GraphicsContainer/ResolutionContainer"]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_ed6pg")
+text = ">"
+
+[node name="FullscreenContainer" type="HBoxContainer" parent="GraphicsContainer"]
+layout_mode = 2
+
+[node name="FullscreenLabel" type="Label" parent="GraphicsContainer/FullscreenContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "FULLSCREEN"
+
+[node name="FullscreenButton" type="CheckButton" parent="GraphicsContainer/FullscreenContainer"]
+modulate = Color(0.404511, 0.404511, 0.404511, 1)
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="VSYNCContainer" type="HBoxContainer" parent="GraphicsContainer"]
+layout_mode = 2
+
+[node name="VSYNCLabel" type="Label" parent="GraphicsContainer/VSYNCContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "VSYNC"
+
+[node name="VSYNCButton" type="CheckButton" parent="GraphicsContainer/VSYNCContainer"]
+modulate = Color(0.404511, 0.404511, 0.404511, 1)
+layout_mode = 2
+size_flags_horizontal = 4
+button_pressed = true
+
+[node name="Space_2" type="HSeparator" parent="."]
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 2
+
+[node name="GameSettingsContainer" type="VBoxContainer" parent="."]
+visible = false
+layout_mode = 2
+
+[node name="GameSettingsLabel" type="Label" parent="GameSettingsContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "GAME SETTINGS"
+horizontal_alignment = 1
+
+[node name="GameSeparator" type="HSeparator" parent="GameSettingsContainer"]
+layout_mode = 2
+
+[node name="comment" type="Label" parent="GameSettingsContainer"]
+layout_mode = 2
+text = "добавить:
+- LANGUAGE
+"
+
+[node name="Space_3" type="HSeparator" parent="."]
+visible = false
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(0, 16)
+layout_mode = 2
+
+[node name="ButtonsContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="AcceptButton" type="Button" parent="ButtonsContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/normal = SubResource("StyleBoxTexture_uj1a4")
+disabled = true
+text = "accept"
+
+[node name="BackButton" type="Button" parent="ButtonsContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/normal = SubResource("StyleBoxTexture_882gr")
+text = "back"
+
+[node name="CloseButton" type="Button" parent="."]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+text = "close"

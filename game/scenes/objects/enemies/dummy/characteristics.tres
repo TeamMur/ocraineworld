@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://c8tvfeodccxh0"]
+
+[ext_resource type="Script" path="res://game/characteristics.gd" id="1_ex7ll"]
+
+[resource]
+script = ExtResource("1_ex7ll")
+health = 10.0
+mana = 0.0
+damage = 0.0
+protection = 1.0
+speed = 0.0
+luck = 0.0
+world_version_path = "res://game/scenes/objects/enemies/dummy/dummy.tscn"
+fight_version_path = "res://game/scenes/objects/enemies/dummy/fight_dummy.tscn"

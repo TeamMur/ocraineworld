@@ -1,0 +1,584 @@
+[gd_scene load_steps=45 format=3 uid="uid://dapjv27oqreqe"]
+
+[ext_resource type="Script" path="res://game/scenes/game_scenes/world_scene/world_scene.gd" id="1_bng1d"]
+[ext_resource type="Texture2D" uid="uid://byhjnt8sxglyf" path="res://game/global_sprites/backgrounds/papers.png" id="2_ilbis"]
+[ext_resource type="Script" path="res://samples/dashes_sprite/dashes_sprite.gd" id="3_7c8ud"]
+[ext_resource type="Texture2D" uid="uid://ba6mlqgq7bpgk" path="res://game/global_sprites/dashes/заварулина.png" id="5_ftwlb"]
+[ext_resource type="Texture2D" uid="uid://gu0poywv5nr4" path="res://game/global_sprites/Tilesets/синеватый деревянный пол.png" id="5_uw1ie"]
+[ext_resource type="Texture2D" uid="uid://dka81se06qt1n" path="res://game/global_sprites/dashes/загагулина1.png" id="6_wewug"]
+[ext_resource type="Texture2D" uid="uid://67ugpchfe03k" path="res://game/global_sprites/Tilesets/тайл сет1.png" id="6_wibrg"]
+[ext_resource type="Texture2D" uid="uid://d4d6uc2a13ncg" path="res://game/global_sprites/Tilesets/тайл сет белой травы1.png" id="7_k5ehx"]
+[ext_resource type="Texture2D" uid="uid://d0i4modqtqimq" path="res://game/global_sprites/Tilesets/тайл сет белой травы.png" id="8_266aj"]
+[ext_resource type="Texture2D" uid="uid://dl56s3l7hf0xf" path="res://game/global_sprites/dashes/загагулина.png" id="8_muyvb"]
+[ext_resource type="Texture2D" uid="uid://befv50ndububy" path="res://game/global_sprites/dashes/камешки1.png" id="9_qghgy"]
+[ext_resource type="Texture2D" uid="uid://dev2d0egfq13a" path="res://game/global_sprites/dashes/камешки2.png" id="10_vsirt"]
+[ext_resource type="Texture2D" uid="uid://dhbpmm6y4gkwb" path="res://game/global_sprites/dashes/камешки.png" id="11_8c1o3"]
+[ext_resource type="Texture2D" uid="uid://y5646dirwpgp" path="res://game/global_sprites/dashes/травинка1.png" id="12_l7mur"]
+[ext_resource type="Texture2D" uid="uid://dt4cgf84ed244" path="res://game/global_sprites/dashes/травинка2.png" id="13_55unw"]
+[ext_resource type="Texture2D" uid="uid://blm3pthu4alwn" path="res://game/global_sprites/dashes/травинка3.png" id="14_t51w4"]
+[ext_resource type="Texture2D" uid="uid://cjd1xr786l62r" path="res://game/global_sprites/dashes/травинка4.png" id="15_ydhu0"]
+[ext_resource type="Texture2D" uid="uid://b5h6plyu4kkmm" path="res://game/global_sprites/dashes/штрих1.png" id="17_lbgo4"]
+[ext_resource type="Texture2D" uid="uid://bl27gx75uosiy" path="res://game/global_sprites/dashes/штрих2.png" id="18_kgd5x"]
+[ext_resource type="PackedScene" uid="uid://bqecew0o7mxok" path="res://samples/things/clock/clock.tscn" id="19_0hrn7"]
+[ext_resource type="PackedScene" uid="uid://c1h7u2fexx28k" path="res://game/global_objects/enviroment/hay_z.tscn" id="22_8sm0g"]
+[ext_resource type="PackedScene" uid="uid://srmhoulhmnfe" path="res://game/global_objects/enviroment/hay_h_2.tscn" id="22_i57dw"]
+[ext_resource type="Texture2D" uid="uid://d4kgf18i271dm" path="res://game/global_sprites/enviroment/mushrooms/гриб2.png" id="23_bbqa1"]
+[ext_resource type="PackedScene" uid="uid://8xoukc78wpds" path="res://game/global_objects/enviroment/bushes.tscn" id="23_cbvvn"]
+[ext_resource type="PackedScene" uid="uid://csa5luuveie3n" path="res://game/scenes/objects/player/player.tscn" id="23_eccl3"]
+[ext_resource type="PackedScene" uid="uid://djudysfc7sfp0" path="res://game/scenes/objects/enemies/dummy/dummy.tscn" id="24_32u13"]
+[ext_resource type="Texture2D" uid="uid://bwxar4xd5mdog" path="res://game/global_sprites/enviroment/mushrooms/гриб1.png" id="24_kscyp"]
+[ext_resource type="PackedScene" uid="uid://ek1mwsgtdup0" path="res://game/global_objects/enviroment/hay_h.tscn" id="24_yxkab"]
+[ext_resource type="Texture2D" uid="uid://bxrw73dc1mee0" path="res://game/global_sprites/enviroment/mushrooms/гриб3.png" id="25_i805h"]
+[ext_resource type="PackedScene" uid="uid://cg7clhm1fhxn1" path="res://game/global_objects/enviroment/hay_v.tscn" id="25_mvd3g"]
+[ext_resource type="PackedScene" uid="uid://b0o16mko3xb7g" path="res://game/scenes/objects/enemies/cracker/cracker.tscn" id="25_p7rm3"]
+[ext_resource type="PackedScene" uid="uid://57b7ykjxklno" path="res://game/global_objects/enviroment/hay_v_2.tscn" id="26_7jvsp"]
+[ext_resource type="Texture2D" uid="uid://b2j2ku86mp781" path="res://game/global_sprites/enviroment/mushrooms/гриб.png" id="26_s26i8"]
+[ext_resource type="Texture2D" uid="uid://ujvonp52g6r6" path="res://game/global_sprites/enviroment/stones/камень1.png" id="27_1rj3d"]
+[ext_resource type="PackedScene" uid="uid://c2chs8n31adb2" path="res://game/global_objects/enviroment/hay_z_2.tscn" id="27_b3e0w"]
+[ext_resource type="Texture2D" uid="uid://deomtdg3peqn" path="res://game/global_sprites/enviroment/stones/камень2.png" id="28_mxv6l"]
+[ext_resource type="Texture2D" uid="uid://g0l7f1t3ertq" path="res://game/global_sprites/enviroment/stones/камень3.png" id="29_vo5tq"]
+[ext_resource type="Texture2D" uid="uid://s6k5ss81obp8" path="res://game/global_sprites/enviroment/stones/камень4.png" id="30_wlydn"]
+[ext_resource type="Texture2D" uid="uid://dw61sk6e5umnu" path="res://game/global_sprites/enviroment/stones/камень.png" id="31_3xbil"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_dbpvp"]
+texture = ExtResource("5_uw1ie")
+texture_region_size = Vector2i(170, 170)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2fi2y"]
+texture = ExtResource("6_wibrg")
+texture_region_size = Vector2i(170, 170)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c23op"]
+texture = ExtResource("7_k5ehx")
+texture_region_size = Vector2i(170, 170)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w6o4g"]
+texture = ExtResource("8_266aj")
+texture_region_size = Vector2i(170, 170)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_lnarv"]
+tile_size = Vector2i(170, 170)
+sources/0 = SubResource("TileSetAtlasSource_dbpvp")
+sources/2 = SubResource("TileSetAtlasSource_2fi2y")
+sources/3 = SubResource("TileSetAtlasSource_c23op")
+sources/4 = SubResource("TileSetAtlasSource_w6o4g")
+
+[node name="TestingScene" type="Node"]
+script = ExtResource("1_bng1d")
+
+[node name="Background" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="Clock" parent="Background" instance=ExtResource("19_0hrn7")]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -56.0
+offset_top = 16.0
+offset_right = -16.0
+offset_bottom = 39.0
+grow_horizontal = 0
+
+[node name="Papers" type="Sprite2D" parent="Background"]
+process_mode = 3
+visible = false
+scale = Vector2(4.18909, 3.54098)
+texture = ExtResource("2_ilbis")
+centered = false
+hframes = 3
+script = ExtResource("3_7c8ud")
+
+[node name="Ground" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_lnarv")
+format = 2
+layer_0/name = "Ground Level 1"
+layer_0/tile_data = PackedInt32Array(-65543, 65538, 1, -7, 65538, 1, 65529, 65538, 1, 131065, 65538, 1, 196601, 65538, 1, 262137, 65538, 1, 327673, 65538, 1, 393209, 65538, 1, 458745, 65538, 1, -65542, 65538, 1, -6, 65538, 1, 65530, 65538, 1, 131066, 65538, 1, 196602, 65538, 1, 262138, 65538, 1, 327674, 65538, 1, 393210, 65538, 1, 458746, 65538, 1, -65541, 65538, 1, -5, 65538, 1, 65531, 65538, 1, 131067, 65538, 1, 196603, 65538, 1, 262139, 65538, 1, 327675, 65538, 1, 393211, 65538, 1, 458747, 65538, 1, -65540, 65538, 1, -4, 65538, 1, 65532, 65538, 1, 131068, 65538, 1, 196604, 65538, 1, 262140, 65538, 1, 327676, 65538, 1, 393212, 65538, 1, 458748, 65538, 1, -65539, 65538, 1, -3, 65538, 1, 65533, 65538, 1, 131069, 65538, 1, 196605, 65538, 1, 262141, 65538, 1, 327677, 65538, 1, 393213, 65538, 1, 458749, 65538, 1, -65538, 65538, 1, -2, 65538, 1, 65534, 65538, 1, 131070, 65538, 1, 196606, 65538, 1, 262142, 65538, 1, 327678, 65538, 1, 393214, 65538, 1, 458750, 65538, 1, -65537, 65538, 1, -1, 65538, 1, 65535, 65538, 1, 131071, 65538, 1, 196607, 65538, 1, 262143, 65538, 1, 327679, 65538, 1, 393215, 65538, 1, 458751, 65538, 1, -131072, 65538, 1, -65536, 65538, 1, 0, 65538, 1, 65536, 65538, 1, 131072, 65538, 1, 196608, 65538, 1, 262144, 65538, 1, 327680, 65538, 1, 393216, 65538, 1, -131071, 65538, 1, -65535, 65538, 1, 1, 65538, 1, 65537, 65538, 1, 131073, 65538, 1, 196609, 65538, 1, 262145, 65538, 1, 327681, 65538, 1, 393217, 65538, 1, -131070, 65538, 1, -65534, 65538, 1, 2, 65538, 1, 65538, 65538, 1, 131074, 65538, 1, 196610, 65538, 1, 262146, 65538, 1, 327682, 65538, 1, 393218, 65538, 1, -131069, 65538, 1, -65533, 65538, 1, 3, 65538, 1, 65539, 65538, 1, 131075, 65538, 1, 196611, 65538, 1, 262147, 65538, 1, 327683, 65538, 1, 393219, 65538, 1, -131068, 65538, 1, -65532, 65538, 1, 4, 65538, 1, 65540, 65538, 1, 131076, 65538, 1, 196612, 65538, 1, 262148, 65538, 1, 327684, 65538, 1, 393220, 65538, 1, -131067, 65538, 1, -65531, 65538, 1, 5, 65538, 1, 65541, 65538, 1, 131077, 65538, 1, 196613, 65538, 1, 262149, 65538, 1, 327685, 65538, 1, 393221, 65538, 1, -131066, 65538, 1, -65530, 65538, 1, 6, 65538, 1, 65542, 65538, 1, 131078, 65538, 1, 196614, 65538, 1, 262150, 65538, 1, 327686, 65538, 1, 393222, 65538, 1, -131065, 65538, 1, -65529, 65538, 1, 7, 65538, 1, 65543, 65538, 1, 131079, 65538, 1, 196615, 65538, 1, 262151, 65538, 1, 327687, 65538, 1, 393223, 65538, 1, -131064, 65538, 1, -65528, 65538, 1, 8, 65538, 1, 65544, 65538, 1, 131080, 65538, 1, 196616, 65538, 1, 262152, 65538, 1, 327688, 65538, 1, 393224, 65538, 1, -131063, 65538, 1, -65527, 65538, 1, 9, 65538, 1, 65545, 65538, 1, 131081, 65538, 1, 196617, 65538, 1, 262153, 65538, 1, 327689, 65538, 1, 393225, 65538, 1, -131062, 65538, 1, -65526, 65538, 1, 10, 65538, 1, 65546, 65538, 1, 131082, 65538, 1, 196618, 65538, 1, 262154, 65538, 1, 327690, 65538, 1, 393226, 65538, 1, -131061, 65538, 1, -65525, 65538, 1, 11, 65538, 1, 65547, 65538, 1, 131083, 65538, 1, 196619, 65538, 1, 262155, 65538, 1, 327691, 65538, 1, 393227, 65538, 1, -131060, 65538, 1, -65524, 65538, 1, 12, 65538, 1, 65548, 65538, 1, 131084, 65538, 1, 196620, 65538, 1, 262156, 65538, 1, 327692, 65538, 1, 393228, 65538, 1, -131059, 65538, 1, -65523, 65538, 1, 13, 65538, 1, 65549, 65538, 1, 131085, 65538, 1, 196621, 65538, 1, 262157, 65538, 1, 327693, 65538, 1, 393229, 65538, 1, -131058, 65538, 1, -65522, 65538, 1, 14, 65538, 1, 65550, 65538, 1, 131086, 65538, 1, 196622, 65538, 1, 262158, 65538, 1, 327694, 65538, 1, 393230, 65538, 1, -131057, 65538, 1, -65521, 65538, 1, 15, 65538, 1, 65551, 65538, 1, 131087, 65538, 1, 196623, 65538, 1, 262159, 65538, 1, 327695, 65538, 1, 393231, 65538, 1, -131056, 65538, 1, -65520, 65538, 1, 16, 65538, 1, 65552, 65538, 1, 131088, 65538, 1, 196624, 65538, 1, 262160, 65538, 1, 327696, 65538, 1, 393232, 65538, 1, -131055, 65538, 1, -65519, 65538, 1, 17, 65538, 1, 65553, 65538, 1, 131089, 65538, 1, 196625, 65538, 1, 262161, 65538, 1, 327697, 65538, 1, 393233, 65538, 1, -131079, 65538, 1, -131078, 65538, 1, -131077, 65538, 1, -131076, 65538, 1, -131075, 65538, 1, -131074, 65538, 1, -131073, 65538, 1, -196608, 65538, 1, -196607, 65538, 1, -196606, 65538, 1, -196605, 65538, 1, -196604, 65538, 1, -196603, 65538, 1, -196602, 65538, 1, -196601, 65538, 1, -196600, 65538, 1, -196599, 65538, 1, -196598, 65538, 1, -196597, 65538, 1, -196596, 65538, 1, -196595, 65538, 1, -196594, 65538, 1, -196593, 65538, 1, -196592, 65538, 1, -196591, 65538, 1)
+layer_1/name = "Level 2"
+layer_1/tile_data = PackedInt32Array(262150, 65540, 1, 262149, 65540, 1, 262151, 65540, 1, 196614, 65540, 0, 196615, 65540, 0, 196613, 65540, 0, 327687, 65540, 1, 393223, 65540, 2, 393222, 65540, 2, 393221, 65540, 2, 327685, 65540, 1, 327686, 65540, 1, 196611, 4, 0, 196612, 65540, 0, 196616, 131076, 0, 262152, 131076, 1, 327688, 131076, 1, 393224, 131076, 2, 393220, 4, 2, 327684, 3, 2, 327683, 4, 2, 262147, 4, 1, 262148, 65540, 1)
+layer_2/name = "Level 3"
+layer_2/tile_data = PackedInt32Array(-65531, 65536, 1, -65530, 65536, 1, -65529, 65536, 1, -65528, 65536, 1, -65527, 65536, 1, 9, 65536, 1, 8, 65536, 1, 7, 65536, 1, 6, 65536, 1, 5, 65536, 1, 65541, 65536, 2, 65542, 65536, 2, 65543, 65536, 2, 65544, 65536, 2, 65545, 65536, 2, 65546, 131072, 2, 10, 131072, 1, -65526, 131072, 1, -131062, 131072, 0, -131063, 65536, 0, -131064, 65536, 0, -131066, 65536, 0, -131065, 65536, 0, -131067, 65536, 0, -131068, 0, 0, -65532, 0, 1, 4, 0, 1, 65540, 0, 2)
+
+[node name="Dashes" type="Node2D" parent="Ground"]
+
+[node name="Заварулина" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(1366, 463)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("5_ftwlb")
+
+[node name="Заварулина2" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(1456, 447)
+rotation = 3.59189
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("5_ftwlb")
+
+[node name="Загагулина1" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(-568, 295)
+texture = ExtResource("6_wewug")
+
+[node name="Загагулина" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(-338, 629)
+texture = ExtResource("8_muyvb")
+
+[node name="Камешки1" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(1041, 398)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("9_qghgy")
+
+[node name="Камешки2" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(482, 359)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("10_vsirt")
+
+[node name="Камешки3" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(932, 426)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("10_vsirt")
+
+[node name="Камешки4" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(881.15, 340.2)
+scale = Vector2(0.774049, 0.765278)
+texture = ExtResource("10_vsirt")
+
+[node name="Камешки10" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(-608, -81)
+scale = Vector2(1.02024, 0.997222)
+texture = ExtResource("10_vsirt")
+
+[node name="Камешки5" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(430, -40)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("10_vsirt")
+
+[node name="Камешки6" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(1105, 402)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("10_vsirt")
+
+[node name="Камешки7" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(223, 530)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("10_vsirt")
+
+[node name="Камешки8" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(207, 191)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("10_vsirt")
+
+[node name="Камешки" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(643, 269)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("11_8c1o3")
+
+[node name="Камешки9" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(1100, 540)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("11_8c1o3")
+
+[node name="Камешки11" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(1223, 972)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("11_8c1o3")
+
+[node name="Камешки12" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(-512, 376)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("11_8c1o3")
+
+[node name="Камешки13" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(-518, 151)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("11_8c1o3")
+
+[node name="Травинка1" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(1414, 480)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("12_l7mur")
+
+[node name="Травинка2" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(947, 292)
+scale = Vector2(0.556186, 0.542308)
+texture = ExtResource("12_l7mur")
+
+[node name="Травинка3" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(422, 116)
+scale = Vector2(0.556186, 0.542308)
+texture = ExtResource("12_l7mur")
+
+[node name="Травинка4" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(476, 141)
+scale = Vector2(0.422423, 0.386539)
+texture = ExtResource("12_l7mur")
+
+[node name="Травинка8" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(959, 322)
+scale = Vector2(0.757603, 0.680449)
+texture = ExtResource("12_l7mur")
+
+[node name="Травинка14" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(423, 274)
+scale = Vector2(0.757603, 0.680449)
+texture = ExtResource("12_l7mur")
+
+[node name="Травинка18" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(-755, 445)
+scale = Vector2(0.757603, 0.680449)
+texture = ExtResource("12_l7mur")
+
+[node name="Травинка19" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(-440, -10)
+scale = Vector2(0.757603, 0.680449)
+texture = ExtResource("12_l7mur")
+
+[node name="Травинка20" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(63, 595)
+scale = Vector2(0.757603, 0.680449)
+texture = ExtResource("12_l7mur")
+
+[node name="Травинка21" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(1759, 319)
+scale = Vector2(0.757603, 0.680449)
+texture = ExtResource("12_l7mur")
+
+[node name="Травинка22" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(647, -44)
+scale = Vector2(0.757603, 0.680449)
+texture = ExtResource("12_l7mur")
+
+[node name="Травинка5" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(641, 143)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("13_55unw")
+
+[node name="Травинка9" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(1279, 691)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("13_55unw")
+
+[node name="Травинка6" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(885, 450)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("13_55unw")
+
+[node name="Травинка7" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(197, 490)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("13_55unw")
+
+[node name="Травинка10" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(1197, 398)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("14_t51w4")
+
+[node name="Травинка11" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(690, 491)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("14_t51w4")
+
+[node name="Травинка12" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(315, 93)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("14_t51w4")
+
+[node name="Травинка13" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(394, -60)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("14_t51w4")
+
+[node name="Травинка15" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(603, -147)
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("15_ydhu0")
+
+[node name="Травинка16" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(-331.9, 327.1)
+scale = Vector2(1.19381, 1.10513)
+texture = ExtResource("15_ydhu0")
+
+[node name="Травинка17" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(-717, 629)
+scale = Vector2(1.19381, 1.10513)
+texture = ExtResource("15_ydhu0")
+
+[node name="Штрих1" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(1436, 365)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("17_lbgo4")
+
+[node name="Штрих4" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(-717, 83.0001)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("17_lbgo4")
+
+[node name="Штрих5" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(198, 54)
+texture = ExtResource("18_kgd5x")
+
+[node name="Штрих6" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(1009, 740)
+rotation = 1.07687
+texture = ExtResource("18_kgd5x")
+
+[node name="Штрих10" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(-281, 57)
+rotation = 1.07687
+texture = ExtResource("18_kgd5x")
+
+[node name="Штрих2" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(425, -185)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("17_lbgo4")
+
+[node name="Штрих7" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(1022, 824)
+texture = ExtResource("18_kgd5x")
+
+[node name="Штрих8" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(608, 609)
+texture = ExtResource("18_kgd5x")
+
+[node name="Штрих9" type="Sprite2D" parent="Ground/Dashes"]
+position = Vector2(608, 609)
+texture = ExtResource("18_kgd5x")
+
+[node name="World" type="Node2D" parent="Ground"]
+y_sort_enabled = true
+scale = Vector2(0.5, 0.5)
+
+[node name="Bushes" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+position = Vector2(1210, -1214)
+
+[node name="Bushes2" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+position = Vector2(3298, -1232)
+
+[node name="Bushes3" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+position = Vector2(-2224, 1620)
+
+[node name="Bushes23" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+position = Vector2(-1198, 1792)
+
+[node name="Bushes24" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+position = Vector2(-422, 1878)
+
+[node name="Bushes4" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+position = Vector2(5372, 1684)
+
+[node name="Bushes18" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+position = Vector2(150, -1212)
+
+[node name="Bushes19" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+position = Vector2(2228, -1218)
+
+[node name="Bushes20" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+position = Vector2(-2220, 870)
+
+[node name="Bushes21" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+position = Vector2(94, 468)
+
+[node name="Bushes5" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+position = Vector2(4346, -1234)
+
+[node name="Bushes6" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+position = Vector2(80, 110)
+
+[node name="Bushes7" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+position = Vector2(3242, 1704)
+
+[node name="Bushes8" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+position = Vector2(152, 1660)
+
+[node name="Bushes9" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+position = Vector2(1222, 1648)
+
+[node name="Bushes10" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+position = Vector2(4274, 1704)
+
+[node name="Bushes11" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+position = Vector2(-2222, 158)
+
+[node name="Bushes22" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+position = Vector2(-1840, -436)
+
+[node name="Bushes12" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+position = Vector2(-848, -762)
+
+[node name="Bushes13" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+position = Vector2(5378, 620)
+
+[node name="Bushes14" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+position = Vector2(4278, 688)
+
+[node name="Bushes15" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+position = Vector2(4252, 34.0001)
+
+[node name="Bushes16" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+position = Vector2(4258, -564)
+
+[node name="Bushes17" parent="Ground/World" instance=ExtResource("23_cbvvn")]
+position = Vector2(64, -554)
+
+[node name="Hays1" type="Node2D" parent="Ground/World"]
+position = Vector2(762, -566)
+scale = Vector2(1.7, 1.7)
+
+[node name="Hay_H_2_1" parent="Ground/World/Hays1" instance=ExtResource("22_i57dw")]
+scale = Vector2(1, 1)
+
+[node name="Hay_H_2_2" parent="Ground/World/Hays1" instance=ExtResource("22_i57dw")]
+position = Vector2(207.059, 14.1176)
+scale = Vector2(1, 1)
+
+[node name="Hay_V_2_1" parent="Ground/World/Hays1" instance=ExtResource("26_7jvsp")]
+position = Vector2(354.118, 35.2941)
+scale = Vector2(1, 1)
+
+[node name="Hay_Z_2_1" parent="Ground/World/Hays1" instance=ExtResource("27_b3e0w")]
+position = Vector2(307.059, -34.1176)
+scale = Vector2(1, 1)
+
+[node name="Hays2" type="Node2D" parent="Ground/World"]
+position = Vector2(762, -566)
+scale = Vector2(1.7, 1.7)
+
+[node name="HayH9" parent="Ground/World/Hays2" instance=ExtResource("24_yxkab")]
+position = Vector2(847.059, 692.941)
+scale = Vector2(0.882353, 0.882353)
+
+[node name="HayH10" parent="Ground/World/Hays2" instance=ExtResource("24_yxkab")]
+position = Vector2(1017.65, 689.412)
+scale = Vector2(0.882353, 0.882353)
+
+[node name="HayH11" parent="Ground/World/Hays2" instance=ExtResource("24_yxkab")]
+position = Vector2(936.471, 758.824)
+scale = Vector2(0.882353, 0.882353)
+
+[node name="HayH12" parent="Ground/World/Hays2" instance=ExtResource("24_yxkab")]
+position = Vector2(1105.88, 745.882)
+scale = Vector2(0.882353, 0.882353)
+
+[node name="HayH13" parent="Ground/World/Hays2" instance=ExtResource("24_yxkab")]
+position = Vector2(945.882, 665.882)
+scale = Vector2(0.882353, 0.882353)
+
+[node name="Hays3" type="Node2D" parent="Ground/World"]
+position = Vector2(762, -566)
+scale = Vector2(1.7, 1.7)
+
+[node name="HayZ" parent="Ground/World/Hays3" instance=ExtResource("22_8sm0g")]
+position = Vector2(1627.06, -5.88235)
+scale = Vector2(1.17647, 1.17647)
+
+[node name="HayV29" parent="Ground/World/Hays3" instance=ExtResource("25_mvd3g")]
+position = Vector2(1701.18, 143.529)
+scale = Vector2(1, 1)
+
+[node name="HayV30" parent="Ground/World/Hays3" instance=ExtResource("25_mvd3g")]
+position = Vector2(1616.47, 204.706)
+scale = Vector2(1, 1)
+
+[node name="HayV31" parent="Ground/World/Hays3" instance=ExtResource("25_mvd3g")]
+position = Vector2(1697.65, 322.353)
+scale = Vector2(1, 1)
+
+[node name="Гриб2" type="Sprite2D" parent="Ground/World"]
+position = Vector2(3516, 878)
+scale = Vector2(2, 2)
+texture = ExtResource("23_bbqa1")
+
+[node name="Гриб1" type="Sprite2D" parent="Ground/World"]
+position = Vector2(3404, 820)
+scale = Vector2(2, 2)
+texture = ExtResource("24_kscyp")
+
+[node name="Гриб3" type="Sprite2D" parent="Ground/World"]
+position = Vector2(3614, 878)
+scale = Vector2(2, 2)
+texture = ExtResource("25_i805h")
+
+[node name="Гриб" type="Sprite2D" parent="Ground/World"]
+position = Vector2(3604, 842)
+scale = Vector2(1.8, 1.8)
+texture = ExtResource("26_s26i8")
+
+[node name="Камень1" type="Sprite2D" parent="Ground/World"]
+position = Vector2(-1332, 188)
+scale = Vector2(2, 2)
+texture = ExtResource("27_1rj3d")
+
+[node name="Камень2" type="Sprite2D" parent="Ground/World"]
+position = Vector2(3650, 590)
+scale = Vector2(2, 2)
+texture = ExtResource("28_mxv6l")
+
+[node name="Камень3" type="Sprite2D" parent="Ground/World"]
+position = Vector2(3698, 640)
+scale = Vector2(2, 2)
+texture = ExtResource("29_vo5tq")
+
+[node name="Камень4" type="Sprite2D" parent="Ground/World"]
+position = Vector2(3598, 660)
+scale = Vector2(1.13322, 1.10417)
+texture = ExtResource("27_1rj3d")
+
+[node name="Камень5" type="Sprite2D" parent="Ground/World"]
+position = Vector2(-1358, 90)
+scale = Vector2(2, 2)
+texture = ExtResource("30_wlydn")
+
+[node name="Камень" type="Sprite2D" parent="Ground/World"]
+position = Vector2(-1208, 200)
+scale = Vector2(2, 2)
+texture = ExtResource("31_3xbil")
+
+[node name="Камень6" type="Sprite2D" parent="Ground/World"]
+position = Vector2(-854, -220)
+scale = Vector2(2, 2)
+texture = ExtResource("29_vo5tq")
+
+[node name="Dummy" parent="Ground/World" instance=ExtResource("24_32u13")]
+position = Vector2(2750, -144)
+scale = Vector2(1.2, 1.2)
+speed = 0.0
+
+[node name="Cracker" parent="Ground/World" instance=ExtResource("25_p7rm3")]
+position = Vector2(2144, 1548)
+
+[node name="Player" parent="Ground/World" instance=ExtResource("23_eccl3")]
+texture_filter = 2
+position = Vector2(1872, 32)
+scale = Vector2(1.5, 1.5)

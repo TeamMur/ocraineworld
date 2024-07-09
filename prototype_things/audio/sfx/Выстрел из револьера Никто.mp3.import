@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://4v56gpr3mnip"
+path="res://.godot/imported/Выстрел из револьера Никто.mp3-3cd0d645e4de8cdf64e5b725babea11b.mp3str"
+
+[deps]
+
+source_file="res://prototype_things/audio/sfx/Выстрел из револьера Никто.mp3"
+dest_files=["res://.godot/imported/Выстрел из револьера Никто.mp3-3cd0d645e4de8cdf64e5b725babea11b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2chs8n31adb2"]
+
+[ext_resource type="Texture2D" uid="uid://b43kblmq8edgn" path="res://game/global_sprites/enviroment/hay/сено5.png" id="1_2yijn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4ymmb"]
+size = Vector2(163, 78.127)
+
+[node name="Hay_Z_2" type="StaticBody2D"]
+collision_layer = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_2yijn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-9.16381, 1.2841)
+rotation = 0.471239
+shape = SubResource("RectangleShape2D_4ymmb")

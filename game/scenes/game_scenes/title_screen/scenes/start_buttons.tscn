@@ -1,0 +1,56 @@
+[gd_scene load_steps=7 format=3 uid="uid://bl228pekg5imo"]
+
+[ext_resource type="Script" path="res://game/scenes/game_scenes/title_screen/scenes/start_buttons.gd" id="1_trd3x"]
+[ext_resource type="Texture2D" uid="uid://mrsv1g7wu6ak" path="res://game/global_sprites/UI/normal/UI Никто.png" id="2_eaucw"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0q2sb"]
+texture = ExtResource("2_eaucw")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l8u8b"]
+texture = ExtResource("2_eaucw")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7ty5u"]
+texture = ExtResource("2_eaucw")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gii5c"]
+texture = ExtResource("2_eaucw")
+
+[node name="StartButtons" type="VBoxContainer"]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -152.0
+offset_top = -208.0
+offset_right = -64.0
+offset_bottom = -72.0
+grow_horizontal = 0
+grow_vertical = 0
+alignment = 2
+script = ExtResource("1_trd3x")
+
+[node name="NewGameButton" type="Button" parent="."]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_0q2sb")
+text = "new game"
+
+[node name="ContinueButton" type="Button" parent="."]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_l8u8b")
+text = "continue"
+
+[node name="SettingsButton" type="Button" parent="."]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_7ty5u")
+text = "settings"
+
+[node name="CopyrightsButton" type="Button" parent="."]
+visible = false
+layout_mode = 2
+text = "*copyrights"
+
+[node name="ExitButton" type="Button" parent="."]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_gii5c")
+text = "exit"

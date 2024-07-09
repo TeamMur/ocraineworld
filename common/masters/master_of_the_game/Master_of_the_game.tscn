@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://6xpc0ge01y0e"]
+
+[ext_resource type="Script" path="res://common/masters/master_of_the_game/Master_of_the_game.gd" id="1_kpaey"]
+[ext_resource type="PackedScene" uid="uid://dvqjcfutanpdl" path="res://game/scenes/game_scenes/title_screen/scenes/settings_buttons.tscn" id="2_257bw"]
+
+[node name="MasterOfTheGame" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_kpaey")
+
+[node name="SettingsPanel" type="Panel" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -176.0
+offset_top = -165.0
+offset_right = 176.0
+offset_bottom = 165.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SettingsButtons" parent="SettingsPanel" instance=ExtResource("2_257bw")]
+layout_mode = 1
+offset_top = -143.0
+offset_bottom = 143.0
+alignment = 1
