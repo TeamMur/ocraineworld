@@ -1,12 +1,24 @@
-[gd_scene load_steps=13 format=3 uid="uid://rbfhinkfolqo"]
+[gd_scene load_steps=17 format=3 uid="uid://rbfhinkfolqo"]
 
 [ext_resource type="Script" path="res://scenes/MENU/scene_menu.gd" id="1_qylio"]
 [ext_resource type="Texture2D" uid="uid://byhjnt8sxglyf" path="res://assets/BATTLE/BG_papers.png" id="2_goyem"]
 [ext_resource type="Script" path="res://scenes/GLOBAL/dashes_sprite.gd" id="3_rd0oe"]
 [ext_resource type="Texture2D" uid="uid://lhc00q24wu43" path="res://assets/MENU/ICON_main_chracter.png" id="4_m7oek"]
-[ext_resource type="PackedScene" uid="uid://bnjqjrnyi5uyf" path="res://scenes/MENU/UI_start_buttons.tscn" id="4_rp25m"]
+[ext_resource type="Texture2D" uid="uid://mrsv1g7wu6ak" path="res://assets/BATTLE/UI_Никто.png" id="4_xgqj5"]
 [ext_resource type="Script" path="res://scenes/MENU/ui_settings_buttons.gd" id="6_efldu"]
 [ext_resource type="Texture2D" uid="uid://2sv5uu647sii" path="res://assets/BATTLE/UI_темный.png" id="7_8huby"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0q2sb"]
+texture = ExtResource("4_xgqj5")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l8u8b"]
+texture = ExtResource("4_xgqj5")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7ty5u"]
+texture = ExtResource("4_xgqj5")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gii5c"]
+texture = ExtResource("4_xgqj5")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_svgax"]
 texture = ExtResource("7_8huby")
@@ -50,10 +62,45 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="StartButtons" parent="Statics" instance=ExtResource("4_rp25m")]
+[node name="StartButtons" type="VBoxContainer" parent="Statics"]
 layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -152.0
 offset_top = -192.0
+offset_right = -64.0
 offset_bottom = -56.0
+grow_horizontal = 0
+grow_vertical = 0
+alignment = 2
+
+[node name="NewGameButton" type="Button" parent="Statics/StartButtons"]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_0q2sb")
+text = "new game"
+
+[node name="ContinueButton" type="Button" parent="Statics/StartButtons"]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_l8u8b")
+text = "continue"
+
+[node name="SettingsButton" type="Button" parent="Statics/StartButtons"]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_7ty5u")
+text = "settings"
+
+[node name="CopyrightsButton" type="Button" parent="Statics/StartButtons"]
+visible = false
+layout_mode = 2
+text = "*copyrights"
+
+[node name="ExitButton" type="Button" parent="Statics/StartButtons"]
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxTexture_gii5c")
+text = "exit"
 
 [node name="GameName" type="TextureRect" parent="Statics"]
 layout_mode = 1
@@ -269,7 +316,7 @@ offset_bottom = -9.0
 grow_horizontal = 0
 grow_vertical = 0
 theme_override_font_sizes/font_size = 24
-text = "version alpha 0.01"
+text = "version alpha 0.2.0"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -288,7 +335,7 @@ offset_bottom = -9.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_font_sizes/font_size = 24
-text = "created by TeamMur & Davlenie"
+text = "created by T/D/A"
 horizontal_alignment = 1
 vertical_alignment = 1
 

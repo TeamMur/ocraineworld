@@ -1,17 +1,11 @@
 extends Node
 
+const SCENE_PATH_BATTLE: String = "res://scenes/BATTLE/SCENE_battle.tscn"
+const SCENE_PATH_WORLD: String = "res://scenes/WORLD/SCENE_world.tscn"
+const SCENE_PATH_MENU: String = "res://scenes/MENU/SCENE_menu.tscn"
+
 @onready var settings_panel = $SettingsPanel
 @onready var settings_buttons = $SettingsPanel/SettingsButtons
-
-#глобальные папки
-##не уверен, что в этом мастере
-var global_game_scenes_package: String = "res://game/scenes/game_scenes/"
-
-var global_audio_package: String = "res://prototype_things/audio/"
-var global_sfx_package: String = "res://prototype_things/audio/sfx/"
-var global_music_package: String = "res://prototype_things/audio/music/"
-
-const title_screen_path: String = "res://scenes/MENU/SCENE_menu.tscn"
 
 var scene_is_pausable: bool = false
 var scene_has_settings: bool = false
@@ -32,7 +26,7 @@ func _ready():
 	MasterOfTheSenses.scene_changed.connect(get_tree().set_pause.bind(false))
 	
 	#назначения кнопок
-	settings_buttons.back_button.pressed.connect(MasterOfTheSenses.change_scene_with_transition.bind(title_screen_path, "dissolve_in", "dissolve_out"))
+	settings_buttons.back_button.pressed.connect(MasterOfTheSenses.change_scene_with_transition.bind(SCENE_PATH_MENU, "dissolve_in", "dissolve_out"))
 	settings_buttons.back_button.pressed.connect(settings_panel.hide)
 	settings_buttons.close_button.pressed.connect(set_game_pause.bind(false))
 
@@ -68,24 +62,7 @@ func cause_game_over():
 func cause_victory():
 	pass
 
-#Игрок: сеттер и геттер
-##в основном для игр с одним игроком
-func set_current_player(new_player):
-	current_player = new_player
-	#сюда стоит добавить проверку на то, что new_player - объект класса Player, однако и без такого класса можно обойтись
-
-func get_current_player():
-	return current_player
-
 #глобальные настройки
 ##в основном те, что нельзя установить через настройки проекта (через редактор)
 func _apply_global_settings():
 	DisplayServer.window_set_min_size(Vector2i(640,360))
-
-
-#боевая сцена
-##Думаю стоит не переключать сцену а както поверх вызывать боевку
-const fight_scene_path: String = "res://scenes/BATTLE/SCENE_battle.tscn"
-
-func change_to_fight_scene(player, enemy):
-	MasterOfTheSenses.change_scene_with_transition(fight_scene_path, "dissolve_in", "dissolve_out")

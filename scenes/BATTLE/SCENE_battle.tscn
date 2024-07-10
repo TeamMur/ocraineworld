@@ -174,7 +174,7 @@ position = Vector2(832, 400)
 [node name="PlayerPivot" type="Marker2D" parent="."]
 position = Vector2(258, 340)
 
-[node name="FightPlayer" parent="PlayerPivot" instance=ExtResource("15_ptksl")]
+[node name="BattlePlayer" parent="PlayerPivot" instance=ExtResource("15_ptksl")]
 
 [node name="GUI" type="CanvasLayer" parent="."]
 layer = 0

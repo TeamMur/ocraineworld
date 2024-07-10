@@ -6,7 +6,8 @@ extends Node
 
 @onready var transition_player = $TransitionPlayer
 
-
+const SFX_BUTTON_ENTERED = preload("res://assets/MENU/SFXCR_mouse_entered.wav")
+const SFX_BUTTON_PRESSED = preload("res://assets/MENU/SFXCR_button_up.mp3")
 
 signal scene_changed
 

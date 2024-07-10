@@ -3,7 +3,7 @@ class_name Player
 
 @export var characteristics_res: Resource:
 	set (value):
-		MasterOfTheFight.player_characteristics = value
+		MasterOfTheBattle.player_characteristics = value
 		characteristics_res = value
 
 @onready var sprite = $Sprite
@@ -15,16 +15,16 @@ const STEPS_SOUND = preload("res://assets/WORLD/SFXCR_PLAYER_steps.mp3")
 @export var speed: float = 1.25
 
 func _ready():
-	MasterOfTheGame.set_current_player(self)
+	MasterOfTheGame.current_player = self
 	
 	hitbox.body_entered.connect(_on_hitbox_body_entered)
-	
+
 
 func _physics_process(delta):
 	movement(delta)
 	sprite.update_sprite(velocity)
 	##^можно передавать direction, чтобы уменьшить код в спрайте
-	##но стоит учитывать, что в данный момент velocity важно установке анимации бега/ходьбы (которой нет)
+	##но стоит учитывать, что в данный момент velocity важно в установке анимации бега/ходьбы (которой нет)
 
 #движение
 func movement(delta):
@@ -39,5 +39,5 @@ func movement(delta):
 ##пока не очень
 func _on_hitbox_body_entered(body):
 	if body is Enemy:
-		MasterOfTheFight.set_fight_enemy(body.characteristics_res)
-		MasterOfTheGame.change_to_fight_scene(self, body)
+		MasterOfTheBattle.set_fight_enemy(body.characteristics_res)
+		MasterOfTheSenses.change_scene_with_transition(MasterOfTheGame.SCENE_PATH_BATTLE, "dissolve_in", "dissolve_out")

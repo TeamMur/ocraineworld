@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dg1f4pctyvhet"]
 
-[ext_resource type="Script" path="res://common/masters/master_of_the_fight/MasterOfTheFight.gd" id="1_ogcv8"]
+[ext_resource type="Script" path="res://common/masters/master_of_the_battle/MasterOfTheBattle.gd" id="1_ogcv8"]
 
 [node name="MasterOfTheFight" type="Node"]
 script = ExtResource("1_ogcv8")
