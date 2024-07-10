@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0d68nj7uynuu"
-path="res://.godot/imported/M5eJ24KajD4.jpg-46237c3987250dab11f60fdbc7d74d84.ctex"
+uid="uid://bqobefxjva8co"
+path="res://.godot/imported/wendy.png-94e8425fdff29e4017d0368a44750ea9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/NEW/M5eJ24KajD4.jpg"
-dest_files=["res://.godot/imported/M5eJ24KajD4.jpg-46237c3987250dab11f60fdbc7d74d84.ctex"]
+source_file="res://assets/NEW/wendy.png"
+dest_files=["res://.godot/imported/wendy.png-94e8425fdff29e4017d0368a44750ea9.ctex"]
 
 [params]
 
