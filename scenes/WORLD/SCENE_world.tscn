@@ -386,7 +386,7 @@ position = Vector2(-422, 1878)
 position = Vector2(5372, 1684)
 
 [node name="Bushes18" parent="Ground/World" instance=ExtResource("19_w14be")]
-position = Vector2(150, -1212)
+position = Vector2(142, -1238)
 
 [node name="Bushes19" parent="Ground/World" instance=ExtResource("19_w14be")]
 position = Vector2(2228, -1218)
