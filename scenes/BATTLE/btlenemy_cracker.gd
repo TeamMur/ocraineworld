@@ -5,7 +5,6 @@ const final_pos = Vector2(-400, 24)
 var is_dodged: bool = false
 var is_key_chansing: bool = false
 
-signal successful_attack(damage)
 signal dodged
 signal key_chance_finished
 
