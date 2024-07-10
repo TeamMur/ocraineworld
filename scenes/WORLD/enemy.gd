@@ -39,7 +39,7 @@ func update_side():
 		sprite.flip_h = true if side == 1 else false
 
 func _on_visibility_area_body_entered(body):
-	if body == MasterOfTheGame.get_current_player():
+	if body == MasterOfTheGame.current_player:
 		target = body
 		MasterOfTheSenses.play_sfx(load("res://assets/WORLD/SFXCR_ENEMY_attention.mp3"))
 

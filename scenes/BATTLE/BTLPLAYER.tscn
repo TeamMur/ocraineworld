@@ -369,7 +369,7 @@ _data = {
 "shot": SubResource("Animation_q3q00")
 }
 
-[node name="FightPlayer" type="Node2D"]
+[node name="BattlePlayer" type="Node2D"]
 script = ExtResource("1_yfxki")
 characteristics_res = ExtResource("2_wycw3")
 

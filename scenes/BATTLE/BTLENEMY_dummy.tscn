@@ -59,7 +59,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="FightDummy" type="Node2D"]
+[node name="BattleDummy" type="Node2D"]
 script = ExtResource("1_jkpbf")
 
 [node name="Sprite" type="AnimatedSprite2D" parent="."]

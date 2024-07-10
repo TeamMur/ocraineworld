@@ -1,5 +1,5 @@
 extends Node2D
-class_name FightEnemy
+class_name BattleEnemy
 
 @onready var sprite = $Sprite
 
@@ -35,8 +35,8 @@ func death():
 		await sprite.animation_finished
 	else:
 		queue_free()
-	if MasterOfTheFight.current_enemy == self:
-		MasterOfTheFight.current_enemy = null
+	if MasterOfTheBattle.current_enemy == self:
+		MasterOfTheBattle.current_enemy = null
 	#queue_free()
 
 func attack():

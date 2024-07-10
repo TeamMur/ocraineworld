@@ -1,9 +1,9 @@
 extends Node
 
-var current_enemy: Object
-
 var current_player: Object
 var player_characteristics: Resource
+
+var current_enemy: Object
 
 func set_fight_enemy(characteristics_res):
 	var new_enemy = load(characteristics_res.fight_version_path).instantiate()

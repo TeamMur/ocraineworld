@@ -1,4 +1,4 @@
-extends FightEnemy
+extends BattleEnemy
 
 const final_pos = Vector2(-400, 24)
 
