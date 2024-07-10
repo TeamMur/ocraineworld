@@ -3,6 +3,8 @@ class_name FightEnemy
 
 @onready var sprite = $Sprite
 
+signal successful_attack(damage)
+
 var damage: float = 3
 
 var is_active: bool = false
@@ -36,5 +38,8 @@ func death():
 	if MasterOfTheFight.current_enemy == self:
 		MasterOfTheFight.current_enemy = null
 	#queue_free()
+
+func attack():
+	pass
 
 #тут типо скиллы
