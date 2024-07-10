@@ -33,8 +33,8 @@ var skills_dict = {
 var current_skills = [skills_dict["shot_revolver"],skills_dict["eyes"], skills_dict["shot_revolver_double"]]
 
 func _ready():
-	MasterOfTheFight.current_player = self
-	if MasterOfTheFight.player_characteristics: characteristics_res = MasterOfTheFight.player_characteristics
+	MasterOfTheBattle.current_player = self
+	if MasterOfTheBattle.player_characteristics: characteristics_res = MasterOfTheBattle.player_characteristics
 
 func get_damage(value):
 	if characteristics_res.health <= 0:
@@ -71,8 +71,8 @@ func shot_revolver(damage):
 	sprite.play("revolver_shot")
 	MasterOfTheSenses.play_sfx(fire_sfx)
 	skills_animation.play("shot")
-	if MasterOfTheFight.current_enemy:
-		MasterOfTheFight.current_enemy.get_damage(damage)
+	if MasterOfTheBattle.current_enemy:
+		MasterOfTheBattle.current_enemy.get_damage(damage)
 	await sprite.animation_finished
 	play_idle_animation()
 	is_busy = false
