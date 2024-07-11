@@ -12,7 +12,7 @@ class_name Player
 
 const STEPS_SOUND = preload("res://assets/WORLD/SFXCR_PLAYER_steps.mp3")
 
-@export var speed: float = 1.25
+@export var speed: float = 1.75
 
 func _ready():
 	MasterOfTheGame.current_player = self
