@@ -50,7 +50,7 @@ func _on_player_turn_finished():
 	battle_player.is_active = false
 	battle_enemy.is_active = true
 	turn_label .text = "Ход врага"
-	battle_enemy.attack()
+	battle_enemy.start_turn()
 
 func _on_enemy_turn_finished():
 	if not battle_enemy: return

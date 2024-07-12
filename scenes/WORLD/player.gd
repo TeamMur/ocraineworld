@@ -14,7 +14,11 @@ const STEPS_SOUND = preload("res://assets/WORLD/SFXCR_PLAYER_steps.mp3")
 
 @export var speed: float = 1.75
 
+var unique_id
+
 func _ready():
+	update_interstage_saves()
+	
 	MasterOfTheGame.current_player = self
 	
 	hitbox.body_entered.connect(_on_hitbox_body_entered)
@@ -41,3 +45,13 @@ func _on_hitbox_body_entered(body):
 	if body is Enemy:
 		MasterOfTheBattle.set_fight_enemy(body.characteristics_res)
 		MasterOfTheSenses.change_scene_with_transition(MasterOfTheGame.SCENE_PATH_BATTLE, "dissolve_in", "dissolve_out")
+		MasterOfTheLogic.interstage_saves[unique_id]["global_position"] = global_position
+	
+func update_interstage_saves():
+	unique_id = str(get_index()) + str(name)
+	if unique_id in MasterOfTheLogic.interstage_saves:
+		print("восстановление для ", unique_id)
+		global_position = MasterOfTheLogic.interstage_saves[unique_id]["global_position"]
+	else:
+		print("создание для ", unique_id)
+		MasterOfTheLogic.interstage_saves[unique_id] = {"global_position": global_position}

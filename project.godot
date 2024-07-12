@@ -22,7 +22,7 @@ buses/default_bus_layout="res://common/default_bus_layout.tres"
 
 [autoload]
 
-MasterOfTheLogic="res://common/masters/master_of_the_logic/Master_of_the_logic.tscn"
+MasterOfTheLogic="*res://common/masters/master_of_the_logic/Master_of_the_logic.tscn"
 MasterOfTheGame="*res://common/masters/master_of_the_game/Master_of_the_game.tscn"
 MasterOfTheSenses="*res://common/masters/master_of_the_senses/Master_of_the_senses.tscn"
 MasterOfTheBattle="*res://common/masters/master_of_the_battle/master_of_the_battle.tscn"
