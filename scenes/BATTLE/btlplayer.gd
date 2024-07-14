@@ -35,6 +35,7 @@ var current_skills = [skills_dict["shot_revolver"],skills_dict["eyes"], skills_d
 func _ready():
 	MasterOfTheBattle.current_player = self
 	if MasterOfTheBattle.player_characteristics: characteristics_res = MasterOfTheBattle.player_characteristics
+	play_idle_animation()
 
 func get_damage(value):
 	if characteristics_res.health <= 0:

@@ -6,7 +6,7 @@
 script = ExtResource("1_36hhb")
 health = 20.0
 mana = 0.0
-damage = 10.0
+damage = 3.0
 protection = 5.0
 speed = 0.0
 luck = 0.0

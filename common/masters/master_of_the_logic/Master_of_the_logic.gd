@@ -58,3 +58,10 @@ func _input(event):
 		if mouse_click_timer.is_stopped() or (mouse_pressed_position-mouse_release_position).length() > mouse_fast_click_length:
 			mouse_is_dragging = true
 			mouse_is_dragged = true
+
+#БАЗА ДАННЫХ МЕЖСЦЕНОВЫХ СОХРАНЕНИЙ
+var interstage_saves = {
+	Object.new(): {
+		"field": "value"
+	}
+}

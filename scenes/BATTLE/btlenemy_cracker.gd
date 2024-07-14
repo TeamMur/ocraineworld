@@ -1,57 +1,47 @@
 extends BattleEnemy
 
-const final_pos = Vector2(-400, 24)
+var final_pos = Vector2(-400, 24)
 
-var is_dodged: bool = false
-var is_key_chansing: bool = false
-
-signal dodged
-signal key_chance_finished
-
-func _input(event):
-	if event is InputEventKey and event.keycode == KEY_Z and event.is_pressed() and not event.is_echo():
-		if is_key_chansing:
-			print("задоджено")
-			is_dodged = true
-			is_key_chansing = false
-			dodged.emit()
-
-func attack():
+func start_turn():
 	if characteristics_res.health <= 0:
 		return
 	if sprite.animation == "damage" and sprite.is_playing():
 		await sprite.finished
+	is_dodged = false
+	preparation()
+
+func preparation():
 	var tween = create_tween()
-	
 	tween.tween_property(self, "position", final_pos*0.8, 1)
-	print("бегу")
 	sprite.play("walk")
-	
-	tween.tween_callback(key_chance)
-	await key_chance_finished
-	
+	tween.tween_callback(attack)
+	print("бегу")
+
+func attack():
+	print("пытаюсь укусить")
+	has_dodge_chance = true
+	var tween = create_tween()
+	tween.tween_property(self, "position", final_pos, 1)
+	await tween.finished
 	if not is_dodged:
-		if not tween.is_valid(): tween = create_tween()
-		tween.tween_callback(sprite.play.bind("attack"))
-		await sprite.animation_finished
-		successful_attack.emit(damage)
-		print("укусил")
-		#тут сделать нанесение урона
-	
+		make_damage(characteristics_res.damage)
+	else:
+		end_turn()
+
+func make_damage(damage):
+	sprite.play("attack")
+	await sprite.animation_finished
+	successful_attack.emit(characteristics_res.damage)
+	print("укусил")
+	end_turn()
+
+func end_turn():
 	sprite.play("walk")
 	sprite.flip_h = true
-	if not tween.is_valid(): tween = create_tween()
+	var tween = create_tween()
 	tween.tween_property(self, "position", Vector2.ZERO, 1)
 	tween.tween_callback(sprite.play.bind("idle"))
 	await tween.finished
 	turn_finished.emit()
 	sprite.flip_h = false
 	is_dodged = false
-
-func key_chance():
-	print("пытаюсь укусить")
-	is_key_chansing = true
-	var tween = create_tween()
-	tween.tween_property(self, "position", final_pos, 1)
-	await tween.finished
-	key_chance_finished.emit()

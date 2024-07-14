@@ -11,9 +11,12 @@ class_name Enemy
 var target: Object
 
 func _ready():
-	#чтобы у каждой сущности оно было разным
-	#characteristics_res = characteristics_res.duplicate()
-	
+	update_characteristics_res()
+	if characteristics_res.health <= 0:
+		sprite.play("death")
+		set_physics_process(false)
+		collision.disabled = true
+		return
 	visibility_area.body_entered.connect(_on_visibility_area_body_entered)
 
 func _physics_process(delta):
@@ -46,3 +49,11 @@ func _on_visibility_area_body_entered(body):
 func _on_visibility_area_body_exited(body):
 	if body == target:
 		target = null
+
+func update_characteristics_res():
+	var unique_id = str(get_index()) + str(name)
+	if unique_id in MasterOfTheLogic.interstage_saves:
+		characteristics_res = MasterOfTheLogic.interstage_saves[unique_id]
+	else:
+		characteristics_res = characteristics_res.duplicate()
+		MasterOfTheLogic.interstage_saves[unique_id] = characteristics_res

@@ -3,17 +3,34 @@ class_name BattleEnemy
 
 @onready var sprite = $Sprite
 
-signal successful_attack(damage)
 
-var damage: float = 3
-
+#vход врага?v
 var is_active: bool = false
-@export var characteristics_res: Resource
+var has_dodge_chance: bool = false
+var is_dodged: bool = false
 
+signal dodged
+signal successful_attack(damage)
 signal turn_finished
+signal died
 
 const DAMAGE_SOUND = preload("res://assets/BATTLE/SFXCR_damage.mp3")
 
+@export var characteristics_res: Resource
+
+func _ready():
+	if characteristics_res.health <= 0:
+		death()
+
+func _input(event):
+	if event is InputEventKey and event.keycode == KEY_Z and event.is_pressed() and not event.is_echo():
+		if has_dodge_chance:
+			print("задоджено")
+			is_dodged = true
+			has_dodge_chance = false
+			dodged.emit()
+
+#получение урона врагом
 func get_damage(value):
 	characteristics_res.health -= value
 	sprite.play("damage")
@@ -29,6 +46,7 @@ func get_damage(value):
 		return
 	sprite.play("idle")
 
+#смерть врага
 func death():
 	sprite.play("death")
 	if sprite.animation == "death": #лучше убрать когда будет возможность
@@ -37,9 +55,28 @@ func death():
 		queue_free()
 	if MasterOfTheBattle.current_enemy == self:
 		MasterOfTheBattle.current_enemy = null
+	died.emit()
 	#queue_free()
 
-func attack():
+func start_turn():
+	#функция для вызова атаки
 	pass
 
-#тут типо скиллы
+#подготовка к атаке
+func preparation():
+	#тут враг должен подбежать к цели и т.п.
+	pass
+
+#атака
+func attack():
+	#тут враг должен вызвать возможность нажать Z
+	has_dodge_chance = true
+
+func make_damage(damage):
+	#тут враг наносит урон по факту
+	has_dodge_chance = false
+	#player.health -= damage
+
+func end_turn():
+	#тут перс завершает ход и возвращается на позицию
+	pass

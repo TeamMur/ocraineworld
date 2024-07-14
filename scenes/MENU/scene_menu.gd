@@ -19,7 +19,7 @@ extends Node
 var new_game_scene_path: String = MasterOfTheGame.SCENE_PATH_WORLD
 var continue_game_scene_path: String
 
-const SCENE_MUSIC = null
+const SCENE_MUSIC = preload("res://assets/MENU/MUSIC_pause.mp3")
 const SFX_START_GAME = preload("res://assets/MENU/SFXCR_start_game.mp3")
 
 func _ready():
