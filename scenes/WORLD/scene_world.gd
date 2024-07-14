@@ -1,6 +1,6 @@
 extends Node
 
-const SCENE_MUSIC = preload("res://assets/WORLD/MUSICCR_17. Forest Chillin'.mp3")
+const SCENE_MUSIC = preload("res://assets/WORLD/MUSIC_world.mp3")
 
 func _ready():
 	#включение настроек мастера, ибо настроек в сцене нет

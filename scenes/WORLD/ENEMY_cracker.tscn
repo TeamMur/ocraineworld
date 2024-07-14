@@ -204,6 +204,7 @@ shape = SubResource("CircleShape2D_vq24y")
 debug_color = Color(0.981582, 0, 0.369798, 0.42)
 
 [node name="Sprite" type="AnimatedSprite2D" parent="."]
+process_mode = 3
 position = Vector2(0, -9.33333)
 sprite_frames = SubResource("SpriteFrames_7m007")
 animation = &"idle"
