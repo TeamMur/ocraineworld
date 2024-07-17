@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cd03papjik204"
-path="res://.godot/imported/полоска маны.png-e802fd6b0a09340e6785231f6710fee6.ctex"
+uid="uid://dg4tnyy7xtl72"
+path="res://.godot/imported/BTLPLAYER_usage.png-091ca70ae8eae475104694d5bdbdb9bd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/NEW/полоска маны.png"
-dest_files=["res://.godot/imported/полоска маны.png-e802fd6b0a09340e6785231f6710fee6.ctex"]
+source_file="res://assets/BATTLE/BTLPLAYER_usage.png"
+dest_files=["res://.godot/imported/BTLPLAYER_usage.png-091ca70ae8eae475104694d5bdbdb9bd.ctex"]
 
 [params]
 

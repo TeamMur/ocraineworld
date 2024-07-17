@@ -50,8 +50,6 @@ func _on_hitbox_body_entered(body):
 func update_interstage_saves():
 	unique_id = str(get_index()) + str(name)
 	if unique_id in MasterOfTheLogic.interstage_saves:
-		print("восстановление для ", unique_id)
 		global_position = MasterOfTheLogic.interstage_saves[unique_id]["global_position"]
 	else:
-		print("создание для ", unique_id)
 		MasterOfTheLogic.interstage_saves[unique_id] = {"global_position": global_position}

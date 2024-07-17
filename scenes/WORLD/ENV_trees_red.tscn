@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://f270pt5cl7tv"]
 
-[ext_resource type="Texture2D" uid="uid://x6m4un0x30l2" path="res://assets/NEW/деревья2.png" id="1_o2sae"]
+[ext_resource type="Texture2D" uid="uid://x6m4un0x30l2" path="res://assets/WORLD/ENV_trees_red.png" id="1_o2sae"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d5n44"]
 size = Vector2(358, 179)

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bcwilqldjfi8f"
-path="res://.godot/imported/деревья4.png-50ba762d2dcd08a267748549665a3c32.ctex"
+uid="uid://emya3gw2wfx4"
+path="res://.godot/imported/UI_пустая полоска.png-bdc05a205cd48e55b24891eb8cb57f27.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/NEW/деревья4.png"
-dest_files=["res://.godot/imported/деревья4.png-50ba762d2dcd08a267748549665a3c32.ctex"]
+source_file="res://assets/BATTLE/UI_пустая полоска.png"
+dest_files=["res://.godot/imported/UI_пустая полоска.png-bdc05a205cd48e55b24891eb8cb57f27.ctex"]
 
 [params]
 

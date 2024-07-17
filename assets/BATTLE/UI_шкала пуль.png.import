@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4xx7p7xfdlrs"
-path="res://.godot/imported/Спрайт лист анимации думать.png-8026fd64753b9537322e85369bdd998b.ctex"
+uid="uid://cjb433wqmupb8"
+path="res://.godot/imported/UI_шкала пуль.png-4443c9d50f72e883c3faae42e70cf85a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/NEW/Спрайт лист анимации думать.png"
-dest_files=["res://.godot/imported/Спрайт лист анимации думать.png-8026fd64753b9537322e85369bdd998b.ctex"]
+source_file="res://assets/BATTLE/UI_шкала пуль.png"
+dest_files=["res://.godot/imported/UI_шкала пуль.png-4443c9d50f72e883c3faae42e70cf85a.ctex"]
 
 [params]
 
