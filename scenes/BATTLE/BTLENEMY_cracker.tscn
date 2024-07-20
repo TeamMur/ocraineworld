@@ -183,7 +183,5 @@ script = ExtResource("1_dqx5m")
 
 [node name="Sprite" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_wyu4g")
-animation = &"attack"
+animation = &"idle"
 autoplay = "idle"
-frame = 4
-frame_progress = 1.0
