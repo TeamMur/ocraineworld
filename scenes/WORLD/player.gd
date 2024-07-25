@@ -8,16 +8,22 @@ class_name Player
 
 @onready var sprite = $Sprite
 @onready var hitbox = $Hitbox
+@onready var collision = $Collision
+
 @onready var audio_player = $AudioPlayer
 
 const STEPS_SOUND = preload("res://assets/WORLD/SFXCR_PLAYER_steps.mp3")
 
 @export var speed: float = 1.75
 
+var effects: Array
+
 var unique_id
 
 func _ready():
 	update_interstage_saves()
+	#временная неуязвимость при появлении на сцене
+	activate_invisible_mode(3)
 	
 	MasterOfTheGame.current_player = self
 	
@@ -39,6 +45,24 @@ func movement(delta):
 		audio_player.play()
 	move_and_slide()
 
+func activate_invisible_mode(effect_time: float):
+	if "invisible" in effects:
+		return #тут можно сбросить эфект обратно до максимального времени или складывать время
+	effects.append("invisible")
+	collision.disabled = true
+	var invisible_timer = Timer.new()
+	invisible_timer.one_shot = true
+	invisible_timer.autostart = true
+	invisible_timer.wait_time = effect_time
+	add_child(invisible_timer)
+	var delete: Callable = func ():
+		effects.erase("invisible")
+		collision.disabled = false #< строго после очистки "invisible"
+		remove_child(invisible_timer)
+		invisible_timer.queue_free()
+	invisible_timer.timeout.connect(delete)
+	
+
 #переход в боевую сцену
 ##пока не очень
 func _on_hitbox_body_entered(body):
@@ -46,7 +70,9 @@ func _on_hitbox_body_entered(body):
 		MasterOfTheBattle.set_fight_enemy(body.characteristics_res)
 		MasterOfTheSenses.change_scene_with_transition(MasterOfTheGame.SCENE_PATH_BATTLE, "dissolve_in", "dissolve_out")
 		MasterOfTheLogic.interstage_saves[unique_id]["global_position"] = global_position
-	
+
+
+##ПЕРЕНЕСТИ В МАСТЕРА ЛОГИКИ
 func update_interstage_saves():
 	unique_id = str(get_index()) + str(name)
 	if unique_id in MasterOfTheLogic.interstage_saves:
