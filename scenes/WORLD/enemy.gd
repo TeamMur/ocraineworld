@@ -43,8 +43,11 @@ func update_side():
 
 func _on_visibility_area_body_entered(body):
 	if body == MasterOfTheGame.current_player:
-		target = body
-		MasterOfTheSenses.play_sfx(load("res://assets/WORLD/SFXCR_ENEMY_attention.mp3"))
+		if "invisible" in body.effects:
+			return
+		if target != body:
+			target = body
+			MasterOfTheSenses.play_sfx(load("res://assets/WORLD/SFXCR_ENEMY_attention.mp3"))
 
 func _on_visibility_area_body_exited(body):
 	if body == target:

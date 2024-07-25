@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cjb433wqmupb8"
-path="res://.godot/imported/шкала пуль.png-35cbcc1aceda51917fe7563827443829.ctex"
+uid="uid://m6yqv034ytfn"
+path="res://.godot/imported/UI_рамка навыка.png-5e9e85eac385c0646cc3abc6455e2cb8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/NEW/шкала пуль.png"
-dest_files=["res://.godot/imported/шкала пуль.png-35cbcc1aceda51917fe7563827443829.ctex"]
+source_file="res://assets/BATTLE/UI_рамка навыка.png"
+dest_files=["res://.godot/imported/UI_рамка навыка.png-5e9e85eac385c0646cc3abc6455e2cb8.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://m6yqv034ytfn"
-path="res://.godot/imported/рамка навыка.png-47631b0e2e9a35c64e5dca563088eaf8.ctex"
+uid="uid://b1deqr0slb0n3"
+path="res://.godot/imported/ENV_tree_green.png-5a822045c07fb57d7e9daf54e751a987.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/NEW/рамка навыка.png"
-dest_files=["res://.godot/imported/рамка навыка.png-47631b0e2e9a35c64e5dca563088eaf8.ctex"]
+source_file="res://assets/WORLD/ENV_tree_green.png"
+dest_files=["res://.godot/imported/ENV_tree_green.png-5a822045c07fb57d7e9daf54e751a987.ctex"]
 
 [params]
 

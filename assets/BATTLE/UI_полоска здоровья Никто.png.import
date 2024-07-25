@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dur7gfaug3i8f"
-path="res://.godot/imported/Спрайт лист анимации блок (Battle).png-9e8a2c5d5bc18af83ded296bc508a2ce.ctex"
+uid="uid://dck216ejscwsc"
+path="res://.godot/imported/UI_полоска здоровья Никто.png-75075079679d067d94beda709b3f78f9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/NEW/Спрайт лист анимации блок (Battle).png"
-dest_files=["res://.godot/imported/Спрайт лист анимации блок (Battle).png-9e8a2c5d5bc18af83ded296bc508a2ce.ctex"]
+source_file="res://assets/BATTLE/UI_полоска здоровья Никто.png"
+dest_files=["res://.godot/imported/UI_полоска здоровья Никто.png-75075079679d067d94beda709b3f78f9.ctex"]
 
 [params]
 

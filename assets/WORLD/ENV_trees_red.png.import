@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cjmuhapv5oj6d"
-path="res://.godot/imported/пустая полоска здоровья Никто.png-748afc760dff65d56b95bdc07b390e54.ctex"
+uid="uid://x6m4un0x30l2"
+path="res://.godot/imported/ENV_trees_red.png-a0e76d09c2263f5affbf7c6f99e816e2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/NEW/пустая полоска здоровья Никто.png"
-dest_files=["res://.godot/imported/пустая полоска здоровья Никто.png-748afc760dff65d56b95bdc07b390e54.ctex"]
+source_file="res://assets/WORLD/ENV_trees_red.png"
+dest_files=["res://.godot/imported/ENV_trees_red.png-a0e76d09c2263f5affbf7c6f99e816e2.ctex"]
 
 [params]
 

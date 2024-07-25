@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://cpwkiat8gdec0"]
+[gd_scene load_steps=40 format=3 uid="uid://cpwkiat8gdec0"]
 
 [ext_resource type="Script" path="res://scenes/BATTLE/scene_battle.gd" id="1_feyyh"]
 [ext_resource type="Texture2D" uid="uid://cw5lh7pl76vd1" path="res://assets/BATTLE/BG_небо задний фон.png" id="2_6vj7v"]
@@ -29,12 +29,17 @@
 [ext_resource type="Texture2D" uid="uid://0n677df4ik7o" path="res://assets/BATTLE/UI_серая рамка (pressed).png" id="24_gkquw"]
 [ext_resource type="Texture2D" uid="uid://ddd3a8s7trmcb" path="res://assets/BATTLE/BG_stars.png" id="24_x02or"]
 [ext_resource type="Texture2D" uid="uid://bifp84hoajyfr" path="res://assets/BATTLE/ICON_Кнопка сбежать.png" id="25_pq12p"]
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d7ya1"]
-texture = ExtResource("22_v1d4s")
+[ext_resource type="Texture2D" uid="uid://b87gt7s3n8hxx" path="res://assets/NEW/Паралакс1.png" id="30_jjjan"]
+[ext_resource type="Texture2D" uid="uid://cjmuhapv5oj6d" path="res://assets/BATTLE/UI_пустая полоска здоровья Никто.png" id="30_rvpt7"]
+[ext_resource type="Texture2D" uid="uid://dck216ejscwsc" path="res://assets/BATTLE/UI_полоска здоровья Никто.png" id="31_vd3dj"]
+[ext_resource type="Texture2D" uid="uid://cjb433wqmupb8" path="res://assets/BATTLE/UI_шкала пуль.png" id="32_yu3he"]
+[ext_resource type="Texture2D" uid="uid://qex8eamjkdrk" path="res://assets/NEW/пуля от НЕРФ.png" id="34_4gfqm"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_swpeg"]
 texture = ExtResource("22_sjobb")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_d7ya1"]
+texture = ExtResource("22_v1d4s")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cw5h6"]
 texture = ExtResource("23_gdpmt")
@@ -494,33 +499,12 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -136.0
-offset_top = -88.0
-offset_right = 136.0
-offset_bottom = -16.0
+offset_left = -416.0
+offset_top = -544.0
+offset_right = -192.0
+offset_bottom = -472.0
 grow_horizontal = 2
 grow_vertical = 0
-
-[node name="InventoryButton" type="Button" parent="GUI/Hotbar"]
-custom_minimum_size = Vector2(32, 32)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 8
-theme_override_styles/normal = SubResource("StyleBoxTexture_d7ya1")
-
-[node name="Icon" type="TextureRect" parent="GUI/Hotbar/InventoryButton"]
-layout_mode = 0
-offset_left = -2.00003
-offset_top = -2.0
-offset_right = 510.0
-offset_bottom = 510.0
-scale = Vector2(0.07, 0.07)
-texture = ExtResource("23_0h6k8")
-
-[node name="VSeparator" type="VSeparator" parent="GUI/Hotbar"]
-modulate = Color(1, 1, 1, 0)
-custom_minimum_size = Vector2(8, 0)
-layout_mode = 2
 
 [node name="Skills" type="HBoxContainer" parent="GUI/Hotbar"]
 layout_mode = 2
@@ -578,12 +562,33 @@ mouse_filter = 2
 expand_mode = 2
 stretch_mode = 5
 
+[node name="InventoryButton" type="Button" parent="GUI"]
+custom_minimum_size = Vector2(32, 32)
+offset_left = 400.0
+offset_top = 568.0
+offset_right = 464.0
+offset_bottom = 632.0
+size_flags_horizontal = 4
+size_flags_vertical = 8
+theme_override_styles/normal = SubResource("StyleBoxTexture_d7ya1")
+
+[node name="Icon" type="TextureRect" parent="GUI/InventoryButton"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("23_0h6k8")
+expand_mode = 2
+stretch_mode = 4
+
 [node name="PauseButton" type="Button" parent="GUI"]
 process_mode = 3
-offset_left = 16.0
-offset_top = 560.0
-offset_right = 88.0
-offset_bottom = 632.0
+offset_left = 1072.0
+offset_top = 8.0
+offset_right = 1144.0
+offset_bottom = 80.0
 theme_override_styles/normal = SubResource("StyleBoxTexture_swpeg")
 theme_override_styles/hover = SubResource("StyleBoxTexture_cw5h6")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_wdfru")
@@ -606,10 +611,10 @@ expand_mode = 2
 stretch_mode = 5
 
 [node name="RunButton" type="Button" parent="GUI"]
-offset_left = 96.0
-offset_top = 560.0
-offset_right = 168.0
-offset_bottom = 632.0
+offset_left = 400.0
+offset_top = 504.0
+offset_right = 464.0
+offset_bottom = 568.0
 theme_override_styles/normal = SubResource("StyleBoxTexture_scfhs")
 icon_alignment = 1
 expand_icon = true
@@ -629,3 +634,92 @@ mouse_filter = 2
 texture = ExtResource("25_pq12p")
 expand_mode = 2
 stretch_mode = 5
+
+[node name="Panel" type="TextureRect" parent="GUI"]
+offset_left = 16.0
+offset_top = 504.0
+offset_right = 400.0
+offset_bottom = 632.0
+texture = ExtResource("30_jjjan")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="VContainer" type="VBoxContainer" parent="GUI/Panel"]
+layout_mode = 2
+offset_right = 384.0
+offset_bottom = 128.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HealthContainer" type="HBoxContainer" parent="GUI/Panel/VContainer"]
+layout_mode = 2
+theme_override_constants/separation = -20
+
+[node name="Icon" type="TextureRect" parent="GUI/Panel/VContainer/HealthContainer"]
+layout_mode = 2
+texture = ExtResource("3_pes5v")
+
+[node name="HealthBar" type="TextureProgressBar" parent="GUI/Panel/VContainer/HealthContainer"]
+custom_minimum_size = Vector2(0, 72)
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 10.0
+value = 6.0
+nine_patch_stretch = true
+texture_under = ExtResource("30_rvpt7")
+texture_progress = ExtResource("31_vd3dj")
+
+[node name="Bullets" type="TextureRect" parent="GUI/Panel/VContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+texture = ExtResource("32_yu3he")
+expand_mode = 1
+
+[node name="BulletsContainer" type="HBoxContainer" parent="GUI/Panel/VContainer/Bullets"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 64.0
+offset_top = -4.0
+offset_right = -84.0
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 2
+
+[node name="Bullet_1" type="TextureRect" parent="GUI/Panel/VContainer/Bullets/BulletsContainer"]
+layout_mode = 2
+texture = ExtResource("34_4gfqm")
+expand_mode = 3
+stretch_mode = 4
+
+[node name="Bullet_2" type="TextureRect" parent="GUI/Panel/VContainer/Bullets/BulletsContainer"]
+layout_mode = 2
+texture = ExtResource("34_4gfqm")
+expand_mode = 3
+stretch_mode = 4
+
+[node name="Bullet_3" type="TextureRect" parent="GUI/Panel/VContainer/Bullets/BulletsContainer"]
+layout_mode = 2
+texture = ExtResource("34_4gfqm")
+expand_mode = 3
+stretch_mode = 4
+
+[node name="Bullet_4" type="TextureRect" parent="GUI/Panel/VContainer/Bullets/BulletsContainer"]
+layout_mode = 2
+texture = ExtResource("34_4gfqm")
+expand_mode = 3
+stretch_mode = 4
+
+[node name="Bullet_5" type="TextureRect" parent="GUI/Panel/VContainer/Bullets/BulletsContainer"]
+layout_mode = 2
+texture = ExtResource("34_4gfqm")
+expand_mode = 3
+stretch_mode = 4
+
+[node name="Bullet_6" type="TextureRect" parent="GUI/Panel/VContainer/Bullets/BulletsContainer"]
+layout_mode = 2
+texture = ExtResource("34_4gfqm")
+expand_mode = 3
+stretch_mode = 4
