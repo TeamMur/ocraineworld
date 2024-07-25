@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cpyxqckcfqhry"
-path="res://.godot/imported/красное дерево.png-23f0ff5a68f3e2e6264d8b8b9279e80b.ctex"
+uid="uid://dur7gfaug3i8f"
+path="res://.godot/imported/BTLPLAYER_block.png-3c98e9a350af7c13c0f8c4aab9159c9d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/NEW/красное дерево.png"
-dest_files=["res://.godot/imported/красное дерево.png-23f0ff5a68f3e2e6264d8b8b9279e80b.ctex"]
+source_file="res://assets/BATTLE/BTLPLAYER_block.png"
+dest_files=["res://.godot/imported/BTLPLAYER_block.png-3c98e9a350af7c13c0f8c4aab9159c9d.ctex"]
 
 [params]
 

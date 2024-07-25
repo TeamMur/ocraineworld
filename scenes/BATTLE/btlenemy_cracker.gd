@@ -2,14 +2,15 @@ extends BattleEnemy
 
 var final_pos = Vector2(-400, 24)
 
+#начало хода. дополнительные проверки
 func start_turn():
 	if characteristics_res.health <= 0:
 		return
 	if sprite.animation == "damage" and sprite.is_playing():
 		await sprite.finished
-	is_dodged = false
 	preparation()
 
+#подготовка. часть хода перед шансом доджа 
 func preparation():
 	var tween = create_tween()
 	tween.tween_property(self, "position", final_pos*0.8, 1)
@@ -17,6 +18,7 @@ func preparation():
 	tween.tween_callback(attack)
 	print("бегу")
 
+#атака. на ее протежении можно задоджить
 func attack():
 	print("пытаюсь укусить")
 	has_dodge_chance = true
@@ -26,7 +28,8 @@ func attack():
 	if not is_dodged:
 		make_damage(characteristics_res.damage)
 	else:
-		end_turn()
+		make_damage(characteristics_res.damage/2)
+		#end_turn() #раньше щелкун просто убегал, но давление сказал наносить в 2 раза меньше урона
 
 func make_damage(damage):
 	sprite.play("attack")
@@ -35,6 +38,7 @@ func make_damage(damage):
 	print("укусил")
 	end_turn()
 
+#завершение хода. возврат к исходной точке
 func end_turn():
 	sprite.play("walk")
 	sprite.flip_h = true

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://emya3gw2wfx4"
-path="res://.godot/imported/пустая полоска.png-86329aadddc4d1fda804a36a41840300.ctex"
+uid="uid://cjmuhapv5oj6d"
+path="res://.godot/imported/UI_пустая полоска здоровья Никто.png-5b37efd31d0da06bcf1c0e73c7570ef0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/NEW/пустая полоска.png"
-dest_files=["res://.godot/imported/пустая полоска.png-86329aadddc4d1fda804a36a41840300.ctex"]
+source_file="res://assets/BATTLE/UI_пустая полоска здоровья Никто.png"
+dest_files=["res://.godot/imported/UI_пустая полоска здоровья Никто.png-5b37efd31d0da06bcf1c0e73c7570ef0.ctex"]
 
 [params]
 

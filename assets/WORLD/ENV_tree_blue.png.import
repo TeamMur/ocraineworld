@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dck216ejscwsc"
-path="res://.godot/imported/полоска здоровья Никто.png-5a5ba08d682a2b1e2c2bc75820cf811f.ctex"
+uid="uid://r1stp3q2xrn0"
+path="res://.godot/imported/ENV_tree_blue.png-4842c1dbd985d394ad504a2b1de522dc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/NEW/полоска здоровья Никто.png"
-dest_files=["res://.godot/imported/полоска здоровья Никто.png-5a5ba08d682a2b1e2c2bc75820cf811f.ctex"]
+source_file="res://assets/WORLD/ENV_tree_blue.png"
+dest_files=["res://.godot/imported/ENV_tree_blue.png-4842c1dbd985d394ad504a2b1de522dc.ctex"]
 
 [params]
 

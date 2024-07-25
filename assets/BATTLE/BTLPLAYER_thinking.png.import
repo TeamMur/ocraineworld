@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dg4tnyy7xtl72"
-path="res://.godot/imported/Спрайт лист анимации использование предмета.png-e955b5d88db9671e97d91bbecdc78cb9.ctex"
+uid="uid://c4xx7p7xfdlrs"
+path="res://.godot/imported/BTLPLAYER_thinking.png-3b511997bfe91e830f14a79b57e0dfbc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/NEW/Спрайт лист анимации использование предмета.png"
-dest_files=["res://.godot/imported/Спрайт лист анимации использование предмета.png-e955b5d88db9671e97d91bbecdc78cb9.ctex"]
+source_file="res://assets/BATTLE/BTLPLAYER_thinking.png"
+dest_files=["res://.godot/imported/BTLPLAYER_thinking.png-3b511997bfe91e830f14a79b57e0dfbc.ctex"]
 
 [params]
 
