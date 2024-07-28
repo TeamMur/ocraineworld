@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cae7xvtsaxxxl"
-path="res://.godot/imported/PLAYER_idle.png-b9e18893969a041cca2ce4f36ffb93a7.ctex"
+uid="uid://s1inqkdwifk4"
+path="res://.godot/imported/спрайт лист анимации Никто Fuck.png-3b6bd8d08979b39da2bfe34fa81f7204.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/WORLD/PLAYER_idle.png"
-dest_files=["res://.godot/imported/PLAYER_idle.png-b9e18893969a041cca2ce4f36ffb93a7.ctex"]
+source_file="res://assets/NEW/спрайт лист анимации Никто Fuck.png"
+dest_files=["res://.godot/imported/спрайт лист анимации Никто Fuck.png-3b6bd8d08979b39da2bfe34fa81f7204.ctex"]
 
 [params]
 

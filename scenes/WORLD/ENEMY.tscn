@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://dur13tcvbv3k7"]
 
 [ext_resource type="Script" path="res://scenes/WORLD/enemy.gd" id="1_iij01"]
-[ext_resource type="Texture2D" uid="uid://ukvyqp63b4" path="res://assets/WORLD/ENEMY_dummy_idle.png" id="2_pn5kc"]
+[ext_resource type="Texture2D" uid="uid://bkuj7amja2l3r" path="res://assets/NEW/Спрайт лист idle анимации Битое пугало.png" id="2_b7sou"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_b3c7v"]
 radius = 112.161
@@ -9,36 +9,36 @@ radius = 112.161
 [sub_resource type="CircleShape2D" id="CircleShape2D_vq24y"]
 radius = 327.024
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_hfrv4"]
-atlas = ExtResource("2_pn5kc")
+[sub_resource type="AtlasTexture" id="AtlasTexture_kgs2n"]
+atlas = ExtResource("2_b7sou")
 region = Rect2(0, 0, 472, 472)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ufbhl"]
-atlas = ExtResource("2_pn5kc")
+[sub_resource type="AtlasTexture" id="AtlasTexture_gnml1"]
+atlas = ExtResource("2_b7sou")
 region = Rect2(472, 0, 472, 472)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_n1gqy"]
-atlas = ExtResource("2_pn5kc")
+[sub_resource type="AtlasTexture" id="AtlasTexture_h178k"]
+atlas = ExtResource("2_b7sou")
 region = Rect2(944, 0, 472, 472)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_j675j"]
-atlas = ExtResource("2_pn5kc")
+[sub_resource type="AtlasTexture" id="AtlasTexture_06may"]
+atlas = ExtResource("2_b7sou")
 region = Rect2(1416, 0, 472, 472)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_cw51p"]
 animations = [{
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_hfrv4")
+"texture": SubResource("AtlasTexture_kgs2n")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_ufbhl")
+"texture": SubResource("AtlasTexture_gnml1")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_n1gqy")
+"texture": SubResource("AtlasTexture_h178k")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_j675j")
+"texture": SubResource("AtlasTexture_06may")
 }],
 "loop": true,
 "name": &"idle",

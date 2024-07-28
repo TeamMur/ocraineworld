@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cae7xvtsaxxxl"
-path="res://.godot/imported/PLAYER_idle.png-b9e18893969a041cca2ce4f36ffb93a7.ctex"
+uid="uid://b3l5i0cxbvhmk"
+path="res://.godot/imported/Спрайт лист анимации щелкуна укус.png-e88efb300a1076035d3c39051c952ea7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/WORLD/PLAYER_idle.png"
-dest_files=["res://.godot/imported/PLAYER_idle.png-b9e18893969a041cca2ce4f36ffb93a7.ctex"]
+source_file="res://assets/NEW/Спрайт лист анимации щелкуна укус.png"
+dest_files=["res://.godot/imported/Спрайт лист анимации щелкуна укус.png-e88efb300a1076035d3c39051c952ea7.ctex"]
 
 [params]
 

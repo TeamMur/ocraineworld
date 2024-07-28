@@ -1,22 +1,22 @@
 [gd_scene load_steps=8 format=3 uid="uid://cgw31ukhefr22"]
 
-[ext_resource type="Texture2D" uid="uid://ukvyqp63b4" path="res://assets/WORLD/ENEMY_dummy_idle.png" id="1_0at78"]
 [ext_resource type="Script" path="res://scenes/BATTLE/btlenemy.gd" id="1_jkpbf"]
+[ext_resource type="Texture2D" uid="uid://bkuj7amja2l3r" path="res://assets/NEW/Спрайт лист idle анимации Битое пугало.png" id="2_qj1u6"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_80cml"]
-atlas = ExtResource("1_0at78")
+[sub_resource type="AtlasTexture" id="AtlasTexture_8f805"]
+atlas = ExtResource("2_qj1u6")
 region = Rect2(0, 0, 472, 472)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_usx5t"]
-atlas = ExtResource("1_0at78")
+[sub_resource type="AtlasTexture" id="AtlasTexture_eumcv"]
+atlas = ExtResource("2_qj1u6")
 region = Rect2(472, 0, 472, 472)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_r34xy"]
-atlas = ExtResource("1_0at78")
+[sub_resource type="AtlasTexture" id="AtlasTexture_igwp0"]
+atlas = ExtResource("2_qj1u6")
 region = Rect2(944, 0, 472, 472)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_tjpyr"]
-atlas = ExtResource("1_0at78")
+[sub_resource type="AtlasTexture" id="AtlasTexture_in3qd"]
+atlas = ExtResource("2_qj1u6")
 region = Rect2(1416, 0, 472, 472)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_vlxt1"]
@@ -38,16 +38,16 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_80cml")
+"texture": SubResource("AtlasTexture_8f805")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_usx5t")
+"texture": SubResource("AtlasTexture_eumcv")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_r34xy")
+"texture": SubResource("AtlasTexture_igwp0")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_tjpyr")
+"texture": SubResource("AtlasTexture_in3qd")
 }],
 "loop": true,
 "name": &"idle",
