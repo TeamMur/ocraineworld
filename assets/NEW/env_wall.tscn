@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://dco62rkcqerui"]
+
+[ext_resource type="Texture2D" uid="uid://bvb37vxowajgm" path="res://assets/NEW/стена обыкновенного дома.png" id="1_w7ryj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vvtgv"]
+size = Vector2(1043, 391)
+
+[node name="ENV_Wall" type="StaticBody2D"]
+collision_layer = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_w7ryj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2.5, -2.5)
+shape = SubResource("RectangleShape2D_vvtgv")

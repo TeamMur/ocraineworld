@@ -1,17 +1,17 @@
 [gd_scene load_steps=3 format=3 uid="uid://8xoukc78wpds"]
 
-[ext_resource type="Texture2D" uid="uid://802xjbrhi2f8" path="res://assets/WORLD/ENV_кусты1.png" id="1_kwwl7"]
+[ext_resource type="Texture2D" uid="uid://dveokmn8wcp4m" path="res://assets/NEW/кусты.png" id="1_8qkqn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cgqc0"]
-size = Vector2(694, 496)
+size = Vector2(776.667, 583.333)
 
 [node name="Bushes" type="StaticBody2D"]
 scale = Vector2(1.5, 1.5)
 collision_layer = 4
 
 [node name="Sprite" type="Sprite2D" parent="."]
-texture = ExtResource("1_kwwl7")
+texture = ExtResource("1_8qkqn")
 
 [node name="Collision" type="CollisionShape2D" parent="."]
-position = Vector2(4, 107.5)
+position = Vector2(-4.33334, 91)
 shape = SubResource("RectangleShape2D_cgqc0")

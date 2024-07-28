@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cae7xvtsaxxxl"
-path="res://.godot/imported/PLAYER_idle.png-b9e18893969a041cca2ce4f36ffb93a7.ctex"
+uid="uid://86218jc1aaq0"
+path="res://.godot/imported/Спрайт лист анимации щелкуна помер.png-5b21d556e32c25d180b0787729e8dbdb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/WORLD/PLAYER_idle.png"
-dest_files=["res://.godot/imported/PLAYER_idle.png-b9e18893969a041cca2ce4f36ffb93a7.ctex"]
+source_file="res://assets/NEW/Спрайт лист анимации щелкуна помер.png"
+dest_files=["res://.godot/imported/Спрайт лист анимации щелкуна помер.png-5b21d556e32c25d180b0787729e8dbdb.ctex"]
 
 [params]
 
