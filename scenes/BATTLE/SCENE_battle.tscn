@@ -666,6 +666,7 @@ custom_minimum_size = Vector2(0, 72)
 layout_mode = 2
 size_flags_horizontal = 3
 max_value = 10.0
+step = 0.5
 value = 6.0
 nine_patch_stretch = true
 texture_under = ExtResource("31_6fem8")

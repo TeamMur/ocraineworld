@@ -28,13 +28,13 @@ func attack():
 	if not is_dodged:
 		make_damage(characteristics_res.damage)
 	else:
-		make_damage(characteristics_res.damage/2)
+		make_damage(characteristics_res.damage/2.0)
 		#end_turn() #раньше щелкун просто убегал, но давление сказал наносить в 2 раза меньше урона
 
 func make_damage(damage):
 	sprite.play("attack")
 	await sprite.animation_finished
-	successful_attack.emit(characteristics_res.damage)
+	successful_attack.emit(damage)
 	print("укусил")
 	end_turn()
 

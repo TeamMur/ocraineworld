@@ -13,6 +13,7 @@ signal dodged
 signal successful_attack(damage)
 signal turn_finished
 signal died
+signal damaged(value)
 
 const DAMAGE_SOUND = preload("res://assets/BATTLE/SFXCR_damage.mp3")
 
@@ -34,6 +35,7 @@ func _input(event):
 func get_damage(value):
 	characteristics_res.health -= value
 	sprite.play("damage")
+	damaged.emit(value)
 	MasterOfTheSenses.play_sfx(DAMAGE_SOUND)
 	if sprite.animation == "damage": #лучше убрать когда будет возможность
 		await sprite.animation_finished

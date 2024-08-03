@@ -4,6 +4,7 @@
 
 [resource]
 script = ExtResource("1_ppafk")
+max_health = 0.0
 health = 0.0
 mana = 0.0
 damage = 0.0
