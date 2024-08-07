@@ -50,6 +50,7 @@ func activate_invisible_mode(effect_time: float):
 		return #тут можно сбросить эфект обратно до максимального времени или складывать время
 	effects.append("invisible")
 	collision.disabled = true
+	hitbox.monitoring = false
 	var invisible_timer = Timer.new()
 	invisible_timer.one_shot = true
 	invisible_timer.autostart = true
@@ -58,6 +59,7 @@ func activate_invisible_mode(effect_time: float):
 	var delete: Callable = func ():
 		effects.erase("invisible")
 		collision.disabled = false #< строго после очистки "invisible"
+		hitbox.monitoring = true
 		remove_child(invisible_timer)
 		invisible_timer.queue_free()
 	invisible_timer.timeout.connect(delete)

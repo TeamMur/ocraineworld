@@ -43,6 +43,14 @@ func play_new_music(music_file):
 	set_music(music_file)
 	music_player.play()
 
+func play_music_continues(music_file):
+	var checkpoint = music_player.get_playback_position()
+	music_player.stop()
+	music_player.stream = music_file
+	if checkpoint>music_file.get_length():checkpoint=0
+	music_player.play(checkpoint)
+	
+
 func set_music(music_file):
 	music_player.stream = music_file
 

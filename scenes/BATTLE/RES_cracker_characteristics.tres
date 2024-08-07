@@ -4,6 +4,7 @@
 
 [resource]
 script = ExtResource("1_36hhb")
+max_health = 20.0
 health = 20.0
 mana = 0.0
 damage = 3.0
