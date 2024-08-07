@@ -8,4 +8,4 @@ func _ready():
 	MasterOfTheGame.set_scene_has_settings(false)
 	
 	#включение музыки сцены
-	MasterOfTheSenses.play_new_music(SCENE_MUSIC)
+	MasterOfTheSenses.play_music_continues(SCENE_MUSIC)

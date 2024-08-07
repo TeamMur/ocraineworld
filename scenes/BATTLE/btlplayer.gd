@@ -14,19 +14,23 @@ var is_active: bool = true
 const DAMAGE_SOUND = preload("res://assets/BATTLE/SFXCR_damage.mp3")
 
 signal turn_finished
+signal damaged(value)
 
 var skills_dict = {
 	"shot_revolver": {
 		"texture": preload("res://assets/BATTLE/SKILL_icon_pistol.png"),
-		"method": shot_revolver.bind(5)
+		"method": shot_revolver.bind(5),
+		"cost": 0
 	},
 	"eyes": {
 		"texture": preload("res://assets/BATTLE/SKILL_icon_eyes.png"),
-		"method": eyes.bind(3)
+		"method": eyes.bind(3),
+		"cost": 1
 	},
 	"shot_revolver_double": {
 		"texture": preload("res://assets/BATTLE/SKILL_icon_pistol.png"),
-		"method": shot_revolver.bind(10)
+		"method": shot_revolver.bind(10),
+		"cost": 5
 	}
 }
 
@@ -43,6 +47,7 @@ func get_damage(value):
 	characteristics_res.health -= value
 	MasterOfTheSenses.play_sfx(DAMAGE_SOUND)
 	sprite.play("damage")
+	damaged.emit(value)
 	await sprite.animation_finished
 	if characteristics_res.health <= 0:
 		death()
@@ -84,6 +89,7 @@ func eyes(value):
 		return
 	characteristics_res.health -= value
 	sprite.play("damage")
+	damaged.emit(value)
 	await sprite.animation_finished
 	if characteristics_res.health <= 0:
 		death()

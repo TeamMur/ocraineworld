@@ -1,5 +1,6 @@
 extends Resource
 
+@export var max_health: float
 @export var health: float
 @export var mana: float
 @export var damage: float
