@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://x6vxpme21xpa"
-path="res://.godot/imported/TILES_синеватый деревянный пол.png-d7d570f374216348d6078a8c849d3eef.ctex"
+uid="uid://b3wqh4wfbl20x"
+path="res://.godot/imported/SKILL_Навык верные пули.png-6f36bf3c2eb40e2bcb26a0f3ae6acc09.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/WORLD/TILES_синеватый деревянный пол.png"
-dest_files=["res://.godot/imported/TILES_синеватый деревянный пол.png-d7d570f374216348d6078a8c849d3eef.ctex"]
+source_file="res://assets/BATTLE/SKILL_Навык верные пули.png"
+dest_files=["res://.godot/imported/SKILL_Навык верные пули.png-6f36bf3c2eb40e2bcb26a0f3ae6acc09.ctex"]
 
 [params]
 
