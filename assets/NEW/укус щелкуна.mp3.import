@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ch5m5ftqmj0ur"
+path="res://.godot/imported/укус щелкуна.mp3-da5c9fbe7e5174189a1a769189a6bb1e.mp3str"
+
+[deps]
+
+source_file="res://assets/NEW/укус щелкуна.mp3"
+dest_files=["res://.godot/imported/укус щелкуна.mp3-da5c9fbe7e5174189a1a769189a6bb1e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

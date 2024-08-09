@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://brjn1il1ky6xl"
-path="res://.godot/imported/ENV_grass_black_6.png-7387a70401b626d93b187f4e2aca0a42.ctex"
+uid="uid://dyb12qw0f1t4p"
+path="res://.godot/imported/ENV_сундук.png-d25e50bd70e678a5eda3ea415a0d3e05.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/WORLD/ENV_grass_black_6.png"
-dest_files=["res://.godot/imported/ENV_grass_black_6.png-7387a70401b626d93b187f4e2aca0a42.ctex"]
+source_file="res://assets/NEW/ENV_сундук.png"
+dest_files=["res://.godot/imported/ENV_сундук.png-d25e50bd70e678a5eda3ea415a0d3e05.ctex"]
 
 [params]
 

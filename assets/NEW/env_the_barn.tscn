@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://dq3hudabjikvt"]
+
+[ext_resource type="Texture2D" uid="uid://c67txr0wurk55" path="res://assets/NEW/ENV_хлев1.png" id="1_hgyhl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_57o3d"]
+size = Vector2(566, 541)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v8s0o"]
+size = Vector2(96, 196)
+
+[node name="ENV_the_barn" type="StaticBody2D"]
+scale = Vector2(2, 2)
+collision_layer = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_hgyhl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-43, 139.5)
+shape = SubResource("RectangleShape2D_57o3d")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+position = Vector2(283, 259)
+shape = SubResource("RectangleShape2D_v8s0o")
