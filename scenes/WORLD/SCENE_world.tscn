@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=3 uid="uid://dapjv27oqreqe"]
+[gd_scene load_steps=54 format=3 uid="uid://dapjv27oqreqe"]
 
 [ext_resource type="Script" path="res://scenes/WORLD/scene_world.gd" id="1_i5c5t"]
 [ext_resource type="Texture2D" uid="uid://byhjnt8sxglyf" path="res://assets/BATTLE/BG_papers.png" id="2_mjdss"]
@@ -24,10 +24,11 @@
 [ext_resource type="PackedScene" uid="uid://cg7clhm1fhxn1" path="res://scenes/WORLD/ENV_hay_v.tscn" id="25_ylo1u"]
 [ext_resource type="Texture2D" uid="uid://d4kgf18i271dm" path="res://assets/WORLD/ENV_гриб2.png" id="26_dhout"]
 [ext_resource type="Texture2D" uid="uid://bwxar4xd5mdog" path="res://assets/WORLD/ENV_гриб1.png" id="27_e08oo"]
+[ext_resource type="PackedScene" uid="uid://dq3hudabjikvt" path="res://assets/NEW/env_the_barn.tscn" id="28_a3dsn"]
 [ext_resource type="Texture2D" uid="uid://bxrw73dc1mee0" path="res://assets/WORLD/ENV_гриб3.png" id="28_nqu3h"]
 [ext_resource type="Texture2D" uid="uid://b2j2ku86mp781" path="res://assets/WORLD/ENV_гриб.png" id="29_ii2qv"]
 [ext_resource type="Texture2D" uid="uid://ujvonp52g6r6" path="res://assets/WORLD/ENV_камень1.png" id="30_rh7l6"]
-[ext_resource type="PackedScene" uid="uid://dco62rkcqerui" path="res://scenes/WORLD/ENV_house_wall.tscn" id="31_4cmi3"]
+[ext_resource type="PackedScene" uid="uid://bn64jvci0igcv" path="res://assets/NEW/env_wall.tscn" id="31_4cmi3"]
 [ext_resource type="Texture2D" uid="uid://deomtdg3peqn" path="res://assets/WORLD/ENV_камень2.png" id="31_7ioa1"]
 [ext_resource type="Texture2D" uid="uid://g0l7f1t3ertq" path="res://assets/WORLD/ENV_камень3.png" id="32_l1i4a"]
 [ext_resource type="Texture2D" uid="uid://s6k5ss81obp8" path="res://assets/WORLD/ENV_камень4.png" id="33_jpum6"]
@@ -36,13 +37,16 @@
 [ext_resource type="PackedScene" uid="uid://b0o16mko3xb7g" path="res://scenes/WORLD/ENEMY_cracker.tscn" id="36_rkuae"]
 [ext_resource type="PackedScene" uid="uid://csa5luuveie3n" path="res://scenes/WORLD/PLAYER.tscn" id="37_s30ks"]
 [ext_resource type="PackedScene" uid="uid://bbcy6r2xfjowy" path="res://scenes/WORLD/ENV_bush.tscn" id="39_m2e6w"]
-[ext_resource type="PackedScene" uid="uid://c7d7jyp0viekq" path="res://scenes/WORLD/ENV_tree_blue.tscn" id="40_eh6ci"]
-[ext_resource type="PackedScene" uid="uid://cuq52recmy5bu" path="res://scenes/WORLD/ENV_trees_blue.tscn" id="41_yrfr3"]
-[ext_resource type="PackedScene" uid="uid://c4vn4yai4ydj8" path="res://scenes/WORLD/ENV_tree_green.tscn" id="42_pocmr"]
-[ext_resource type="PackedScene" uid="uid://dd08ryjgs073t" path="res://scenes/WORLD/ENV_trees_green.tscn" id="43_knmdr"]
-[ext_resource type="PackedScene" uid="uid://dysho3nl4wot0" path="res://scenes/WORLD/ENV_tree_red.tscn" id="44_5o7rm"]
-[ext_resource type="PackedScene" uid="uid://f270pt5cl7tv" path="res://scenes/WORLD/ENV_trees_red.tscn" id="45_ivffb"]
-[ext_resource type="PackedScene" uid="uid://d2lc81ie7r7vq" path="res://scenes/WORLD/ENV_trees_rgb.tscn" id="46_pesg3"]
+[ext_resource type="PackedScene" path="res://scenes/WORLD/ENV_tree_blue.tscn" id="40_eh6ci"]
+[ext_resource type="PackedScene" path="res://scenes/WORLD/ENV_trees_blue.tscn" id="41_yrfr3"]
+[ext_resource type="PackedScene" path="res://scenes/WORLD/ENV_tree_green.tscn" id="42_pocmr"]
+[ext_resource type="PackedScene" path="res://scenes/WORLD/ENV_trees_green.tscn" id="43_knmdr"]
+[ext_resource type="PackedScene" path="res://scenes/WORLD/ENV_tree_red.tscn" id="44_5o7rm"]
+[ext_resource type="PackedScene" path="res://scenes/WORLD/ENV_trees_red.tscn" id="45_ivffb"]
+[ext_resource type="PackedScene" uid="uid://cejx7lio1a0c7" path="res://assets/NEW/env_сhest.tscn" id="45_s53o4"]
+[ext_resource type="PackedScene" uid="uid://dy6xpuqab3ddc" path="res://assets/NEW/env_table.tscn" id="46_mmbkh"]
+[ext_resource type="PackedScene" path="res://scenes/WORLD/ENV_trees_rgb.tscn" id="46_pesg3"]
+[ext_resource type="PackedScene" uid="uid://d2487hry2rwax" path="res://assets/NEW/env_sharikov's_chair.tscn" id="47_p4uj8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ohwr2"]
 texture = ExtResource("4_1h8oh")
@@ -404,11 +408,8 @@ position = Vector2(8680, 376)
 [node name="Red_tree" parent="Ground/World" instance=ExtResource("44_5o7rm")]
 position = Vector2(6958, 114)
 
-[node name="Blue_tree" parent="Ground/World" instance=ExtResource("40_eh6ci")]
-position = Vector2(7586, -918)
-
 [node name="Green_tree" parent="Ground/World" instance=ExtResource("42_pocmr")]
-position = Vector2(8306, -934)
+position = Vector2(8694, -1504)
 
 [node name="Green_tree2" parent="Ground/World" instance=ExtResource("42_pocmr")]
 position = Vector2(7142, -632)
@@ -426,16 +427,16 @@ position = Vector2(9168, -36)
 position = Vector2(9868, -198)
 
 [node name="Green_trees" parent="Ground/World" instance=ExtResource("43_knmdr")]
-position = Vector2(8726, -834)
+position = Vector2(9396, -922)
 
 [node name="Green_trees2" parent="Ground/World" instance=ExtResource("43_knmdr")]
-position = Vector2(9116, -1170)
+position = Vector2(9970, -844)
 
 [node name="Green_trees3" parent="Ground/World" instance=ExtResource("43_knmdr")]
 position = Vector2(9110, -488)
 
 [node name="Green_trees4" parent="Ground/World" instance=ExtResource("43_knmdr")]
-position = Vector2(9400, -926)
+position = Vector2(9736, -1308)
 
 [node name="Green_trees5" parent="Ground/World" instance=ExtResource("43_knmdr")]
 position = Vector2(9546, -488)
@@ -444,7 +445,7 @@ position = Vector2(9546, -488)
 position = Vector2(6944, -954)
 
 [node name="Blue_trees2" parent="Ground/World" instance=ExtResource("41_yrfr3")]
-position = Vector2(7596, -1204)
+position = Vector2(6388, -1768)
 
 [node name="Blue_trees3" parent="Ground/World" instance=ExtResource("41_yrfr3")]
 position = Vector2(6992, -1482)
@@ -453,10 +454,7 @@ position = Vector2(6992, -1482)
 position = Vector2(6372, -1194)
 
 [node name="Blue_trees5" parent="Ground/World" instance=ExtResource("41_yrfr3")]
-position = Vector2(8044, -1558)
-
-[node name="Blue_trees6" parent="Ground/World" instance=ExtResource("41_yrfr3")]
-position = Vector2(8536, -1366)
+position = Vector2(9362, -1634)
 
 [node name="ENV_bush" parent="Ground/World" instance=ExtResource("39_m2e6w")]
 position = Vector2(5946, 910)
@@ -567,6 +565,18 @@ scale = Vector2(0.882353, 0.882353)
 position = Vector2(762, -566)
 scale = Vector2(1.7, 1.7)
 
+[node name="ENV_the_barn" parent="Ground/World/Hays3" instance=ExtResource("28_a3dsn")]
+position = Vector2(4278.82, -443.529)
+scale = Vector2(1.17647, 1.17647)
+
+[node name="Blue_trees6" parent="Ground/World/Hays3" instance=ExtResource("41_yrfr3")]
+position = Vector2(4827.06, -396.471)
+scale = Vector2(1.17647, 1.17647)
+
+[node name="Blue_tree" parent="Ground/World/Hays3" instance=ExtResource("40_eh6ci")]
+position = Vector2(4702.35, -118.824)
+scale = Vector2(1.17647, 1.17647)
+
 [node name="HayZ" parent="Ground/World/Hays3" instance=ExtResource("24_85w0s")]
 position = Vector2(1583.53, 90.5882)
 scale = Vector2(1.17647, 1.17647)
@@ -601,6 +611,12 @@ texture = ExtResource("27_e08oo")
 position = Vector2(3538, 662)
 scale = Vector2(2, 2)
 texture = ExtResource("28_nqu3h")
+
+[node name="ENV_Sharikov\'s chair" parent="Ground/World" instance=ExtResource("47_p4uj8")]
+position = Vector2(2784, 44)
+
+[node name="ENV_Table" parent="Ground/World" instance=ExtResource("46_mmbkh")]
+position = Vector2(2878, 186)
 
 [node name="Гриб" type="Sprite2D" parent="Ground/World"]
 position = Vector2(3502, 602)
@@ -648,15 +664,18 @@ scale = Vector2(1.2, 1.2)
 speed = 0.0
 
 [node name="Cracker" parent="Ground/World" instance=ExtResource("36_rkuae")]
-position = Vector2(1892, 4062)
+position = Vector2(7590, -134)
 
 [node name="Player" parent="Ground/World" instance=ExtResource("37_s30ks")]
 texture_filter = 2
-position = Vector2(1680, 404)
+position = Vector2(1754, 454)
 scale = Vector2(1.5, 1.5)
 
 [node name="Cracker2" parent="Ground/World" instance=ExtResource("36_rkuae")]
-position = Vector2(3858, 4264)
+position = Vector2(7482, 620)
 
 [node name="Cracker3" parent="Ground/World" instance=ExtResource("36_rkuae")]
-position = Vector2(2710, 3998)
+position = Vector2(2140, 1572)
+
+[node name="ENV_Сhest" parent="Ground/World" instance=ExtResource("45_s53o4")]
+position = Vector2(998, -446)

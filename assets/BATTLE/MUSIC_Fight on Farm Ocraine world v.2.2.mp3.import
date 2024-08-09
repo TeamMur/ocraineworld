@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ba6iqwstishwv"
+path="res://.godot/imported/MUSIC_Fight on Farm Ocraine world v.2.2.mp3-f39175f5942ed6ebf4302bc50dcaed29.mp3str"
+
+[deps]
+
+source_file="res://assets/BATTLE/MUSIC_Fight on Farm Ocraine world v.2.2.mp3"
+dest_files=["res://.godot/imported/MUSIC_Fight on Farm Ocraine world v.2.2.mp3-f39175f5942ed6ebf4302bc50dcaed29.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://j5vhjj8qyw50"
-path="res://.godot/imported/ENV_grass_black_3.png-a329c01a838e289ce881513493ecc854.ctex"
+uid="uid://bce7fhudg2tpe"
+path="res://.godot/imported/ENV_ворота для хлева (правые).png-65b9b528a86ae9939cc1a876c24c6300.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/WORLD/ENV_grass_black_3.png"
-dest_files=["res://.godot/imported/ENV_grass_black_3.png-a329c01a838e289ce881513493ecc854.ctex"]
+source_file="res://assets/NEW/ENV_ворота для хлева (правые).png"
+dest_files=["res://.godot/imported/ENV_ворота для хлева (правые).png-65b9b528a86ae9939cc1a876c24c6300.ctex"]
 
 [params]
 

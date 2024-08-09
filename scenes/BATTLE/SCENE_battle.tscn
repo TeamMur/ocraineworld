@@ -6,19 +6,19 @@
 [ext_resource type="Texture2D" uid="uid://cyf4y0f0kyn7y" path="res://assets/BATTLE/BG_guide.png" id="2_ik5r5"]
 [ext_resource type="Texture2D" uid="uid://drrk4keyx10gy" path="res://assets/BATTLE/BG_земля для фона.png" id="3_gkyyw"]
 [ext_resource type="Texture2D" uid="uid://dxb3ukwwjwnhd" path="res://assets/BATTLE/ICON_health.png" id="3_pes5v"]
-[ext_resource type="Texture2D" uid="uid://wlc2u8v7ybyx" path="res://assets/WORLD/ENV_grass_black_1.png" id="4_kygaf"]
+[ext_resource type="Texture2D" uid="uid://wlc2u8v7ybyx" path="res://assets/ARCHIEVE/ENV_grass_black_1.png" id="4_kygaf"]
 [ext_resource type="Texture2D" uid="uid://byuu7ik4xd8ld" path="res://assets/BATTLE/BG_кусты задний фон.png" id="4_u8f4j"]
 [ext_resource type="Texture2D" uid="uid://65rncxihalmp" path="res://assets/BATTLE/ICON_mana.png" id="4_yfacw"]
 [ext_resource type="Texture2D" uid="uid://dwwvj4337jlpe" path="res://assets/BATTLE/ICON_protection.png" id="5_855ts"]
-[ext_resource type="Texture2D" uid="uid://dy5k2scqpd32v" path="res://assets/WORLD/ENV_grass_black_2.png" id="5_udxv4"]
-[ext_resource type="Texture2D" uid="uid://j5vhjj8qyw50" path="res://assets/WORLD/ENV_grass_black_3.png" id="6_8pjua"]
+[ext_resource type="Texture2D" uid="uid://dy5k2scqpd32v" path="res://assets/ARCHIEVE/ENV_grass_black_2.png" id="5_udxv4"]
+[ext_resource type="Texture2D" uid="uid://j5vhjj8qyw50" path="res://assets/ARCHIEVE/ENV_grass_black_3.png" id="6_8pjua"]
 [ext_resource type="Texture2D" uid="uid://ckf61rpjckemf" path="res://assets/BATTLE/ICON_damage.png" id="6_qnkgq"]
-[ext_resource type="Texture2D" uid="uid://b26qar3l1uscx" path="res://assets/WORLD/ENV_grass_black_4.png" id="7_1qj0e"]
+[ext_resource type="Texture2D" uid="uid://b26qar3l1uscx" path="res://assets/ARCHIEVE/ENV_grass_black_4.png" id="7_1qj0e"]
 [ext_resource type="Texture2D" uid="uid://cyrgu0ivwsyt5" path="res://assets/BATTLE/ICON_speed.png" id="7_krfy6"]
 [ext_resource type="Texture2D" uid="uid://cpbrnt7if6556" path="res://assets/BATTLE/ICON_luck.png" id="8_jycb2"]
-[ext_resource type="Texture2D" uid="uid://cfnsyuw3jmy61" path="res://assets/WORLD/ENV_grass_black_5.png" id="8_xo45o"]
-[ext_resource type="Texture2D" uid="uid://brjn1il1ky6xl" path="res://assets/WORLD/ENV_grass_black_6.png" id="9_de823"]
-[ext_resource type="Texture2D" uid="uid://cgs5vf0ea7f8j" path="res://assets/WORLD/ENV_grass_black_7.png" id="10_n2pws"]
+[ext_resource type="Texture2D" uid="uid://cfnsyuw3jmy61" path="res://assets/ARCHIEVE/ENV_grass_black_5.png" id="8_xo45o"]
+[ext_resource type="Texture2D" uid="uid://brjn1il1ky6xl" path="res://assets/ARCHIEVE/ENV_grass_black_6.png" id="9_de823"]
+[ext_resource type="Texture2D" uid="uid://cgs5vf0ea7f8j" path="res://assets/ARCHIEVE/ENV_grass_black_7.png" id="10_n2pws"]
 [ext_resource type="PackedScene" uid="uid://0w2kir3xkrn3" path="res://scenes/BATTLE/BTLPLAYER.tscn" id="15_ptksl"]
 [ext_resource type="Texture2D" uid="uid://qb6v5x4yk2f6" path="res://assets/BATTLE/UI_серая рамка.png" id="22_sjobb"]
 [ext_resource type="Texture2D" uid="uid://dkgrj8udrcyux" path="res://assets/BATTLE/UI_коричневая.png" id="22_v1d4s"]
@@ -29,7 +29,7 @@
 [ext_resource type="Texture2D" uid="uid://0n677df4ik7o" path="res://assets/BATTLE/UI_серая рамка (pressed).png" id="24_gkquw"]
 [ext_resource type="Texture2D" uid="uid://ddd3a8s7trmcb" path="res://assets/BATTLE/BG_stars.png" id="24_x02or"]
 [ext_resource type="Texture2D" uid="uid://bifp84hoajyfr" path="res://assets/BATTLE/ICON_Кнопка сбежать.png" id="25_pq12p"]
-[ext_resource type="Texture2D" uid="uid://b87gt7s3n8hxx" path="res://assets/MENU/UI_Паралакс1.png" id="30_jjjan"]
+[ext_resource type="Texture2D" uid="uid://byawb8l6y0k7l" path="res://assets/NEW/UI_Никто.png" id="30_2kh3w"]
 [ext_resource type="Texture2D" uid="uid://76y7324vwqc1" path="res://assets/BATTLE/UI_пустая полоска чего-то.png" id="31_6fem8"]
 [ext_resource type="Texture2D" uid="uid://b102ijivlqdxt" path="res://assets/BATTLE/ICON_иконка здоровье Никто.png" id="31_fn7hf"]
 [ext_resource type="Texture2D" uid="uid://dck216ejscwsc" path="res://assets/BATTLE/UI_полоска здоровья Никто.png" id="31_vd3dj"]
@@ -641,9 +641,8 @@ offset_left = 16.0
 offset_top = 520.0
 offset_right = 352.0
 offset_bottom = 632.0
-texture = ExtResource("30_jjjan")
+texture = ExtResource("30_2kh3w")
 expand_mode = 1
-stretch_mode = 1
 
 [node name="VContainer" type="VBoxContainer" parent="GUI/Panel"]
 layout_mode = 1

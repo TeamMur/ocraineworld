@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wlc2u8v7ybyx"
-path="res://.godot/imported/ENV_grass_black_1.png-b2e6cd150328824c0036e6fe13073e5a.ctex"
+uid="uid://bsw5gqy1e8eld"
+path="res://.godot/imported/ENV_хлев.png-fe749259e53b0564ee76998b1cbc0253.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/WORLD/ENV_grass_black_1.png"
-dest_files=["res://.godot/imported/ENV_grass_black_1.png-b2e6cd150328824c0036e6fe13073e5a.ctex"]
+source_file="res://assets/NEW/ENV_хлев.png"
+dest_files=["res://.godot/imported/ENV_хлев.png-fe749259e53b0564ee76998b1cbc0253.ctex"]
 
 [params]
 

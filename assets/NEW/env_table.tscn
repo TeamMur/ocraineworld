@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dy6xpuqab3ddc"]
+
+[ext_resource type="Texture2D" uid="uid://blgj6x2plp43x" path="res://assets/WORLD/ENV_столик.png" id="1_gxro2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iamlb"]
+size = Vector2(84, 80.1579)
+
+[node name="ENV_Table" type="StaticBody2D"]
+scale = Vector2(1.9, 1.9)
+collision_layer = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_gxro2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, 16.921)
+shape = SubResource("RectangleShape2D_iamlb")
