@@ -664,7 +664,7 @@ scale = Vector2(1.2, 1.2)
 speed = 0.0
 
 [node name="Cracker" parent="Ground/World" instance=ExtResource("36_rkuae")]
-position = Vector2(7590, -134)
+position = Vector2(1852, 2450)
 
 [node name="Player" parent="Ground/World" instance=ExtResource("37_s30ks")]
 texture_filter = 2
@@ -672,7 +672,7 @@ position = Vector2(1754, 454)
 scale = Vector2(1.5, 1.5)
 
 [node name="Cracker2" parent="Ground/World" instance=ExtResource("36_rkuae")]
-position = Vector2(7482, 620)
+position = Vector2(2244, 2298)
 
 [node name="Cracker3" parent="Ground/World" instance=ExtResource("36_rkuae")]
 position = Vector2(2140, 1572)
