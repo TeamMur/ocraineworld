@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b3oa0e7ig38iy"
-path="res://.godot/imported/Спрайт лист Idle анимации Никто WS.png-17ecc77fe2779a72c0608e6fcf50bbbe.ctex"
+uid="uid://gu0poywv5nr4"
+path="res://.godot/imported/TILES_синеватый деревянный пол.png-d3f3b4378b45cb086d926def9c42d79e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ARCHIEVE/Спрайт лист Idle анимации Никто WS.png"
-dest_files=["res://.godot/imported/Спрайт лист Idle анимации Никто WS.png-17ecc77fe2779a72c0608e6fcf50bbbe.ctex"]
+source_file="res://assets/OLD/TILES_синеватый деревянный пол.png"
+dest_files=["res://.godot/imported/TILES_синеватый деревянный пол.png-d3f3b4378b45cb086d926def9c42d79e.ctex"]
 
 [params]
 

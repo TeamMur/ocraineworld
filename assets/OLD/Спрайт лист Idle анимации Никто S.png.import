@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bit1hkkbfagiq"
-path="res://.godot/imported/Спрайт лист Idle анимации Никто S.png-50092f1f2729fae97edba4adacdb485b.ctex"
+path="res://.godot/imported/Спрайт лист Idle анимации Никто S.png-03cda958fd729c6d1d4884d3ea4c37e5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ARCHIEVE/Спрайт лист Idle анимации Никто S.png"
-dest_files=["res://.godot/imported/Спрайт лист Idle анимации Никто S.png-50092f1f2729fae97edba4adacdb485b.ctex"]
+source_file="res://assets/OLD/Спрайт лист Idle анимации Никто S.png"
+dest_files=["res://.godot/imported/Спрайт лист Idle анимации Никто S.png-03cda958fd729c6d1d4884d3ea4c37e5.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7snir0a86ut4"
-path="res://.godot/imported/FX_transition.png-aef0b1969a20640a6b7835cce84984f3.ctex"
+uid="uid://b3oa0e7ig38iy"
+path="res://.godot/imported/Спрайт лист Idle анимации Никто WS.png-336d409f85063c0c37536edff4115165.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/MENU/FX_transition.png"
-dest_files=["res://.godot/imported/FX_transition.png-aef0b1969a20640a6b7835cce84984f3.ctex"]
+source_file="res://assets/OLD/Спрайт лист Idle анимации Никто WS.png"
+dest_files=["res://.godot/imported/Спрайт лист Idle анимации Никто WS.png-336d409f85063c0c37536edff4115165.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://chyqmr7fg4he2"
-path="res://.godot/imported/ENV_куст1.png-698cb99ba2d758e12c5e3bdb01237fa5.ctex"
+uid="uid://802xjbrhi2f8"
+path="res://.godot/imported/ENV_кусты1.png-d8beb60826b58f6870d61e9d7d8f887b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ARCHIEVE/ENV_куст1.png"
-dest_files=["res://.godot/imported/ENV_куст1.png-698cb99ba2d758e12c5e3bdb01237fa5.ctex"]
+source_file="res://assets/OLD/ENV_кусты1.png"
+dest_files=["res://.godot/imported/ENV_кусты1.png-d8beb60826b58f6870d61e9d7d8f887b.ctex"]
 
 [params]
 
