@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dgwf5m43jqtmv"
-path="res://.godot/imported/Спрайт лист анимации Никто Idle_E.png-009c00d35a3a9c0a96df9f0c9fed1628.ctex"
+uid="uid://lypvnlcjjg1j"
+path="res://.godot/imported/Спрайт лист Idle анимации Никто N.png-fbecf2b12913d15a160a8968483373bc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ARCHIEVE/Спрайт лист анимации Никто Idle_E.png"
-dest_files=["res://.godot/imported/Спрайт лист анимации Никто Idle_E.png-009c00d35a3a9c0a96df9f0c9fed1628.ctex"]
+source_file="res://assets/OLD/Спрайт лист Idle анимации Никто N.png"
+dest_files=["res://.godot/imported/Спрайт лист Idle анимации Никто N.png-fbecf2b12913d15a160a8968483373bc.ctex"]
 
 [params]
 

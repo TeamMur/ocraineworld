@@ -20,8 +20,8 @@ characteristics_res = ExtResource("2_jnoh3")
 
 [node name="Sprite" type="Sprite2D" parent="."]
 process_mode = 3
-position = Vector2(0, -115)
 texture = ExtResource("3_pjdwg")
+offset = Vector2(0, -96.91)
 hframes = 4
 vframes = 8
 frame = 16
