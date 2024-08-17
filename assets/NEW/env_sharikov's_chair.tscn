@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2487hry2rwax"]
+
+[ext_resource type="Texture2D" uid="uid://dllusdogynrfo" path="res://assets/WORLD/ENV_кресло Шарикова.png" id="1_iada1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pth5a"]
+size = Vector2(167, 116)
+
+[node name="ENV_Sharikov\'s chair" type="StaticBody2D"]
+scale = Vector2(1.8, 1.8)
+collision_layer = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_iada1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-33.5, 54)
+shape = SubResource("RectangleShape2D_pth5a")
