@@ -1,6 +1,6 @@
 extends Node
 
-const SCENE_MUSIC = preload("res://assets/BATTLE/MUSICCR_75. Forest Frenzy.mp3")
+const SCENE_MUSIC = preload("res://assets/BATTLE/MUSIC_Fight on Farm Ocraine world v.2.2.mp3")
 
 @onready var info = $GUI/Info
 @onready var turn_label = $GUI/Info/TurnLabel
