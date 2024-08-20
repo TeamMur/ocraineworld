@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7snir0a86ut4"
-path="res://.godot/imported/FX_transition.png-aef0b1969a20640a6b7835cce84984f3.ctex"
+uid="uid://gu0poywv5nr4"
+path="res://.godot/imported/TILES_синеватый деревянный пол.png-d3f3b4378b45cb086d926def9c42d79e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/MENU/FX_transition.png"
-dest_files=["res://.godot/imported/FX_transition.png-aef0b1969a20640a6b7835cce84984f3.ctex"]
+source_file="res://assets/OLD/TILES_синеватый деревянный пол.png"
+dest_files=["res://.godot/imported/TILES_синеватый деревянный пол.png-d3f3b4378b45cb086d926def9c42d79e.ctex"]
 
 [params]
 

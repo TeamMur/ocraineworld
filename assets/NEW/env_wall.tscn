@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://bn64jvci0igcv"]
+[gd_scene load_steps=3 format=3 uid="uid://cvnxje45dx3b0"]
 
 [ext_resource type="Texture2D" uid="uid://bvb37vxowajgm" path="res://assets/WORLD/ENV_house_wall.png" id="1_tl6ka"]
 
@@ -9,8 +9,9 @@ size = Vector2(1043, 391)
 collision_layer = 4
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -172.5)
 texture = ExtResource("1_tl6ka")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(2.5, -2.5)
+position = Vector2(2.5, -175)
 shape = SubResource("RectangleShape2D_vvtgv")

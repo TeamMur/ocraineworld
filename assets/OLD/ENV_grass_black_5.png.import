@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ij2rap8nnvhl"
-path="res://.godot/imported/Спрайт лист Idle анимации Никто ES.png-188bf955557834a143df33ba6d859f87.ctex"
+uid="uid://cfnsyuw3jmy61"
+path="res://.godot/imported/ENV_grass_black_5.png-c6ca785dcc2ad78a20324e3889e1d73d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/ARCHIEVE/Спрайт лист Idle анимации Никто ES.png"
-dest_files=["res://.godot/imported/Спрайт лист Idle анимации Никто ES.png-188bf955557834a143df33ba6d859f87.ctex"]
+source_file="res://assets/OLD/ENV_grass_black_5.png"
+dest_files=["res://.godot/imported/ENV_grass_black_5.png-c6ca785dcc2ad78a20324e3889e1d73d.ctex"]
 
 [params]
 
