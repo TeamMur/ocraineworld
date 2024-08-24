@@ -1,0 +1,85 @@
+[gd_scene load_steps=13 format=3 uid="uid://b6224siyfqd4q"]
+
+[ext_resource type="Texture2D" uid="uid://dditk0eab2xd5" path="res://assets/BATTLE/BG_game_over_sheet.png" id="1_1fhkg"]
+[ext_resource type="Texture2D" uid="uid://rwaxs4eauak1" path="res://assets/BATTLE/BUTTON_no.png" id="2_2gka8"]
+[ext_resource type="Texture2D" uid="uid://b6h7ekoabifwx" path="res://assets/BATTLE/BUTTON_no dash.png" id="2_7n3rv"]
+[ext_resource type="Texture2D" uid="uid://bhj8my5psarwf" path="res://assets/BATTLE/BG_the end of the story.png" id="3_s33om"]
+[ext_resource type="Texture2D" uid="uid://cwmyfwtme5a04" path="res://assets/BATTLE/BUTTON_yes.png" id="5_bsk61"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ld6gm"]
+atlas = ExtResource("1_1fhkg")
+region = Rect2(0, 0, 1920, 1080)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cw4op"]
+atlas = ExtResource("1_1fhkg")
+region = Rect2(1920, 0, 1920, 1080)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x8fnw"]
+atlas = ExtResource("1_1fhkg")
+region = Rect2(3840, 0, 1920, 1080)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_022ru"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ld6gm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cw4op")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x8fnw")
+}],
+"loop": true,
+"name": &"game over",
+"speed": 10.0
+}]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_foplw"]
+texture = ExtResource("2_7n3rv")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_t5ikd"]
+texture = ExtResource("2_2gka8")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qwlx8"]
+
+[node name="SCENE_game_over" type="CanvasLayer"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(960, 540)
+sprite_frames = SubResource("SpriteFrames_022ru")
+animation = &"game over"
+autoplay = "game over"
+frame_progress = 0.665901
+
+[node name="Button" type="Button" parent="."]
+offset_left = 190.0
+offset_top = 422.0
+offset_right = 351.0
+offset_bottom = 542.0
+theme_override_styles/pressed = SubResource("StyleBoxTexture_foplw")
+theme_override_styles/normal = SubResource("StyleBoxTexture_t5ikd")
+flat = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Button"]
+position = Vector2(90, 67)
+scale = Vector2(0.606061, 0.606061)
+texture = ExtResource("2_2gka8")
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 862.0
+offset_top = 443.0
+offset_right = 972.0
+offset_bottom = 553.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_qwlx8")
+flat = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Button2"]
+position = Vector2(52, 59)
+scale = Vector2(0.601695, 0.601695)
+texture = ExtResource("5_bsk61")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(549, 263)
+scale = Vector2(0.735185, 0.735185)
+texture = ExtResource("3_s33om")

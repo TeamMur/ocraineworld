@@ -14,7 +14,7 @@ class_name Player
 
 const STEPS_SOUND = preload("res://assets/WORLD/SFXCR_PLAYER_steps.mp3")
 
-@export var speed: float = 1.75
+@export var speed: float = 2
 
 var effects: Array
 
