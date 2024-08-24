@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scenes/BATTLE/scene_battle.gd" id="1_feyyh"]
 [ext_resource type="Texture2D" uid="uid://cw5lh7pl76vd1" path="res://assets/BATTLE/BG_небо задний фон.png" id="2_6vj7v"]
 [ext_resource type="Script" path="res://scenes/GLOBAL/dashes_sprite.gd" id="2_gb0x2"]
-[ext_resource type="Texture2D" uid="uid://cyf4y0f0kyn7y" path="res://assets/BATTLE/BG_guide.png" id="2_ik5r5"]
+[ext_resource type="Texture2D" uid="uid://cyf4y0f0kyn7y" path="res://assets/OLD/BG_guide.png" id="2_ik5r5"]
 [ext_resource type="Texture2D" uid="uid://drrk4keyx10gy" path="res://assets/BATTLE/BG_земля для фона.png" id="3_gkyyw"]
 [ext_resource type="Texture2D" uid="uid://dxb3ukwwjwnhd" path="res://assets/BATTLE/ICON_health.png" id="3_pes5v"]
 [ext_resource type="Texture2D" uid="uid://wlc2u8v7ybyx" path="res://assets/OLD/ENV_grass_black_1.png" id="4_kygaf"]
@@ -590,9 +590,9 @@ offset_left = 1072.0
 offset_top = 8.0
 offset_right = 1144.0
 offset_bottom = 80.0
-theme_override_styles/normal = SubResource("StyleBoxTexture_swpeg")
 theme_override_styles/hover = SubResource("StyleBoxTexture_cw5h6")
 theme_override_styles/pressed = SubResource("StyleBoxTexture_wdfru")
+theme_override_styles/normal = SubResource("StyleBoxTexture_swpeg")
 icon_alignment = 1
 expand_icon = true
 
