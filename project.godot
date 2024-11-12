@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Ocraine World"
+config/name="Ocraine World (prototipe)"
 config/tags=PackedStringArray("в_процессе", "прототип")
 run/main_scene="res://scenes/WORLD/SCENE_world.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")

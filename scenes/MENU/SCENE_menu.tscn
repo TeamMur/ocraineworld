@@ -3,7 +3,6 @@
 [ext_resource type="Script" path="res://scenes/MENU/scene_menu.gd" id="1_qylio"]
 [ext_resource type="Texture2D" uid="uid://byhjnt8sxglyf" path="res://assets/BATTLE/BG_papers.png" id="2_goyem"]
 [ext_resource type="Script" path="res://scenes/GLOBAL/dashes_sprite.gd" id="3_rd0oe"]
-[ext_resource type="Texture2D" uid="uid://lhc00q24wu43" path="res://assets/MENU/ICON_main_chracter.png" id="4_m7oek"]
 [ext_resource type="Texture2D" uid="uid://mrsv1g7wu6ak" path="res://assets/BATTLE/UI_Никто.png" id="4_xgqj5"]
 [ext_resource type="Script" path="res://scenes/MENU/ui_settings_buttons.gd" id="6_efldu"]
 [ext_resource type="Texture2D" uid="uid://2sv5uu647sii" path="res://assets/BATTLE/UI_темный.png" id="7_8huby"]
@@ -38,6 +37,8 @@ texture = ExtResource("7_8huby")
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_882gr"]
 texture = ExtResource("7_8huby")
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rminn"]
 
 [node name="TitleScreen" type="Node"]
 script = ExtResource("1_qylio")
@@ -101,23 +102,6 @@ text = "*copyrights"
 layout_mode = 2
 theme_override_styles/normal = SubResource("StyleBoxTexture_gii5c")
 text = "exit"
-
-[node name="GameName" type="TextureRect" parent="Statics"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -331.5
-offset_top = -292.0
-offset_right = 331.5
-offset_bottom = 148.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("4_m7oek")
-expand_mode = 1
-stretch_mode = 5
 
 [node name="SettingsButtons" type="VBoxContainer" parent="Statics"]
 visible = false
@@ -301,58 +285,5 @@ layout_mode = 2
 size_flags_horizontal = 3
 text = "close"
 
-[node name="VersionLabel" type="Label" parent="Statics"]
-modulate = Color(0, 0, 0, 1)
-layout_mode = 1
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -104.0
-offset_top = -32.0
-offset_right = -11.0
-offset_bottom = -9.0
-grow_horizontal = 0
-grow_vertical = 0
-theme_override_font_sizes/font_size = 24
-text = "version alpha 0.2.0"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="CopyrightLabel" type="Label" parent="Statics"]
-modulate = Color(0, 0, 0, 1)
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -101.0
-offset_top = -32.0
-offset_right = 101.0
-offset_bottom = -9.0
-grow_horizontal = 2
-grow_vertical = 0
-theme_override_font_sizes/font_size = 24
-text = "created by T/D/A"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="GameTitle" type="Label" parent="Statics"]
-modulate = Color(0, 0, 0, 1)
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -213.0
-offset_top = 124.0
-offset_right = 213.0
-offset_bottom = 181.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_font_sizes/font_size = 76
-text = "DAZZLING ARMADILO"
-horizontal_alignment = 1
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_rminn")
